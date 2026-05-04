@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Us - Mountain Town Rehab</title>
+	<meta name="description" content="Learn about Mountain Town Rehab — a family-owned physical therapy clinic in Mt Pleasant, MI dedicated to personalized, quality care.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="dist/output.css">
+	<style>
+		@keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+		@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+		.animate-fade-in-up { animation: fadeInUp 0.8s ease-out both; }
+		.animate-fade-in { animation: fadeIn 1s ease-out both; }
+		.delay-100 { animation-delay: 0.1s; }
+		.delay-200 { animation-delay: 0.2s; }
+		.delay-300 { animation-delay: 0.3s; }
+		.delay-400 { animation-delay: 0.4s; }
+		.delay-500 { animation-delay: 0.5s; }
+		.glass-card { background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+		.gradient-text { background: linear-gradient(135deg, #81a393 0%, #a7c1b4 50%, #cbdad1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+		.card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+		.card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 60px rgba(129,163,147,0.08); }
+		.hero-gradient { background: linear-gradient(180deg, rgba(15,23,42,0.7) 0%, rgba(15,23,42,0.85) 50%, rgba(15,23,42,1) 100%); }
+		.accent-bar { width: 48px; height: 3px; background: linear-gradient(90deg, #81a393, #d13253); border-radius: 2px; }
+		.nav-link { position: relative; }
+		.nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: linear-gradient(90deg, #81a393, #a7c1b4); transition: width 0.3s ease; border-radius: 1px; }
+		.nav-link:hover::after, .nav-link.active::after { width: 100%; }
+		html { scroll-behavior: smooth; }
+	</style>
+</head>
+<body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
+
+<!-- ====== HEADER ====== -->
+<header class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 transition-all duration-300">
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="flex justify-between items-center h-20">
+			<div class="flex-shrink-0 flex items-center">
+				<a href="index.html" class="block w-56 lg:w-72 group">
+					<svg class="w-full h-auto group-hover:opacity-90 transition-opacity duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 18 800 130">
+						<path d="M 60 90 L 290 90 L 330 40 L 360 75 L 400 25 L 440 75 L 470 40 L 510 90 L 740 90" stroke="#81a393" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+						<text x="400" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="5" text-anchor="middle" fill="#ffffff">MOUNTAIN TOWN REHAB</text>
+					</svg>
+				</a>
+			</div>
+			<nav class="hidden md:flex items-center gap-10">
+				<ul class="flex gap-8 text-sm font-medium text-slate-400">
+					<li><a href="index.html" class="nav-link hover:text-white transition-colors duration-200">Home</a></li>
+					<li><a href="about.html" class="nav-link active text-white transition-colors duration-200">About Us</a></li>
+					<li><a href="services.html" class="nav-link hover:text-white transition-colors duration-200">Physical Therapy</a></li>
+					<li><a href="staff.html" class="nav-link hover:text-white transition-colors duration-200">Staff</a></li>
+					<li><a href="patient-info.html" class="nav-link hover:text-white transition-colors duration-200">Patient Info</a></li>
+					<li><a href="contact.html" class="nav-link hover:text-white transition-colors duration-200">Contact</a></li>
+				</ul>
+				<a href="#" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg shadow-sage-600/20 transition-all duration-300 hover:shadow-sage-500/30">
+					Book Appointment
+				</a>
+			</nav>
+		</div>
+	</div>
+</header>
+
+<!-- ====== MAIN ====== -->
+<main id="primary" class="site-main flex-grow">
+
+	<!-- Hero Section -->
+	<section class="relative overflow-hidden min-h-[50vh] flex items-center">
+		<div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=2000'); opacity: 0.4;"></div>
+		<div class="absolute inset-0 z-[1] hero-gradient"></div>
+		<div class="absolute bottom-10 left-10 w-96 h-96 bg-sage-500/10 rounded-full blur-3xl z-[2]"></div>
+		<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col items-center text-center mt-8">
+			<div class="accent-bar mx-auto mb-6 animate-fade-in"></div>
+			<h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-4 max-w-4xl animate-fade-in-up">
+				About <span class="gradient-text">Mountain Town Rehab</span>
+			</h1>
+			<p class="text-lg text-slate-400 max-w-2xl leading-relaxed animate-fade-in-up delay-200">
+				A family-owned clinic rooted in the Mt Pleasant community, built on trust, compassion, and a passion for helping you heal.
+			</p>
+		</div>
+	</section>
+
+	<!-- Our Story Section -->
+	<section class="py-24 relative z-20 -mt-10">
+		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+			<!-- Story Card -->
+			<div class="glass-card rounded-2xl border border-slate-700/50 p-10 md:p-16 mb-16 animate-fade-in-up delay-100 text-center">
+				<div class="accent-bar mx-auto mb-8"></div>
+				<h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-8">Our Story</h2>
+				<div class="space-y-6 text-slate-400 leading-relaxed max-w-3xl mx-auto text-base">
+					<p>Mountain Town Rehab was founded with a simple but powerful belief: physical therapy should be personal. As a family-owned and operated clinic, we've been proudly serving the Mt Pleasant, Michigan community since 2001 — building lasting relationships with our patients and neighbors along the way.</p>
+					<p>From the beginning, our approach has been different. We don't shuffle patients through a revolving door — we provide dedicated, one-on-one care tailored to your unique needs and goals. Whether you're recovering from surgery, managing a chronic condition, or getting back in the game after a sports injury, you'll always work directly with a licensed provider who knows your story.</p>
+					<p>Our clinic is more than a workplace; it's a family. Mark and Sue Stansberry built Mountain Town Rehab on the values of integrity, compassion, and excellence — values that guide every treatment plan we create and every interaction we have.</p>
+				</div>
+			</div>
+
+			<!-- Team Photos Section -->
+			<div class="mb-16 animate-fade-in-up delay-200">
+				<div class="text-center mb-10">
+					<div class="accent-bar mx-auto mb-6"></div>
+					<h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Our Family at Work <span class="gradient-text">& Play</span></h2>
+					<p class="text-slate-400 max-w-2xl mx-auto">We believe that a team that has fun together provides better care together. Here's a glimpse into the culture that makes Mountain Town Rehab special.</p>
+				</div>
+				<div class="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
+					<div class="group rounded-2xl overflow-hidden border border-slate-700/50 card-hover glass-card">
+						<div class="overflow-hidden">
+							<img src="images/Hippie_Halloween.jpg" alt="Mountain Town Rehab team in hippie Halloween costumes" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
+						</div>
+					</div>
+					<div class="group rounded-2xl overflow-hidden border border-slate-700/50 card-hover glass-card">
+						<div class="overflow-hidden">
+							<img src="images/Penguin_Day.jpg" alt="Mountain Town Rehab team celebrating Penguin Day" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
+						</div>
+					</div>
+					<div class="group rounded-2xl overflow-hidden border border-slate-700/50 card-hover glass-card">
+						<div class="overflow-hidden">
+							<img src="images/PT_Halloween.jpg" alt="Mountain Town Rehab team in physical therapy themed Halloween costumes" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Values Grid -->
+			<div class="text-center mb-12 animate-fade-in-up delay-200">
+				<div class="accent-bar mx-auto mb-6"></div>
+				<h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">What Sets Us Apart</h2>
+				<p class="text-slate-400 max-w-2xl mx-auto">Our commitment to you goes beyond treatment. These are the principles that guide everything we do.</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+
+				<!-- Value 1 -->
+				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-8 group animate-fade-in-up delay-200">
+					<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6 group-hover:scale-110 transition-transform duration-300">
+						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+					</div>
+					<h3 class="text-xl font-serif font-bold text-white mb-3">One-on-One Care</h3>
+					<p class="text-slate-400 text-sm leading-relaxed">Every session is spent directly with your therapist — no aides, no sharing time with other patients. Your recovery gets our full, undivided attention.</p>
+				</div>
+
+				<!-- Value 2 -->
+				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-8 group animate-fade-in-up delay-300">
+					<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6 group-hover:scale-110 transition-transform duration-300">
+						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+					</div>
+					<h3 class="text-xl font-serif font-bold text-white mb-3">Family Values</h3>
+					<p class="text-slate-400 text-sm leading-relaxed">As a family-owned practice, we treat every patient like a member of our own family. Warmth, respect, and genuine care define the Mountain Town experience.</p>
+				</div>
+
+				<!-- Value 3 -->
+				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-8 group animate-fade-in-up delay-400">
+					<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6 group-hover:scale-110 transition-transform duration-300">
+						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+					</div>
+					<h3 class="text-xl font-serif font-bold text-white mb-3">Evidence-Based Treatment</h3>
+					<p class="text-slate-400 text-sm leading-relaxed">Our therapists hold advanced certifications and stay current with the latest research to deliver proven, effective treatment strategies for every condition.</p>
+				</div>
+
+				<!-- Value 4 -->
+				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-8 group animate-fade-in-up delay-500">
+					<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6 group-hover:scale-110 transition-transform duration-300">
+						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+					</div>
+					<h3 class="text-xl font-serif font-bold text-white mb-3">Community Rooted</h3>
+					<p class="text-slate-400 text-sm leading-relaxed">We're proud to call Mt Pleasant home. For over two decades, we've been a trusted partner in this community's health and wellness.</p>
+				</div>
+
+			</div>
+
+			<!-- CTA -->
+			<div class="glass-card rounded-2xl border border-slate-700/50 p-10 md:p-14 text-center animate-fade-in-up delay-300">
+				<h2 class="text-2xl md:text-3xl font-serif font-bold text-white mb-4">Ready to Start Your Recovery?</h2>
+				<p class="text-slate-400 max-w-xl mx-auto mb-8 leading-relaxed">We'd love to meet you and learn how we can help. Schedule your appointment today or give us a call — we're here for you.</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="#" class="inline-flex justify-center items-center px-8 py-4 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg shadow-sage-600/25 transition-all duration-300 hover:shadow-sage-500/40 hover:-translate-y-0.5">
+						Book Appointment
+					</a>
+					<a href="tel:9897792920" class="inline-flex justify-center items-center px-8 py-4 text-base font-medium rounded-full text-slate-300 border border-slate-700 hover:border-sage-500/50 hover:text-white hover:bg-slate-800/50 transition-all duration-300">
+						Call (989) 779-2920
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+</main>
+
+<!-- ====== FOOTER ====== -->
+<footer class="bg-slate-900/80 backdrop-blur border-t border-slate-800/50">
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+			<div class="space-y-4">
+				<div class="mb-4 w-56 lg:w-72">
+					<svg class="w-full h-auto opacity-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 15 800 195">
+						<path d="M 60 90 L 290 90 L 330 40 L 360 75 L 400 25 L 440 75 L 470 40 L 510 90 L 740 90" stroke="#81a393" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+						<text x="400" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="5" text-anchor="middle" fill="#ffffff">MOUNTAIN TOWN REHAB</text>
+						<line x1="60" y1="165" x2="740" y2="165" stroke="#475569" stroke-width="5" stroke-linecap="round" />
+						<text x="400" y="198" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="1" text-anchor="middle" fill="#94a3b8">Your Choice For Personal, Quality Care</text>
+					</svg>
+				</div>
+				<p class="text-slate-500 text-sm leading-relaxed">A family-owned clinic dedicated to your trust and recovery.</p>
+			</div>
+			<div>
+				<h3 class="text-sm font-semibold uppercase tracking-widest text-slate-400 mb-5">Quick Links</h3>
+				<ul class="space-y-3 text-sm text-slate-500">
+					<li><a href="index.html" class="hover:text-sage-400 transition-colors duration-200">Home</a></li>
+					<li><a href="about.html" class="hover:text-sage-400 transition-colors duration-200">About Us</a></li>
+					<li><a href="services.html" class="hover:text-sage-400 transition-colors duration-200">Physical Therapy</a></li>
+					<li><a href="staff.html" class="hover:text-sage-400 transition-colors duration-200">Staff</a></li>
+					<li><a href="patient-info.html" class="hover:text-sage-400 transition-colors duration-200">Patient Info</a></li>
+					<li><a href="contact.html" class="hover:text-sage-400 transition-colors duration-200">Contact</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3 class="text-sm font-semibold uppercase tracking-widest text-slate-400 mb-5">Contact Us</h3>
+				<ul class="space-y-4 text-sm text-slate-500">
+					<li class="flex items-start gap-3">
+						<svg class="h-5 w-5 text-sage-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+						</svg>
+						<span>1106 W High St<br>Mt Pleasant, MI 48858<br>(989) 779-2920<br><a href="mailto:info@mountaintownrehab.com" class="hover:text-sage-400 transition-colors">info@mountaintownrehab.com</a></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mt-12 pt-8 border-t border-slate-800/50 text-center">
+			<p class="text-xs text-slate-600">&copy; 2026 Mountain Town Rehab. All rights reserved.</p>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
