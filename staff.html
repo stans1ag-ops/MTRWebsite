@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Our Staff - Mountain Town Rehab</title>
+	<link rel="icon" type="image/png" href="images/Favicon.png">
 	<meta name="description" content="Meet the dedicated team at Mountain Town Rehab.">
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,6 +114,7 @@
 					<li><a href="services.html" class="nav-link hover:text-white transition-colors duration-200">Physical Therapy</a></li>
 					<li><a href="staff.html" class="nav-link active text-white transition-colors duration-200">Staff</a></li>
 					<li><a href="patient-info.html" class="nav-link hover:text-white transition-colors duration-200">Patient Info</a></li>
+					<li><a href="payments.html" class="nav-link hover:text-white transition-colors duration-200">Payments</a></li>
 					<li><a href="contact.html" class="nav-link hover:text-white transition-colors duration-200">Contact</a></li>
 				</ul>
 				<a href="contact.html" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg shadow-sage-600/20 transition-all duration-300 hover:shadow-sage-500/30">
@@ -127,7 +129,7 @@
 <main id="primary" class="site-main flex-grow">
 
 	<!-- Hero Section -->
-	<section class="relative overflow-hidden min-h-[50vh] flex items-center">
+	<section class="relative overflow-hidden min-h-[85vh] flex items-center">
 		<!-- Background Image (Placeholder for exterior clinic shot) -->
 		<div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('images/Front_Desk.jpg'); opacity: 0.5;"></div>
 		<!-- Gradient Overlay -->
@@ -153,10 +155,10 @@
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 				
 				<!-- Mark Stansberry -->
-				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-6 flex flex-col items-center text-center animate-fade-in-up delay-100">
+				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-100 cursor-pointer staff-card group transition-colors" data-target="modal-mark">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<!-- Placeholder image -->
-						<img src="https://ui-avatars.com/api/?name=Mark+Stansberry&background=1E293B&color=81a393&size=256" alt="Mark Stansberry" class="w-full h-full object-cover">
+						<img src="images/Mark.jpg" alt="Mark Stansberry" class="w-full h-full object-cover">
 					</div>
 					<h3 class="text-xl font-serif font-bold text-white mb-1">Mark Stansberry</h3>
 					<p class="text-sage-400 font-medium text-sm mb-4">Owner / PT, DPT, OCS, FAAOMPT</p>
@@ -164,10 +166,13 @@
 					<p class="text-slate-400 text-sm leading-relaxed">
 						Mark brings years of specialized experience in physical therapy, focusing on personalized, evidence-based treatments to ensure optimal recovery for every patient.
 					</p>
+					<div class="mt-4 text-sage-400 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1">
+						Read Bio <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+					</div>
 				</div>
 
 				<!-- Sue Stansberry -->
-				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-6 flex flex-col items-center text-center animate-fade-in-up delay-200">
+				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-200 cursor-pointer staff-card group transition-colors" data-target="modal-sue">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<img src="https://ui-avatars.com/api/?name=Sue+Stansberry&background=1E293B&color=81a393&size=256" alt="Sue Stansberry" class="w-full h-full object-cover">
 					</div>
@@ -177,10 +182,13 @@
 					<p class="text-slate-400 text-sm leading-relaxed">
 						Sue ensures our clinic runs smoothly and efficiently, always greeting patients with a warm smile and helping coordinate the best care possible.
 					</p>
+					<div class="mt-4 text-sage-400 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1">
+						Read Bio <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+					</div>
 				</div>
 
 				<!-- Kristi Pifer -->
-				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-6 flex flex-col items-center text-center animate-fade-in-up delay-300">
+				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-300 cursor-pointer staff-card group transition-colors" data-target="modal-kristi">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<img src="https://ui-avatars.com/api/?name=Kristi+Pifer&background=1E293B&color=81a393&size=256" alt="Kristi Pifer" class="w-full h-full object-cover">
 					</div>
@@ -190,10 +198,13 @@
 					<p class="text-slate-400 text-sm leading-relaxed">
 						With a deep commitment to patient well-being, Kristi utilizes her extensive background in physical therapy to craft highly effective rehabilitation programs.
 					</p>
+					<div class="mt-4 text-sage-400 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1">
+						Read Bio <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+					</div>
 				</div>
 
 				<!-- Alex Stansberry -->
-				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-6 flex flex-col items-center text-center animate-fade-in-up delay-400">
+				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-400 cursor-pointer staff-card group transition-colors" data-target="modal-alex">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<img src="images/Alex.jpg" alt="Alex Stansberry" class="w-full h-full object-cover">
 					</div>
@@ -203,10 +214,13 @@
 					<p class="text-slate-400 text-sm leading-relaxed">
 						Alex brings a modern approach to physical therapy, combining advanced clinical knowledge with a passion for helping patients achieve their mobility goals.
 					</p>
+					<div class="mt-4 text-sage-400 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1">
+						Read Bio <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+					</div>
 				</div>
 
 				<!-- Stephanie Pifer -->
-				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-6 flex flex-col items-center text-center animate-fade-in-up delay-100">
+				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-100 cursor-pointer staff-card group transition-colors" data-target="modal-stephanie">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<img src="https://ui-avatars.com/api/?name=Stephanie+Pifer&background=1E293B&color=81a393&size=256" alt="Stephanie Pifer" class="w-full h-full object-cover">
 					</div>
@@ -216,10 +230,13 @@
 					<p class="text-slate-400 text-sm leading-relaxed">
 						Stephanie is dedicated to providing compassionate, one-on-one care, empowering her patients with the tools they need for long-term health and wellness.
 					</p>
+					<div class="mt-4 text-sage-400 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1">
+						Read Bio <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+					</div>
 				</div>
 
 				<!-- Lisa Smith -->
-				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-6 flex flex-col items-center text-center animate-fade-in-up delay-200">
+				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-200 cursor-pointer staff-card group transition-colors" data-target="modal-lisa">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<img src="https://ui-avatars.com/api/?name=Lisa+Smith&background=1E293B&color=81a393&size=256" alt="Lisa Smith" class="w-full h-full object-cover">
 					</div>
@@ -229,10 +246,13 @@
 					<p class="text-slate-400 text-sm leading-relaxed">
 						Lisa works closely with our physical therapists to guide patients through their recovery exercises, ensuring safety, comfort, and positive outcomes.
 					</p>
+					<div class="mt-4 text-sage-400 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1">
+						Read Bio <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+					</div>
 				</div>
 
 				<!-- Mary Lee Humphreys -->
-				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-6 flex flex-col items-center text-center animate-fade-in-up delay-300">
+				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-300 cursor-pointer staff-card group transition-colors" data-target="modal-marylee">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<img src="https://ui-avatars.com/api/?name=Mary+Lee+Humphreys&background=1E293B&color=81a393&size=256" alt="Mary Lee Humphreys" class="w-full h-full object-cover">
 					</div>
@@ -242,10 +262,13 @@
 					<p class="text-slate-400 text-sm leading-relaxed">
 						Mary Lee is an essential part of our front office team, ready to assist you with scheduling, answering questions, and making you feel right at home.
 					</p>
+					<div class="mt-4 text-sage-400 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1">
+						Read Bio <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+					</div>
 				</div>
 
 				<!-- Liz Vasold -->
-				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-6 flex flex-col items-center text-center animate-fade-in-up delay-400">
+				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-400 cursor-pointer staff-card group transition-colors" data-target="modal-liz">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<img src="https://ui-avatars.com/api/?name=Liz+Vasold&background=1E293B&color=81a393&size=256" alt="Liz Vasold" class="w-full h-full object-cover">
 					</div>
@@ -255,6 +278,9 @@
 					<p class="text-slate-400 text-sm leading-relaxed">
 						Liz brings a friendly and helpful presence to our clinic, dedicated to ensuring that your administrative experience is as smooth as your physical therapy.
 					</p>
+					<div class="mt-4 text-sage-400 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1">
+						Read Bio <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+					</div>
 				</div>
 
 			</div>
@@ -291,6 +317,7 @@
 					<li><a href="services.html" class="hover:text-sage-400 transition-colors duration-200">Physical Therapy</a></li>
 					<li><a href="staff.html" class="hover:text-sage-400 transition-colors duration-200">Staff</a></li>
 					<li><a href="patient-info.html" class="hover:text-sage-400 transition-colors duration-200">Patient Info</a></li>
+					<li><a href="payments.html" class="hover:text-sage-400 transition-colors duration-200">Payments</a></li>
 					<li><a href="contact.html" class="hover:text-sage-400 transition-colors duration-200">Contact</a></li>
 				</ul>
 			</div>
@@ -316,6 +343,231 @@
 		</div>
 	</div>
 </footer>
+
+<!-- ====== MODALS ====== -->
+<div id="modal-mark" class="fixed inset-0 z-[100] hidden flex items-center justify-center">
+	<div class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm modal-backdrop cursor-pointer" data-target="modal-mark"></div>
+	<div class="relative bg-slate-900 border border-slate-700/50 rounded-2xl max-w-3xl w-full mx-4 max-h-[90vh] overflow-y-auto shadow-2xl glass-card">
+		<div class="p-8 md:p-10">
+			<button class="absolute top-6 right-6 text-slate-400 hover:text-white transition-colors duration-200 modal-close" data-target="modal-mark">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+			</button>
+			<div class="flex flex-col md:flex-row gap-8 items-start">
+				<div class="w-40 h-40 shrink-0 rounded-full overflow-hidden border-2 border-sage-500/30 bg-slate-800/50 mx-auto md:mx-0">
+					<img src="images/Mark.jpg" alt="Mark Stansberry" class="w-full h-full object-cover">
+				</div>
+				<div>
+					<h3 class="text-3xl font-serif font-bold text-white mb-2 text-center md:text-left">Mark Stansberry</h3>
+					<p class="text-sage-400 font-medium text-lg mb-6 text-center md:text-left">Owner / PT, DPT, OCS, FAAOMPT</p>
+					<div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
+						<p>Mark is originally from Mt. Pleasant and is a graduate of Sacred Heart Academy. He earned his Bachelor's degree in Health Science from the University of Michigan-Flint and completed his Master's in Physical Therapy at U of M-Flint in 1992. He earned his doctorate in physical therapy from Rocky Mountain University in Provo, Utah. He is a graduate of the URSA Foundation under the direction of Dr. Loren Rex. He has extensive training in manual techniques and has completed numerous courses on Muscle Energy Techniques (MET) including coursework instructed by Dr. Fred Mitchell and Dr. Jay Sandweiss. Mark is certified in Intramuscular Manual Therapy through the Travell Series. He is a member of the American Physical Therapy Association (Orthopedic and Private Practice Sections), and the Michigan Physical Therapy Association. He is currently adjunct faculty at Central Michigan University in the Physical Therapy graduate program. Prior to opening his own business, he was the Director of Rehabilitation Services for Central Michigan Community Hospital.</p>
+						<p>Mark opened Mountain Town Rehab in 2001. He treats primarily orthopedic injuries, but enjoys treating an eclectic population with a variety of interventions. He is active in the community and enjoys the company of his family; wife, Sue, son and daughter-in-law, Alex and Theresa, and son Kyle.</p>
+						<p>Mark's patient-centered approach to providing care has created a dedicated clientele and developed a strong referral base. In fact, Mountain Town Rehab has received referrals from over 400 different physicians throughout Michigan and from a variety of states. Mark has selected highly qualified individuals to form his Mountain Town Rehab team. He has treated athletes at the youth, high school, collegiate, professional and Olympic levels. Mountain Town Rehab is the premiere choice for physical therapy in Central Michigan and your choice for personal, quality care.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal-sue" class="fixed inset-0 z-[100] hidden flex items-center justify-center">
+	<div class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm modal-backdrop cursor-pointer" data-target="modal-sue"></div>
+	<div class="relative bg-slate-900 border border-slate-700/50 rounded-2xl max-w-3xl w-full mx-4 max-h-[90vh] overflow-y-auto shadow-2xl glass-card">
+		<div class="p-8 md:p-10">
+			<button class="absolute top-6 right-6 text-slate-400 hover:text-white transition-colors duration-200 modal-close" data-target="modal-sue">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+			</button>
+			<div class="flex flex-col md:flex-row gap-8 items-start">
+				<div class="w-40 h-40 shrink-0 rounded-full overflow-hidden border-2 border-sage-500/30 bg-slate-800/50 mx-auto md:mx-0">
+					<img src="https://ui-avatars.com/api/?name=Sue+Stansberry&background=1E293B&color=81a393&size=256" alt="Sue Stansberry" class="w-full h-full object-cover">
+				</div>
+				<div>
+					<h3 class="text-3xl font-serif font-bold text-white mb-2 text-center md:text-left">Sue Stansberry</h3>
+					<p class="text-sage-400 font-medium text-lg mb-6 text-center md:text-left">Owner / Office Manager</p>
+					<div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
+						<p>Sue is originally from Mt. Pleasant and is a graduate of Sacred Heart Academy. She earned her BS degree in Math and Accounting from Central Michigan University. Sue and her husband Mark opened Mountain Town Rehab in 2001 and she is thankful for the opportunity to work alongside her husband while serving the community they both were raised in. As practice manager and billing specialist, Sue enjoys the Mountain Town Rehab Team and the patients they serve with the goal of making everyone feel like they are at home in the clinic.</p>
+						<p>Prior to opening Mountain Town Rehab, Sue enjoyed being a stay-at-home mom. Outside of work she enjoys the many events offered by Central Michigan University, reading, and spending time with her family. She is especially fond of the time spent with her grandchildren.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal-kristi" class="fixed inset-0 z-[100] hidden flex items-center justify-center">
+	<div class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm modal-backdrop cursor-pointer" data-target="modal-kristi"></div>
+	<div class="relative bg-slate-900 border border-slate-700/50 rounded-2xl max-w-3xl w-full mx-4 max-h-[90vh] overflow-y-auto shadow-2xl glass-card">
+		<div class="p-8 md:p-10">
+			<button class="absolute top-6 right-6 text-slate-400 hover:text-white transition-colors duration-200 modal-close" data-target="modal-kristi">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+			</button>
+			<div class="flex flex-col md:flex-row gap-8 items-start">
+				<div class="w-40 h-40 shrink-0 rounded-full overflow-hidden border-2 border-sage-500/30 bg-slate-800/50 mx-auto md:mx-0">
+					<img src="https://ui-avatars.com/api/?name=Kristi+Pifer&background=1E293B&color=81a393&size=256" alt="Kristi Pifer" class="w-full h-full object-cover">
+				</div>
+				<div>
+					<h3 class="text-3xl font-serif font-bold text-white mb-2 text-center md:text-left">Kristi Pifer</h3>
+					<p class="text-sage-400 font-medium text-lg mb-6 text-center md:text-left">MA, MSPT</p>
+					<div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
+						<p>Kristi is originally from Rosebush. She received her BS degree from Michigan State University and her MS in Physical Therapy as well as an MA degree in Exercise Physiology from Central Michigan University. Kristi has worked with Mark Stansberry since 1998 when they were employed by CMCH - Wellness Central. Kristi came to Mountain Town Rehab in 2003.</p>
+						<p>Kristi received her lymphedema certification (LLCC) in 2003. While she also specializes in pediatric physical therapy and aquatic therapy, she treats a variety of orthopedic and neurologic conditions. Outside of her professional life, Kristi has four boys, which keep her busy attending sporting events, camping, and travelling. She enjoys hiking, gardening, and challenging herself with fitness goals.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal-alex" class="fixed inset-0 z-[100] hidden flex items-center justify-center">
+	<div class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm modal-backdrop cursor-pointer" data-target="modal-alex"></div>
+	<div class="relative bg-slate-900 border border-slate-700/50 rounded-2xl max-w-3xl w-full mx-4 max-h-[90vh] overflow-y-auto shadow-2xl glass-card">
+		<div class="p-8 md:p-10">
+			<button class="absolute top-6 right-6 text-slate-400 hover:text-white transition-colors duration-200 modal-close" data-target="modal-alex">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+			</button>
+			<div class="flex flex-col md:flex-row gap-8 items-start">
+				<div class="w-40 h-40 shrink-0 rounded-full overflow-hidden border-2 border-sage-500/30 bg-slate-800/50 mx-auto md:mx-0">
+					<img src="images/Alex.jpg" alt="Alex Stansberry" class="w-full h-full object-cover">
+				</div>
+				<div>
+					<h3 class="text-3xl font-serif font-bold text-white mb-2 text-center md:text-left">Alex Stansberry</h3>
+					<p class="text-sage-400 font-medium text-lg mb-6 text-center md:text-left">DPT</p>
+					<div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
+						<p>Alex is from Mount Pleasant. He earned his undergraduate degree, a B.S. in Health Fitness, from CMU in 2010. He continued his CMU education and graduated in May 2013 with a Doctorate in Physical Therapy. Alex came to Mountain Town Rehab in May 2013.</p>
+						<p>Alex has clinical experience in outpatient settings with patients of various orthopedic and neurologic conditions, as well as experience in inpatient rehabilitation with patients of various neurologic conditions. Alex is interested in working with patients who have a broad range of orthopedic conditions, with more specific interests in working with individuals who have sports related injuries. He is certified in Intramuscular Manual Therapy (IMT) and Blood Flow Restriction Training (BFRT) and has extensive training in Graston technique.</p>
+						<p>In his personal time, Alex enjoys spending time with family and friends, as well as biking, golfing, playing volleyball, reading, and camping.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal-stephanie" class="fixed inset-0 z-[100] hidden flex items-center justify-center">
+	<div class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm modal-backdrop cursor-pointer" data-target="modal-stephanie"></div>
+	<div class="relative bg-slate-900 border border-slate-700/50 rounded-2xl max-w-3xl w-full mx-4 max-h-[90vh] overflow-y-auto shadow-2xl glass-card">
+		<div class="p-8 md:p-10">
+			<button class="absolute top-6 right-6 text-slate-400 hover:text-white transition-colors duration-200 modal-close" data-target="modal-stephanie">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+			</button>
+			<div class="flex flex-col md:flex-row gap-8 items-start">
+				<div class="w-40 h-40 shrink-0 rounded-full overflow-hidden border-2 border-sage-500/30 bg-slate-800/50 mx-auto md:mx-0">
+					<img src="https://ui-avatars.com/api/?name=Stephanie+Pifer&background=1E293B&color=81a393&size=256" alt="Stephanie Pifer" class="w-full h-full object-cover">
+				</div>
+				<div>
+					<h3 class="text-3xl font-serif font-bold text-white mb-2 text-center md:text-left">Stephanie Pifer</h3>
+					<p class="text-sage-400 font-medium text-lg mb-6 text-center md:text-left">DPT</p>
+					<div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
+						<p>Stephanie is originally from Shepherd, MI. She earned her B.S. in Athletic Training from CMU in 2014 and her Doctorate in Physical Therapy from CMU in 2017.</p>
+						<p>Stephanie has clinical experiences mostly in orthopedic settings. She worked for Covenant Healthcare in an orthopedic outpatient clinic for 6 years before joining the Mountain Town Rehab team in January 2023. She enjoys working with patients of all ages but specifically loves helping patients return to sport or their favorite activities. She is also looking forward to advancing her skills in the use of Blood Flow Restriction Training and Dry Needling.</p>
+						<p>Outside of work, Stephanie enjoys spending time with her family including her husband, Keegan, and their son, Hayes, going to Loons games, traveling and finding the best local places to eat, and going to country concerts in the summer. She also loves a good workout and running when it is nice outside.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal-lisa" class="fixed inset-0 z-[100] hidden flex items-center justify-center">
+	<div class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm modal-backdrop cursor-pointer" data-target="modal-lisa"></div>
+	<div class="relative bg-slate-900 border border-slate-700/50 rounded-2xl max-w-3xl w-full mx-4 max-h-[90vh] overflow-y-auto shadow-2xl glass-card">
+		<div class="p-8 md:p-10">
+			<button class="absolute top-6 right-6 text-slate-400 hover:text-white transition-colors duration-200 modal-close" data-target="modal-lisa">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+			</button>
+			<div class="flex flex-col md:flex-row gap-8 items-start">
+				<div class="w-40 h-40 shrink-0 rounded-full overflow-hidden border-2 border-sage-500/30 bg-slate-800/50 mx-auto md:mx-0">
+					<img src="https://ui-avatars.com/api/?name=Lisa+Smith&background=1E293B&color=81a393&size=256" alt="Lisa Smith" class="w-full h-full object-cover">
+				</div>
+				<div>
+					<h3 class="text-3xl font-serif font-bold text-white mb-2 text-center md:text-left">Lisa Smith</h3>
+					<p class="text-sage-400 font-medium text-lg mb-6 text-center md:text-left">PTA</p>
+					<div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
+						<p>Lisa graduated from Mid Michigan Community College with an Associate of Applied Science - Physical Therapist Assistant in May 2015. She also attended Ferris State University for undergraduate studies. Lisa came to Mountain Town Rehab in June, 2015.</p>
+						<p>Prior to joining the Mountain Town Rehab team, Lisa worked at Hope Network for over 10 years. Her areas of interest include aquatic therapy as well as the neurological, orthopaedic, and pediatric populations. Lisa is an LSVT certified therapist and she also holds certification in Blood Flow Restriction Training (BFR).</p>
+						<p>Outside of work, Lisa likes to spend time with family and friends. Her hobbies include singing, volunteering with her children's school activities, hunting and watching her children's sporting events and 4-H projects.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal-marylee" class="fixed inset-0 z-[100] hidden flex items-center justify-center">
+	<div class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm modal-backdrop cursor-pointer" data-target="modal-marylee"></div>
+	<div class="relative bg-slate-900 border border-slate-700/50 rounded-2xl max-w-3xl w-full mx-4 max-h-[90vh] overflow-y-auto shadow-2xl glass-card">
+		<div class="p-8 md:p-10">
+			<button class="absolute top-6 right-6 text-slate-400 hover:text-white transition-colors duration-200 modal-close" data-target="modal-marylee">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+			</button>
+			<div class="flex flex-col md:flex-row gap-8 items-start">
+				<div class="w-40 h-40 shrink-0 rounded-full overflow-hidden border-2 border-sage-500/30 bg-slate-800/50 mx-auto md:mx-0">
+					<img src="https://ui-avatars.com/api/?name=Mary+Lee+Humphreys&background=1E293B&color=81a393&size=256" alt="Mary Lee Humphreys" class="w-full h-full object-cover">
+				</div>
+				<div>
+					<h3 class="text-3xl font-serif font-bold text-white mb-2 text-center md:text-left">Mary Lee Humphreys</h3>
+					<p class="text-sage-400 font-medium text-lg mb-6 text-center md:text-left">Office Staff</p>
+					<div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
+						<p>Mary Lee joined the Mountain Town Rehab team in 2001 as a home office transcriptionist. In early 2009, Mary Lee joined the in-office team. She is responsible for various office duties, website content, activities for staff and patients, information systems, and increasing awareness of community programs and events.</p>
+						<p>Mary Lee grew up in Farwell and graduated from Michigan State University with a degree in Parks and Recreation Resources. After college, she lived in New Jersey, Virginia, and Illinois while working in the long-term care industry. She became a licensed nursing home administrator in Illinois and always enjoyed working with a geriatric population.</p>
+						<p>Mary Lee and her husband Kevin settled in Michigan in 2000 following the birth of their son. They now have three children, Devin, Madelon, and Ainslee. She enjoys scrapbooking, working in the yard, and family adventures.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal-liz" class="fixed inset-0 z-[100] hidden flex items-center justify-center">
+	<div class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm modal-backdrop cursor-pointer" data-target="modal-liz"></div>
+	<div class="relative bg-slate-900 border border-slate-700/50 rounded-2xl max-w-3xl w-full mx-4 max-h-[90vh] overflow-y-auto shadow-2xl glass-card">
+		<div class="p-8 md:p-10">
+			<button class="absolute top-6 right-6 text-slate-400 hover:text-white transition-colors duration-200 modal-close" data-target="modal-liz">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+			</button>
+			<div class="flex flex-col md:flex-row gap-8 items-start">
+				<div class="w-40 h-40 shrink-0 rounded-full overflow-hidden border-2 border-sage-500/30 bg-slate-800/50 mx-auto md:mx-0">
+					<img src="https://ui-avatars.com/api/?name=Liz+Vasold&background=1E293B&color=81a393&size=256" alt="Liz Vasold" class="w-full h-full object-cover">
+				</div>
+				<div>
+					<h3 class="text-3xl font-serif font-bold text-white mb-2 text-center md:text-left">Liz Vasold</h3>
+					<p class="text-sage-400 font-medium text-lg mb-6 text-center md:text-left">Office Staff</p>
+					<div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
+						<p>Liz Vasold grew up in Mt. Pleasant. She graduated from Sacred Heart Academy and then attended Finlandia University in Hancock, Michigan where she graduated with a Bachelor's Degree in Graphic Design. Liz played basketball and softball in high school and college. After college, Liz lived and worked in Gaylord for a few years. She was then able to transfer with her company and return to Mt. Pleasant, where she continued to manage a local restaurant.</p>
+						<p>Liz joined the Mountain Town Rehab team in April 2017. She handles billing, maintains medical records, schedules patients and participates in all front office operations. Liz enjoys the family atmosphere at Mountain Town Rehab.</p>
+						<p>Outside of work, Liz enjoys adventures with her husband, RJ, and son, Andrew, attending CMU events, traveling, and crafting.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const cards = document.querySelectorAll('.staff-card');
+		cards.forEach(card => {
+			card.addEventListener('click', () => {
+				const target = card.getAttribute('data-target');
+				const modal = document.getElementById(target);
+				if (modal) {
+					modal.classList.remove('hidden');
+				}
+			});
+		});
+
+		const closeBtns = document.querySelectorAll('.modal-close, .modal-backdrop');
+		closeBtns.forEach(btn => {
+			btn.addEventListener('click', () => {
+				const target = btn.getAttribute('data-target');
+				const modal = document.getElementById(target);
+				if (modal) {
+					modal.classList.add('hidden');
+				}
+			});
+		});
+	});
+</script>
 
 </body>
 </html>
