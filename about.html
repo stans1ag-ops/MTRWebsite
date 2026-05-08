@@ -60,6 +60,29 @@
 					Book Appointment
 				</a>
 			</nav>
+			
+			<!-- Mobile Menu Button -->
+			<div class="md:hidden flex items-center">
+				<button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
+					<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+					</svg>
+				</button>
+			</div>
+		</div>
+
+		<!-- Mobile Menu Dropdown -->
+		<div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800/50 absolute w-full left-0 shadow-2xl">
+			<div class="px-4 pt-4 pb-6 space-y-2 text-center">
+				<a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Home</a>
+				<a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About Us</a>
+				<a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Physical Therapy</a>
+				<a href="staff.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Staff</a>
+				<a href="patient-info.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Patient Info</a>
+				<a href="payments.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Payments</a>
+				<a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Contact</a>
+				<a href="contact.html" class="block mt-4 px-6 py-3 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 shadow-lg mx-auto w-11/12 max-w-sm">Book Appointment</a>
+			</div>
 		</div>
 	</div>
 </header>
@@ -92,8 +115,8 @@
 				<div class="accent-bar mx-auto mb-8"></div>
 				<h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-8">Our Story</h2>
 				<div class="space-y-6 text-slate-400 leading-relaxed max-w-3xl mx-auto text-base">
-					<p>Mountain Town Rehab was founded with a simple but powerful belief: physical therapy should be personal. As a family-owned and operated clinic, we've been proudly serving the Mt Pleasant, Michigan community since 2001 — building lasting relationships with our patients and neighbors along the way.</p>
-					<p>From the beginning, our approach has been different. We don't shuffle patients through a revolving door — we provide dedicated, one-on-one care tailored to your unique needs and goals. Whether you're recovering from surgery, managing a chronic condition, or getting back in the game after a sports injury, you'll always work directly with a licensed provider who knows your story.</p>
+					<p>Mountain Town Rehab was founded with a simple but powerful belief: physical therapy should be personal. As a family-owned and operated clinic, we confidently treat each patient as we would want our family members to be treated. We've proudly served the central Michigan area since 2001 — building lasting relationships with our patients and neighbors along the way.</p>
+					<p>From the beginning, our approach has been different, it’s personal. We provide dedicated, one-on-one care tailored to your unique needs and goals. Whether you're recovering from surgery, managing a chronic condition, or getting back in the game after a sports injury, you'll always work directly with a licensed provider who knows your story and understands your goals.  We feel blessed that you have chosen our team to be part of your recovery and wellness plan.</p>
 					<p>Our clinic is more than a workplace; it's a family. Mark and Sue Stansberry built Mountain Town Rehab on the values of integrity, compassion, and excellence — values that guide every treatment plan we create and every interaction we have.</p>
 				</div>
 			</div>
@@ -236,5 +259,24 @@
 	</div>
 </footer>
 
+	<!-- Mobile Menu Script -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const btn = document.getElementById('mobile-menu-btn');
+			const menu = document.getElementById('mobile-menu');
+			const iconPath = document.getElementById('menu-icon-path');
+			
+			if(btn && menu) {
+				btn.addEventListener('click', () => {
+					menu.classList.toggle('hidden');
+					if(menu.classList.contains('hidden')) {
+						iconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+					} else {
+						iconPath.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+					}
+				});
+			}
+		});
+	</script>
 </body>
 </html>

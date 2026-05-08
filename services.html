@@ -124,6 +124,29 @@
 					Book Appointment
 				</a>
 			</nav>
+			
+			<!-- Mobile Menu Button -->
+			<div class="md:hidden flex items-center">
+				<button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
+					<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+					</svg>
+				</button>
+			</div>
+		</div>
+
+		<!-- Mobile Menu Dropdown -->
+		<div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800/50 absolute w-full left-0 shadow-2xl">
+			<div class="px-4 pt-4 pb-6 space-y-2 text-center">
+				<a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Home</a>
+				<a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About Us</a>
+				<a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Physical Therapy</a>
+				<a href="staff.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Staff</a>
+				<a href="patient-info.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Patient Info</a>
+				<a href="payments.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Payments</a>
+				<a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Contact</a>
+				<a href="contact.html" class="block mt-4 px-6 py-3 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 shadow-lg mx-auto w-11/12 max-w-sm">Book Appointment</a>
+			</div>
 		</div>
 	</div>
 </header>
@@ -134,7 +157,7 @@
 	<!-- Hero Section -->
 	<section class="relative overflow-hidden min-h-[50vh] flex items-center">
 		<!-- Background Image -->
-		<div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2000'); opacity: 0.4;"></div>
+		<div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('images/Hats.jpg'); opacity: 0.4;"></div>
 		<!-- Gradient Overlay -->
 		<div class="absolute inset-0 z-[1] hero-gradient"></div>
 		<!-- Decorative Elements -->
@@ -159,8 +182,8 @@
 				
 				<!-- 1. Orthopedic Rehab -->
 				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-8 group animate-fade-in-up delay-100 flex flex-col cursor-pointer service-card" data-target="modal-ortho">
-					<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6 group-hover:scale-110 transition-transform duration-300">
-						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+					<div class="w-full h-48 rounded-xl overflow-hidden mb-6 border border-slate-700/50 group-hover:border-sage-500/50 transition-colors duration-300">
+						<img src="images/orthopedic_rehab.png" alt="Orthopedic Rehab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
 					</div>
 					<h3 class="text-xl font-serif font-bold text-white mb-3">Orthopedic Rehab</h3>
 					<p class="text-slate-400 mb-6 text-sm leading-relaxed flex-grow">Comprehensive care for joint, muscle, and bone injuries to restore function, build strength, and significantly reduce pain levels.</p>
@@ -172,8 +195,8 @@
 
 				<!-- 2. Sports Rehab -->
 				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-8 group animate-fade-in-up delay-200 flex flex-col cursor-pointer service-card" data-target="modal-sports">
-					<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6 group-hover:scale-110 transition-transform duration-300">
-						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+					<div class="w-full h-48 rounded-xl overflow-hidden mb-6 border border-slate-700/50 group-hover:border-sage-500/50 transition-colors duration-300">
+						<img src="images/sports_rehab.png" alt="Sports Rehab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
 					</div>
 					<h3 class="text-xl font-serif font-bold text-white mb-3">Sports Rehab</h3>
 					<p class="text-slate-400 mb-6 text-sm leading-relaxed flex-grow">Specialized treatment plans specifically designed to help athletes recover from injuries and get back in the game safely.</p>
@@ -185,8 +208,8 @@
 
 				<!-- 3. Post-Surgical Care -->
 				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-8 group animate-fade-in-up delay-300 flex flex-col cursor-pointer service-card" data-target="modal-post-surgical">
-					<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6 group-hover:scale-110 transition-transform duration-300">
-						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+					<div class="w-full h-48 rounded-xl overflow-hidden mb-6 border border-slate-700/50 group-hover:border-sage-500/50 transition-colors duration-300">
+						<img src="images/post_surgical_care.png" alt="Post-Surgical Care" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
 					</div>
 					<h3 class="text-xl font-serif font-bold text-white mb-3">Post-Surgical Care</h3>
 					<p class="text-slate-400 mb-6 text-sm leading-relaxed flex-grow">Guided rehabilitation following surgical procedures to ensure optimal healing, restore mobility, and prevent complications.</p>
@@ -237,8 +260,8 @@
 
 				<!-- 7. Blood Flow Restriction -->
 				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-8 group animate-fade-in-up delay-700 flex flex-col cursor-pointer service-card" data-target="modal-bfr">
-					<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6 group-hover:scale-110 transition-transform duration-300">
-						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4h.002m0 0v.01"></path></svg>
+					<div class="w-full h-48 rounded-xl overflow-hidden mb-6 border border-slate-700/50 group-hover:border-sage-500/50 transition-colors duration-300">
+						<img src="images/blood_flow_restriction.jpg" alt="Blood Flow Restriction" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
 					</div>
 					<h3 class="text-xl font-serif font-bold text-white mb-3">Blood Flow Restriction</h3>
 					<p class="text-slate-400 mb-6 text-sm leading-relaxed flex-grow">An innovative technique using specialized cuffs to stimulate muscle growth and strength with lighter resistance.</p>
@@ -250,8 +273,8 @@
 
 				<!-- 8. Dry Needling -->
 				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-8 group animate-fade-in-up delay-800 flex flex-col cursor-pointer service-card" data-target="modal-dry-needling">
-					<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6 group-hover:scale-110 transition-transform duration-300">
-						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+					<div class="w-full h-48 rounded-xl overflow-hidden mb-6 border border-slate-700/50 group-hover:border-sage-500/50 transition-colors duration-300">
+						<img src="images/dry_needling.png" alt="Dry Needling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
 					</div>
 					<h3 class="text-xl font-serif font-bold text-white mb-3">Dry Needling</h3>
 					<p class="text-slate-400 mb-6 text-sm leading-relaxed flex-grow">A modern technique for treating muscular pain and mobility issues using fine, sterile needles targeting trigger points.</p>
@@ -263,8 +286,8 @@
 
 				<!-- 9. Aquatic Therapy -->
 				<div class="card-hover glass-card rounded-2xl border border-slate-700/50 p-8 group animate-fade-in-up delay-100 flex flex-col cursor-pointer service-card" data-target="modal-aquatic">
-					<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6 group-hover:scale-110 transition-transform duration-300">
-						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15c2.483 0 4.345-1.5 5-2 .655.5 2.517 2 5 2s4.345-1.5 5-2c.655.5 2.517 2 5 2M3 19c2.483 0 4.345-1.5 5-2 .655.5 2.517 2 5 2s4.345-1.5 5-2c.655.5 2.517 2 5 2M3 11c2.483 0 4.345-1.5 5-2 .655.5 2.517 2 5 2s4.345-1.5 5-2c.655.5 2.517 2 5 2"></path></svg>
+					<div class="w-full h-48 rounded-xl overflow-hidden mb-6 border border-slate-700/50 group-hover:border-sage-500/50 transition-colors duration-300">
+						<img src="images/Aquatic_therapy.png" alt="Aquatic Therapy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
 					</div>
 					<h3 class="text-xl font-serif font-bold text-white mb-3">Aquatic Therapy</h3>
 					<p class="text-slate-400 mb-6 text-sm leading-relaxed flex-grow">Water-based rehabilitation that uses buoyancy and resistance to reduce joint stress, improve mobility, and accelerate recovery in a low-impact environment.</p>
@@ -371,8 +394,8 @@
 				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
 			</button>
 			<div>
-				<div class="w-16 h-16 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6">
-					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+				<div class="w-full h-64 rounded-xl overflow-hidden mb-8 border border-slate-700/50">
+					<img src="images/orthopedic_rehab.png" alt="Orthopedic Rehab" class="w-full h-full object-cover">
 				</div>
 				<h3 class="text-3xl font-serif font-bold text-white mb-6">Orthopedic Rehab</h3>
 				<div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
@@ -390,8 +413,8 @@
 				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
 			</button>
 			<div>
-				<div class="w-16 h-16 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6">
-					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+				<div class="w-full h-64 rounded-xl overflow-hidden mb-8 border border-slate-700/50">
+					<img src="images/sports_rehab.png" alt="Sports Rehab" class="w-full h-full object-cover">
 				</div>
 				<h3 class="text-3xl font-serif font-bold text-white mb-6">Sports Rehab</h3>
 				<div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
@@ -409,8 +432,8 @@
 				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
 			</button>
 			<div>
-				<div class="w-16 h-16 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6">
-					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+				<div class="w-full h-64 rounded-xl overflow-hidden mb-8 border border-slate-700/50">
+					<img src="images/post_surgical_care.png" alt="Post-Surgical Care" class="w-full h-full object-cover">
 				</div>
 				<h3 class="text-3xl font-serif font-bold text-white mb-6">Post-Surgical Care</h3>
 				<div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
@@ -485,8 +508,8 @@
 				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
 			</button>
 			<div>
-				<div class="w-16 h-16 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6">
-					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4h.002m0 0v.01"></path></svg>
+				<div class="w-full h-64 rounded-xl overflow-hidden mb-8 border border-slate-700/50">
+					<img src="images/blood_flow_restriction.jpg" alt="Blood Flow Restriction" class="w-full h-full object-cover">
 				</div>
 				<h3 class="text-3xl font-serif font-bold text-white mb-6">Blood Flow Restriction</h3>
 				<div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
@@ -504,8 +527,8 @@
 				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
 			</button>
 			<div>
-				<div class="w-16 h-16 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6">
-					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+				<div class="w-full h-64 rounded-xl overflow-hidden mb-8 border border-slate-700/50">
+					<img src="images/dry_needling.png" alt="Dry Needling" class="w-full h-full object-cover">
 				</div>
 				<h3 class="text-3xl font-serif font-bold text-white mb-6">Dry Needling</h3>
 				<div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
@@ -523,8 +546,8 @@
 				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
 			</button>
 			<div>
-				<div class="w-16 h-16 rounded-xl bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6">
-					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15c2.483 0 4.345-1.5 5-2 .655.5 2.517 2 5 2s4.345-1.5 5-2c.655.5 2.517 2 5 2M3 19c2.483 0 4.345-1.5 5-2 .655.5 2.517 2 5 2s4.345-1.5 5-2c.655.5 2.517 2 5 2M3 11c2.483 0 4.345-1.5 5-2 .655.5 2.517 2 5 2s4.345-1.5 5-2c.655.5 2.517 2 5 2"></path></svg>
+				<div class="w-full h-64 rounded-xl overflow-hidden mb-8 border border-slate-700/50">
+					<img src="images/Aquatic_therapy.png" alt="Aquatic Therapy" class="w-full h-full object-cover">
 				</div>
 				<h3 class="text-3xl font-serif font-bold text-white mb-6">Aquatic Therapy</h3>
 				<div class="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
@@ -600,5 +623,24 @@
 	});
 </script>
 
+	<!-- Mobile Menu Script -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const btn = document.getElementById('mobile-menu-btn');
+			const menu = document.getElementById('mobile-menu');
+			const iconPath = document.getElementById('menu-icon-path');
+			
+			if(btn && menu) {
+				btn.addEventListener('click', () => {
+					menu.classList.toggle('hidden');
+					if(menu.classList.contains('hidden')) {
+						iconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+					} else {
+						iconPath.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+					}
+				});
+			}
+		});
+	</script>
 </body>
 </html>

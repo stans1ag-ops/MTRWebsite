@@ -101,6 +101,29 @@
 					Book Appointment
 				</a>
 			</nav>
+			
+			<!-- Mobile Menu Button -->
+			<div class="md:hidden flex items-center">
+				<button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
+					<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+					</svg>
+				</button>
+			</div>
+		</div>
+
+		<!-- Mobile Menu Dropdown -->
+		<div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800/50 absolute w-full left-0 shadow-2xl">
+			<div class="px-4 pt-4 pb-6 space-y-2 text-center">
+				<a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Home</a>
+				<a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About Us</a>
+				<a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Physical Therapy</a>
+				<a href="staff.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Staff</a>
+				<a href="patient-info.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Patient Info</a>
+				<a href="payments.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Payments</a>
+				<a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Contact</a>
+				<a href="contact.html" class="block mt-4 px-6 py-3 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 shadow-lg mx-auto w-11/12 max-w-sm">Book Appointment</a>
+			</div>
 		</div>
 	</div>
 </header>
@@ -110,7 +133,7 @@
 
 	<!-- Hero Section -->
 	<section class="relative overflow-hidden min-h-[50vh] flex items-center">
-		<div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2000'); opacity: 0.4;"></div>
+		<div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('images/MTR_sign.jpg'); opacity: 0.4;"></div>
 		<div class="absolute inset-0 z-[1] hero-gradient"></div>
 		<div class="absolute top-10 right-10 w-72 h-72 bg-sage-500/10 rounded-full blur-3xl z-[2]"></div>
 
@@ -369,5 +392,24 @@
 	</div>
 </footer>
 
+	<!-- Mobile Menu Script -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const btn = document.getElementById('mobile-menu-btn');
+			const menu = document.getElementById('mobile-menu');
+			const iconPath = document.getElementById('menu-icon-path');
+			
+			if(btn && menu) {
+				btn.addEventListener('click', () => {
+					menu.classList.toggle('hidden');
+					if(menu.classList.contains('hidden')) {
+						iconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+					} else {
+						iconPath.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+					}
+				});
+			}
+		});
+	</script>
 </body>
 </html>
