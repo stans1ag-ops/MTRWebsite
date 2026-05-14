@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,81 +10,202 @@
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+		rel="stylesheet">
 	<!-- Tailwind -->
 	<link rel="stylesheet" href="dist/output.css">
 	<style>
 		/* Custom styles */
-		@keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
-		@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-		.animate-fade-in-up { animation: fadeInUp 0.8s ease-out both; }
-		.animate-fade-in { animation: fadeIn 1s ease-out both; }
-		.delay-100 { animation-delay: 0.1s; }
-		.delay-200 { animation-delay: 0.2s; }
-		.delay-300 { animation-delay: 0.3s; }
-		.glass-card { background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
-		.gradient-text { background: linear-gradient(135deg, #81a393 0%, #a7c1b4 50%, #cbdad1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-		.card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-		.card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(129, 163, 147, 0.08); }
-		.hero-gradient { background: linear-gradient(180deg, rgba(15, 23, 42, 0.7) 0%, rgba(15, 23, 42, 0.85) 50%, rgba(15, 23, 42, 1) 100%); }
-		.accent-bar { width: 48px; height: 3px; background: linear-gradient(90deg, #81a393, #d13253); border-radius: 2px; }
-		.nav-link { position: relative; }
-		.nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: linear-gradient(90deg, #81a393, #a7c1b4); transition: width 0.3s ease; border-radius: 1px; }
-		.nav-link:hover::after, .nav-link.active::after { width: 100%; }
-		html { scroll-behavior: smooth; }
+		@keyframes fadeInUp {
+			from {
+				opacity: 0;
+				transform: translateY(24px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+
+		.animate-fade-in-up {
+			animation: fadeInUp 0.8s ease-out both;
+		}
+
+		.animate-fade-in {
+			animation: fadeIn 1s ease-out both;
+		}
+
+		.delay-100 {
+			animation-delay: 0.1s;
+		}
+
+		.delay-200 {
+			animation-delay: 0.2s;
+		}
+
+		.delay-300 {
+			animation-delay: 0.3s;
+		}
+
+		.glass-card {
+			background: rgba(30, 41, 59, 0.6);
+			backdrop-filter: blur(16px);
+			-webkit-backdrop-filter: blur(16px);
+		}
+
+		.gradient-text {
+			background: linear-gradient(135deg, #81a393 0%, #a7c1b4 50%, #cbdad1 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+
+		.card-hover {
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		.card-hover:hover {
+			transform: translateY(-6px);
+			box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(129, 163, 147, 0.08);
+		}
+
+		.hero-gradient {
+			background: linear-gradient(180deg, rgba(15, 23, 42, 0.7) 0%, rgba(15, 23, 42, 0.85) 50%, rgba(15, 23, 42, 1) 100%);
+		}
+
+		.accent-bar {
+			width: 48px;
+			height: 3px;
+			background: linear-gradient(90deg, #81a393, #d13253);
+			border-radius: 2px;
+		}
+
+		.nav-link {
+			position: relative;
+		}
+
+		.nav-link::after {
+			content: '';
+			position: absolute;
+			bottom: -4px;
+			left: 0;
+			width: 0;
+			height: 2px;
+			background: linear-gradient(90deg, #81a393, #a7c1b4);
+			transition: width 0.3s ease;
+			border-radius: 1px;
+		}
+
+		.nav-link:hover::after,
+		.nav-link.active::after {
+			width: 100%;
+		}
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		/* PayPal custom overrides */
+		#paypal-container-3XJ2GD5AT26D6 input,
+		#amount {
+			color: #000000 !important;
+		}
 	</style>
 </head>
+
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
 	<!-- HEADER -->
-	<header class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 transition-all duration-300">
+	<header
+		class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 transition-all duration-300">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex justify-between items-center h-20">
 				<!-- Logo -->
 				<div class="flex-shrink-0 flex items-center">
 					<a href="index.html" class="block w-56 lg:w-72 group">
-						<svg class="w-full h-auto group-hover:opacity-90 transition-opacity duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 18 800 130">
-							<path d="M 60 90 L 290 90 L 330 40 L 360 75 L 400 25 L 440 75 L 470 40 L 510 90 L 740 90" stroke="#81a393" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-							<text x="400" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="5" text-anchor="middle" fill="#ffffff">MOUNTAIN TOWN REHAB</text>
+						<svg class="w-full h-auto group-hover:opacity-90 transition-opacity duration-300"
+							xmlns="http://www.w3.org/2000/svg" viewBox="0 18 800 130">
+							<path d="M 60 90 L 290 90 L 330 40 L 360 75 L 400 25 L 440 75 L 470 40 L 510 90 L 740 90"
+								stroke="#81a393" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"
+								fill="none" />
+							<text x="400" y="142"
+								font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+								font-size="34" font-weight="800" letter-spacing="5" text-anchor="middle"
+								fill="#ffffff">MOUNTAIN TOWN REHAB</text>
 						</svg>
 					</a>
 				</div>
 				<!-- Desktop Menu -->
 				<nav class="hidden md:flex items-center gap-6 lg:gap-10">
 					<ul class="flex gap-4 lg:gap-8 text-sm font-medium text-slate-400">
-						<li><a href="index.html" class="nav-link hover:text-white transition-colors duration-200">Home</a></li>
-						<li><a href="about.html" class="nav-link hover:text-white transition-colors duration-200">About Us</a></li>
-						<li><a href="services.html" class="nav-link hover:text-white transition-colors duration-200">Physical Therapy</a></li>
-						<li><a href="staff.html" class="nav-link hover:text-white transition-colors duration-200">Staff</a></li>
-						<li><a href="patient-info.html" class="nav-link hover:text-white transition-colors duration-200">Patient Info</a></li>
-						<li><a href="payments.html" class="nav-link active text-white transition-colors duration-200">Payments</a></li>
-						<li><a href="contact.html" class="nav-link hover:text-white transition-colors duration-200">Contact</a></li>
+						<li><a href="index.html"
+								class="nav-link hover:text-white transition-colors duration-200">Home</a></li>
+						<li><a href="about.html" class="nav-link hover:text-white transition-colors duration-200">About
+								Us</a></li>
+						<li><a href="services.html"
+								class="nav-link hover:text-white transition-colors duration-200">Physical Therapy</a>
+						</li>
+						<li><a href="staff.html"
+								class="nav-link hover:text-white transition-colors duration-200">Staff</a></li>
+						<li><a href="patient-info.html"
+								class="nav-link hover:text-white transition-colors duration-200">Patient Info</a></li>
+						<li><a href="payments.html"
+								class="nav-link active text-white transition-colors duration-200">Payments</a></li>
+						<li><a href="contact.html"
+								class="nav-link hover:text-white transition-colors duration-200">Contact</a></li>
 					</ul>
-					<a href="contact.html" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg shadow-sage-600/20 transition-all duration-300 hover:shadow-sage-500/30">
+					<a href="contact.html"
+						class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg shadow-sage-600/20 transition-all duration-300 hover:shadow-sage-500/30">
 						Book Appointment
 					</a>
 				</nav>
-				
+
 				<!-- Mobile Menu Button -->
 				<div class="md:hidden flex items-center">
 					<button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
 						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+							<path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h16"></path>
 						</svg>
 					</button>
 				</div>
 			</div>
 
 			<!-- Mobile Menu Dropdown -->
-			<div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800/50 absolute w-full left-0 shadow-2xl">
+			<div id="mobile-menu"
+				class="hidden md:hidden bg-slate-900 border-t border-slate-800/50 absolute w-full left-0 shadow-2xl">
 				<div class="px-4 pt-4 pb-6 space-y-2 text-center">
-					<a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Home</a>
-					<a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About Us</a>
-					<a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Physical Therapy</a>
-					<a href="staff.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Staff</a>
-					<a href="patient-info.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Patient Info</a>
-					<a href="payments.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Payments</a>
-					<a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Contact</a>
-					<a href="contact.html" class="block mt-4 px-6 py-3 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 shadow-lg mx-auto w-11/12 max-w-sm">Book Appointment</a>
+					<a href="index.html"
+						class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Home</a>
+					<a href="about.html"
+						class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About
+						Us</a>
+					<a href="services.html"
+						class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Physical
+						Therapy</a>
+					<a href="staff.html"
+						class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Staff</a>
+					<a href="patient-info.html"
+						class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Patient
+						Info</a>
+					<a href="payments.html"
+						class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Payments</a>
+					<a href="contact.html"
+						class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Contact</a>
+					<a href="contact.html"
+						class="block mt-4 px-6 py-3 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 shadow-lg mx-auto w-11/12 max-w-sm">Book
+						Appointment</a>
 				</div>
 			</div>
 		</div>
@@ -93,15 +215,18 @@
 	<main id="primary" class="site-main flex-grow">
 		<!-- Hero Section -->
 		<section class="relative overflow-hidden min-h-[50vh] flex items-center">
-			<div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('images/hero-clinic.jpg'); opacity: 0.3;"></div>
+			<div class="absolute inset-0 z-0 bg-cover bg-center"
+				style="background-image: url('images/hero-clinic.jpg'); opacity: 0.3;"></div>
 			<div class="absolute inset-0 z-[1] hero-gradient"></div>
 			<!-- Decorative Elements -->
 			<div class="absolute top-20 left-10 w-72 h-72 bg-sage-500/10 rounded-full blur-3xl z-[2]"></div>
 			<div class="absolute bottom-20 right-10 w-96 h-96 bg-crimson-600/5 rounded-full blur-3xl z-[2]"></div>
 
-			<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col items-center text-center">
+			<div
+				class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col items-center text-center">
 				<div class="accent-bar mx-auto mb-6 animate-fade-in"></div>
-				<h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-4 max-w-4xl animate-fade-in-up">
+				<h1
+					class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-4 max-w-4xl animate-fade-in-up">
 					Online <span class="gradient-text">Payments</span>
 				</h1>
 				<p class="text-lg text-slate-400 max-w-2xl leading-relaxed animate-fade-in-up delay-100">
@@ -113,34 +238,51 @@
 		<!-- Payment Options Section -->
 		<section class="py-24 relative z-20">
 			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-				
+
 				<div class="max-w-lg mx-auto">
 					<!-- PayPal Card -->
-					<div class="glass-card rounded-2xl border border-sage-500/30 p-8 flex flex-col items-center text-center animate-fade-in-up delay-200 relative overflow-hidden group">
-						<div class="absolute inset-0 bg-gradient-to-br from-sage-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-						
+					<div
+						class="glass-card rounded-2xl border border-sage-500/30 p-8 flex flex-col items-center text-center animate-fade-in-up delay-200 relative overflow-hidden group">
+						<div
+							class="absolute inset-0 bg-gradient-to-br from-sage-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+						</div>
+
 						<div class="w-16 h-16 mb-6 flex items-center justify-center text-blue-400">
 							<svg class="w-full h-full" viewBox="0 0 24 24" fill="currentColor">
-								<path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zM6.634 14.536l-1.002 6.33c-.022.143.088.271.233.271h3.424c.466 0 .861-.34.933-.8l.848-5.365a.555.555 0 0 1 .547-.468h1.22c3.483 0 6.136-1.42 6.845-4.996.347-1.748.163-3.08-.82-4.004-.844-.795-2.274-1.12-4.225-1.12H8.35c-.233 0-.43.17-.466.4l-1.25 7.918z" />
+								<path
+									d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zM6.634 14.536l-1.002 6.33c-.022.143.088.271.233.271h3.424c.466 0 .861-.34.933-.8l.848-5.365a.555.555 0 0 1 .547-.468h1.22c3.483 0 6.136-1.42 6.845-4.996.347-1.748.163-3.08-.82-4.004-.844-.795-2.274-1.12-4.225-1.12H8.35c-.233 0-.43.17-.466.4l-1.25 7.918z" />
 							</svg>
 						</div>
-						
+
 						<h3 class="text-2xl font-serif font-bold text-white mb-2 relative z-10">Pay with PayPal</h3>
 						<p class="text-slate-400 text-sm leading-relaxed mb-8 relative z-10 flex-grow">
-							Use your PayPal account or a major credit card via PayPal's secure guest checkout to pay your bill instantly.
+							Use your PayPal account or a major credit card via PayPal's secure guest checkout to pay
+							your bill instantly.
 						</p>
-						
-						<a href="https://www.paypal.com/webapps/mpp/send-money-online" target="_blank" rel="noopener noreferrer" class="relative z-10 inline-flex justify-center items-center px-8 py-3 w-full text-sm font-semibold rounded-full text-white bg-[#0070ba] hover:bg-[#003087] shadow-lg shadow-blue-500/20 transition-all duration-300">
-							Proceed to PayPal
-						</a>
-						<p class="text-xs text-slate-500 mt-4 relative z-10">You do not need a PayPal account to pay with a credit card.</p>
+
+						<!-- PayPal SDK -->
+						<script
+							src="https://www.paypal.com/sdk/js?client-id=BAA6YI4W_buXBKQjjGGelIpArrQhAb2r53eUBjENCXkqEdaGWLN3SfkHJsvN2gx-pC0zO4q_LZpzuhKRRM&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+
+						<!-- PayPal Button Container -->
+						<div id="paypal-container-3XJ2GD5AT26D6"
+							class="relative z-10 w-full max-w-[300px] mx-auto min-h-[50px]"></div>
+						<script>
+							paypal.HostedButtons({
+								hostedButtonId: "3XJ2GD5AT26D6",
+							}).render("#paypal-container-3XJ2GD5AT26D6")
+						</script>
+						<p class="text-xs text-slate-500 mt-4 relative z-10">You do not need a PayPal account to pay
+							with a credit card.</p>
 					</div>
 				</div>
 
 				<!-- Instructions -->
 				<div class="mt-16 text-center animate-fade-in-up delay-400">
 					<p class="text-slate-400 text-sm leading-relaxed max-w-2xl mx-auto">
-						<strong>Note on PayPal:</strong> Once redirected, you can log in to send payment, or select "Pay with Debit or Credit Card" to checkout as a guest. Please ensure you reference your invoice number if possible.
+						<strong>Note on PayPal:</strong> Once redirected, you can log in to send payment, or select "Pay
+						with Debit or Credit Card" to checkout as a guest. Please ensure you reference your invoice
+						number if possible.
 					</p>
 				</div>
 
@@ -156,10 +298,19 @@
 				<div class="space-y-4">
 					<div class="mb-4 w-56 lg:w-72">
 						<svg class="w-full h-auto opacity-90" xmlns="http://www.w3.org/2000/svg" viewBox="0 15 800 195">
-							<path d="M 60 90 L 290 90 L 330 40 L 360 75 L 400 25 L 440 75 L 470 40 L 510 90 L 740 90" stroke="#81a393" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-							<text x="400" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="5" text-anchor="middle" fill="#ffffff">MOUNTAIN TOWN REHAB</text>
-							<line x1="60" y1="165" x2="740" y2="165" stroke="#475569" stroke-width="5" stroke-linecap="round" />
-							<text x="400" y="198" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="1" text-anchor="middle" fill="#94a3b8">Your Choice For Personal, Quality Care</text>
+							<path d="M 60 90 L 290 90 L 330 40 L 360 75 L 400 25 L 440 75 L 470 40 L 510 90 L 740 90"
+								stroke="#81a393" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"
+								fill="none" />
+							<text x="400" y="142"
+								font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+								font-size="34" font-weight="800" letter-spacing="5" text-anchor="middle"
+								fill="#ffffff">MOUNTAIN TOWN REHAB</text>
+							<line x1="60" y1="165" x2="740" y2="165" stroke="#475569" stroke-width="5"
+								stroke-linecap="round" />
+							<text x="400" y="198"
+								font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+								font-size="18" font-weight="400" letter-spacing="1" text-anchor="middle"
+								fill="#94a3b8">Your Choice For Personal, Quality Care</text>
 						</svg>
 					</div>
 					<p class="text-slate-500 text-sm leading-relaxed">
@@ -170,13 +321,20 @@
 				<div>
 					<h3 class="text-sm font-semibold uppercase tracking-widest text-slate-400 mb-5">Quick Links</h3>
 					<ul class="space-y-3 text-sm text-slate-500">
-						<li><a href="index.html" class="hover:text-sage-400 transition-colors duration-200">Home</a></li>
-						<li><a href="about.html" class="hover:text-sage-400 transition-colors duration-200">About Us</a></li>
-						<li><a href="services.html" class="hover:text-sage-400 transition-colors duration-200">Physical Therapy</a></li>
-						<li><a href="staff.html" class="hover:text-sage-400 transition-colors duration-200">Staff</a></li>
-						<li><a href="patient-info.html" class="hover:text-sage-400 transition-colors duration-200">Patient Info</a></li>
-						<li><a href="payments.html" class="hover:text-sage-400 transition-colors duration-200">Payments</a></li>
-						<li><a href="contact.html" class="hover:text-sage-400 transition-colors duration-200">Contact</a></li>
+						<li><a href="index.html" class="hover:text-sage-400 transition-colors duration-200">Home</a>
+						</li>
+						<li><a href="about.html" class="hover:text-sage-400 transition-colors duration-200">About Us</a>
+						</li>
+						<li><a href="services.html" class="hover:text-sage-400 transition-colors duration-200">Physical
+								Therapy</a></li>
+						<li><a href="staff.html" class="hover:text-sage-400 transition-colors duration-200">Staff</a>
+						</li>
+						<li><a href="patient-info.html"
+								class="hover:text-sage-400 transition-colors duration-200">Patient Info</a></li>
+						<li><a href="payments.html"
+								class="hover:text-sage-400 transition-colors duration-200">Payments</a></li>
+						<li><a href="contact.html"
+								class="hover:text-sage-400 transition-colors duration-200">Contact</a></li>
 					</ul>
 				</div>
 				<!-- Contact Info -->
@@ -184,11 +342,16 @@
 					<h3 class="text-sm font-semibold uppercase tracking-widest text-slate-400 mb-5">Contact Us</h3>
 					<ul class="space-y-4 text-sm text-slate-500">
 						<li class="flex items-start gap-3">
-							<svg class="h-5 w-5 text-sage-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+							<svg class="h-5 w-5 text-sage-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+								stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+									d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+									d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
 							</svg>
-							<span>1106 W High St<br>Mt Pleasant, MI 48858<br>(989) 779-2920<br><a href="mailto:info@mountaintownrehab.com" class="hover:text-sage-400 transition-colors">info@mountaintownrehab.com</a></span>
+							<span>1106 W High St<br>Mt Pleasant, MI 48858<br>(989) 779-2920<br><a
+									href="mailto:info@mountaintownrehab.com"
+									class="hover:text-sage-400 transition-colors">info@mountaintownrehab.com</a></span>
 						</li>
 					</ul>
 				</div>
@@ -204,11 +367,11 @@
 			const btn = document.getElementById('mobile-menu-btn');
 			const menu = document.getElementById('mobile-menu');
 			const iconPath = document.getElementById('menu-icon-path');
-			
-			if(btn && menu) {
+
+			if (btn && menu) {
 				btn.addEventListener('click', () => {
 					menu.classList.toggle('hidden');
-					if(menu.classList.contains('hidden')) {
+					if (menu.classList.contains('hidden')) {
 						iconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
 					} else {
 						iconPath.setAttribute('d', 'M6 18L18 6M6 6l12 12');
@@ -218,4 +381,5 @@
 		});
 	</script>
 </body>
+
 </html>
