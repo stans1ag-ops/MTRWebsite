@@ -4,10 +4,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mountain Town Rehab - Personal, Quality Care</title>
+	<title>Physical Therapy in Mt Pleasant, MI | Mountain Town Rehab</title>
 	<link rel="icon" type="image/png" href="images/Favicon.png">
 	<meta name="description"
-		content="Mountain Town Rehab provides family-owned, personalized physical therapy. Your choice for trust and recovery.">
+		content="Family-owned physical therapy clinic in Mt Pleasant, MI serving Central Michigan with one-on-one care, orthopedic rehab, sports rehab, pediatric therapy, aquatic therapy, dry needling, and post-surgical rehabilitation.">
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Physical Therapy in Mt Pleasant, MI | Mountain Town Rehab">
+	<meta property="og:description" content="Family-owned physical therapy clinic serving Mt Pleasant and Central Michigan with personalized, one-on-one care.">
+	<meta property="og:image" content="https://mountaintownrehab.com/images/hero-clinic.jpg">
+	<meta property="og:url" content="https://mountaintownrehab.com/">
+	<meta name="twitter:card" content="summary_large_image">
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,124 +23,48 @@
 		rel="stylesheet">
 	<!-- Tailwind -->
 	<link rel="stylesheet" href="dist/output.css">
-	<style>
-		/* Animations & custom styles not covered by Tailwind */
-		@keyframes fadeInUp {
-			from {
-				opacity: 0;
-				transform: translateY(24px);
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "MedicalBusiness",
+		"name": "Mountain Town Rehab",
+		"url": "https://mountaintownrehab.com/",
+		"telephone": "+1-989-779-2920",
+		"email": "info@mountaintownrehab.com",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "1106 W High St",
+			"addressLocality": "Mt Pleasant",
+			"addressRegion": "MI",
+			"postalCode": "48858",
+			"addressCountry": "US"
+		},
+		"areaServed": [
+			"Mt Pleasant, MI",
+			"Mount Pleasant, MI",
+			"Central Michigan",
+			"Mid Michigan"
+		],
+		"medicalSpecialty": "Physical Therapy",
+		"description": "Family-owned physical therapy clinic in Mt Pleasant, MI providing personalized rehabilitation and one-on-one care.",
+		"priceRange": "$$",
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+				"opens": "07:00",
+				"closes": "17:30"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Friday",
+				"opens": "07:00",
+				"closes": "13:00"
 			}
-
-			to {
-				opacity: 1;
-				transform: translateY(0);
-			}
-		}
-
-		@keyframes fadeIn {
-			from {
-				opacity: 0;
-			}
-
-			to {
-				opacity: 1;
-			}
-		}
-
-
-
-		.animate-fade-in-up {
-			animation: fadeInUp 0.8s ease-out both;
-		}
-
-		.animate-fade-in {
-			animation: fadeIn 1s ease-out both;
-		}
-
-		.delay-100 {
-			animation-delay: 0.1s;
-		}
-
-		.delay-200 {
-			animation-delay: 0.2s;
-		}
-
-		.delay-300 {
-			animation-delay: 0.3s;
-		}
-
-		.delay-400 {
-			animation-delay: 0.4s;
-		}
-
-		.delay-500 {
-			animation-delay: 0.5s;
-		}
-
-		/* Glassmorphism card */
-		.glass-card {
-			background: rgba(30, 41, 59, 0.6);
-			backdrop-filter: blur(16px);
-			-webkit-backdrop-filter: blur(16px);
-		}
-
-		/* Gradient text */
-		.gradient-text {
-			background: linear-gradient(135deg, #81a393 0%, #a7c1b4 50%, #cbdad1 100%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-clip: text;
-		}
-
-		/* Subtle glow on hover */
-		.card-hover {
-			transition: transform 0.3s ease, box-shadow 0.3s ease;
-		}
-
-		.card-hover:hover {
-			transform: translateY(-6px);
-			box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(129, 163, 147, 0.08);
-		}
-
-		/* Hero gradient overlay */
-		.hero-gradient {
-			background: linear-gradient(180deg, rgba(15, 23, 42, 0.7) 0%, rgba(15, 23, 42, 0.85) 50%, rgba(15, 23, 42, 1) 100%);
-		}
-
-		/* Accent bar */
-		.accent-bar {
-			width: 48px;
-			height: 3px;
-			background: linear-gradient(90deg, #81a393, #d13253);
-			border-radius: 2px;
-		}
-
-		/* Nav link underline animation */
-		.nav-link {
-			position: relative;
-		}
-
-		.nav-link::after {
-			content: '';
-			position: absolute;
-			bottom: -4px;
-			left: 0;
-			width: 0;
-			height: 2px;
-			background: linear-gradient(90deg, #81a393, #a7c1b4);
-			transition: width 0.3s ease;
-			border-radius: 1px;
-		}
-
-		.nav-link:hover::after {
-			width: 100%;
-		}
-
-		/* Smooth scroll */
-		html {
-			scroll-behavior: smooth;
-		}
-	</style>
+		]
+	}
+	</script>
 </head>
 
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
@@ -244,13 +175,14 @@
 				<div class="accent-bar mx-auto mb-8 animate-fade-in"></div>
 				<h1
 					class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6 max-w-4xl animate-fade-in-up">
-					Your Choice For Personal,<br>
-					<span class="gradient-text">Quality Care</span>
+					Family-Owned Physical Therapy<br>
+					in <span class="gradient-text">Mt Pleasant, MI</span>
 				</h1>
 				<p
 					class="text-lg md:text-xl text-slate-400 mb-12 max-w-2xl leading-relaxed animate-fade-in-up delay-200">
-					Family-owned physical therapy dedicated to your trust and recovery. We provide personalized
-					treatment plans to get you back to the life you love.
+					Mountain Town Rehab is a family-owned physical therapy clinic in Mt Pleasant, Michigan,
+					serving patients throughout Mount Pleasant, Central Michigan, and Mid Michigan with
+					personalized, one-on-one care dedicated to your trust and recovery.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
 					<a href="services.html"
@@ -434,25 +366,7 @@
 		</div>
 	</footer>
 
-	<!-- Mobile Menu Script -->
-	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			const btn = document.getElementById('mobile-menu-btn');
-			const menu = document.getElementById('mobile-menu');
-			const iconPath = document.getElementById('menu-icon-path');
-
-			if (btn && menu) {
-				btn.addEventListener('click', () => {
-					menu.classList.toggle('hidden');
-					if (menu.classList.contains('hidden')) {
-						iconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
-					} else {
-						iconPath.setAttribute('d', 'M6 18L18 6M6 6l12 12');
-					}
-				});
-			}
-		});
-	</script>
+	<script src="scripts/site.js" defer></script>
 </body>
 
 </html>

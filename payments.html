@@ -4,119 +4,20 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Online Payments - Mountain Town Rehab</title>
+	<title>Online Payments | Mountain Town Rehab</title>
 	<link rel="icon" type="image/png" href="images/Favicon.png">
-	<meta name="description" content="Pay your Mountain Town Rehab bills securely online.">
-	<!-- Fonts -->
+	<meta name="description" content="Pay your Mountain Town Rehab physical therapy bills securely online via PayPal or credit card.">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Online Payments | Mountain Town Rehab">
+	<meta property="og:description" content="Pay your Mountain Town Rehab physical therapy bills securely online.">
+	<meta property="og:image" content="https://mountaintownrehab.com/images/hero-clinic.jpg">
+	<meta property="og:url" content="https://mountaintownrehab.com/payments.html">
+	<meta name="twitter:card" content="summary_large_image">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-		rel="stylesheet">
-	<!-- Tailwind -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/output.css">
 	<style>
-		/* Custom styles */
-		@keyframes fadeInUp {
-			from {
-				opacity: 0;
-				transform: translateY(24px);
-			}
-
-			to {
-				opacity: 1;
-				transform: translateY(0);
-			}
-		}
-
-		@keyframes fadeIn {
-			from {
-				opacity: 0;
-			}
-
-			to {
-				opacity: 1;
-			}
-		}
-
-		.animate-fade-in-up {
-			animation: fadeInUp 0.8s ease-out both;
-		}
-
-		.animate-fade-in {
-			animation: fadeIn 1s ease-out both;
-		}
-
-		.delay-100 {
-			animation-delay: 0.1s;
-		}
-
-		.delay-200 {
-			animation-delay: 0.2s;
-		}
-
-		.delay-300 {
-			animation-delay: 0.3s;
-		}
-
-		.glass-card {
-			background: rgba(30, 41, 59, 0.6);
-			backdrop-filter: blur(16px);
-			-webkit-backdrop-filter: blur(16px);
-		}
-
-		.gradient-text {
-			background: linear-gradient(135deg, #81a393 0%, #a7c1b4 50%, #cbdad1 100%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-clip: text;
-		}
-
-		.card-hover {
-			transition: transform 0.3s ease, box-shadow 0.3s ease;
-		}
-
-		.card-hover:hover {
-			transform: translateY(-6px);
-			box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(129, 163, 147, 0.08);
-		}
-
-		.hero-gradient {
-			background: linear-gradient(180deg, rgba(15, 23, 42, 0.7) 0%, rgba(15, 23, 42, 0.85) 50%, rgba(15, 23, 42, 1) 100%);
-		}
-
-		.accent-bar {
-			width: 48px;
-			height: 3px;
-			background: linear-gradient(90deg, #81a393, #d13253);
-			border-radius: 2px;
-		}
-
-		.nav-link {
-			position: relative;
-		}
-
-		.nav-link::after {
-			content: '';
-			position: absolute;
-			bottom: -4px;
-			left: 0;
-			width: 0;
-			height: 2px;
-			background: linear-gradient(90deg, #81a393, #a7c1b4);
-			transition: width 0.3s ease;
-			border-radius: 1px;
-		}
-
-		.nav-link:hover::after,
-		.nav-link.active::after {
-			width: 100%;
-		}
-
-		html {
-			scroll-behavior: smooth;
-		}
-
 		/* PayPal custom overrides */
 		#paypal-container-3XJ2GD5AT26D6 input,
 		#amount {
@@ -361,25 +262,7 @@
 			</div>
 		</div>
 	</footer>
-	<!-- Mobile Menu Script -->
-	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			const btn = document.getElementById('mobile-menu-btn');
-			const menu = document.getElementById('mobile-menu');
-			const iconPath = document.getElementById('menu-icon-path');
-
-			if (btn && menu) {
-				btn.addEventListener('click', () => {
-					menu.classList.toggle('hidden');
-					if (menu.classList.contains('hidden')) {
-						iconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
-					} else {
-						iconPath.setAttribute('d', 'M6 18L18 6M6 6l12 12');
-					}
-				});
-			}
-		});
-	</script>
+	<script src="scripts/site.js" defer></script>
 </body>
 
 </html>
