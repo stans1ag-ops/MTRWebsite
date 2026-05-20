@@ -70,6 +70,17 @@
 
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
 
+	<!-- ====== TOP ANNOUNCEMENT BAR ====== -->
+	<div class="bg-gradient-to-r from-sage-950 via-sage-900 to-sage-950 border-b border-slate-800/40 text-slate-300 py-3 px-4 text-center text-xs sm:text-sm font-medium z-50 relative">
+		<span class="inline-flex items-center gap-2">
+			<span class="w-2.5 h-2.5 rounded-full bg-crimson-500 animate-pulse shrink-0"></span>
+			<span>We are Hiring! We are looking for passionate Physical Therapists and Assistants to join our team.</span>
+		</span>
+		<a href="careers.html" class="inline-flex items-center justify-center ml-3 px-3.5 py-1 text-xs font-semibold rounded-full text-white bg-sage-600 hover:bg-sage-500 transition-all shadow-sm hover:shadow hover:-translate-y-0.5">
+			Apply Now
+		</a>
+	</div>
+
 	<!-- ====== HEADER ====== -->
 	<header
 		class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 transition-all duration-300">
@@ -292,6 +303,30 @@
 			</div>
 		</section>
 
+		<!-- Careers CTA Section -->
+		<section class="py-16 border-t border-slate-900 bg-slate-950 relative overflow-hidden">
+			<div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-sage-500/5 rounded-full blur-3xl"></div>
+			<div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="glass-card rounded-3xl border border-dashed border-sage-500/30 p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 card-hover">
+					<div class="space-y-3 max-w-2xl text-center md:text-left">
+						<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-sage-500/10 text-sage-400 border border-sage-500/20">
+							<span class="w-1.5 h-1.5 rounded-full bg-crimson-500 animate-pulse"></span>
+							We're Hiring
+						</span>
+						<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Looking to grow your clinical career?</h2>
+						<p class="text-slate-400 text-sm md:text-base leading-relaxed">
+							We are looking for dedicated Physical Therapists and Assistants to join our close-knit, family-owned practice. Enjoy a supportive team, 1-on-1 care focus, and professional mentorship in Mt. Pleasant.
+						</p>
+					</div>
+					<div class="shrink-0">
+						<a href="careers.html" class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg transition-all duration-300">
+							Join Our Team
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</main>
 
 	<!-- ====== FOOTER ====== -->
@@ -339,6 +374,8 @@
 								class="hover:text-sage-400 transition-colors duration-200">Payments</a></li>
 						<li><a href="contact.html"
 								class="hover:text-sage-400 transition-colors duration-200">Contact</a></li>
+						<li><a href="careers.html"
+								class="hover:text-sage-400 transition-colors duration-200">Careers</a></li>
 					</ul>
 				</div>
 
