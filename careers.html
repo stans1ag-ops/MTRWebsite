@@ -24,6 +24,48 @@
 	
 	<!-- Tailwind Compiled Styles -->
 	<link rel="stylesheet" href="dist/output.css">
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "MedicalBusiness",
+		"name": "Mountain Town Rehab",
+		"url": "https://mountaintownrehab.com/",
+		"telephone": "+1-989-779-2920",
+		"email": "info@mountaintownrehab.com",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "1106 W High St",
+			"addressLocality": "Mt Pleasant",
+			"addressRegion": "MI",
+			"postalCode": "48858",
+			"addressCountry": "US"
+		},
+		"areaServed": [
+			"Mt Pleasant, MI",
+			"Mount Pleasant, MI",
+			"Central Michigan",
+			"Mid Michigan"
+		],
+		"medicalSpecialty": "Physical Therapy",
+		"description": "Family-owned physical therapy clinic in Mt Pleasant, MI providing personalized rehabilitation and one-on-one care.",
+		"priceRange": "$$",
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+				"opens": "07:00",
+				"closes": "17:30"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Friday",
+				"opens": "07:00",
+				"closes": "13:00"
+			}
+		]
+	}
+	</script>
 </head>
 
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">

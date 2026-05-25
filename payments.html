@@ -18,6 +18,48 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/output.css">
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "MedicalBusiness",
+		"name": "Mountain Town Rehab",
+		"url": "https://mountaintownrehab.com/",
+		"telephone": "+1-989-779-2920",
+		"email": "info@mountaintownrehab.com",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "1106 W High St",
+			"addressLocality": "Mt Pleasant",
+			"addressRegion": "MI",
+			"postalCode": "48858",
+			"addressCountry": "US"
+		},
+		"areaServed": [
+			"Mt Pleasant, MI",
+			"Mount Pleasant, MI",
+			"Central Michigan",
+			"Mid Michigan"
+		],
+		"medicalSpecialty": "Physical Therapy",
+		"description": "Family-owned physical therapy clinic in Mt Pleasant, MI providing personalized rehabilitation and one-on-one care.",
+		"priceRange": "$$",
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+				"opens": "07:00",
+				"closes": "17:30"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Friday",
+				"opens": "07:00",
+				"closes": "13:00"
+			}
+		]
+	}
+	</script>
 	<style>
 		/* PayPal custom overrides */
 		#paypal-container-3XJ2GD5AT26D6 input,
@@ -173,17 +215,48 @@
 							your bill instantly.
 						</p>
 
-						<!-- PayPal SDK -->
-						<script
-							src="https://www.paypal.com/sdk/js?client-id=BAA6YI4W_buXBKQjjGGelIpArrQhAb2r53eUBjENCXkqEdaGWLN3SfkHJsvN2gx-pC0zO4q_LZpzuhKRRM&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
-
 						<!-- PayPal Button Container -->
 						<div id="paypal-container-3XJ2GD5AT26D6"
-							class="relative z-10 w-full max-w-[300px] mx-auto min-h-[50px]"></div>
+							class="relative z-10 w-full max-w-[300px] mx-auto min-h-[50px]" aria-live="polite">
+							<p class="text-sm text-slate-400">Loading secure payment options...</p>
+						</div>
 						<script>
-							paypal.HostedButtons({
-								hostedButtonId: "3XJ2GD5AT26D6",
-							}).render("#paypal-container-3XJ2GD5AT26D6")
+							(function () {
+								const containerSelector = "#paypal-container-3XJ2GD5AT26D6";
+								const container = document.querySelector(containerSelector);
+								const sdkScript = document.createElement("script");
+
+								function showPaymentFallback() {
+									if (!container) return;
+
+									container.innerHTML = '<p class="text-sm text-slate-400">The secure PayPal payment button is unavailable right now. Please refresh the page, or call us at <a href="tel:+19897792920" class="text-sage-400 hover:text-sage-300 transition-colors">(989) 779-2920</a> for help with payment.</p>';
+								}
+
+								function renderPayPalButton() {
+									if (!window.paypal || typeof window.paypal.HostedButtons !== "function") {
+										showPaymentFallback();
+										return;
+									}
+
+									try {
+										const renderResult = window.paypal.HostedButtons({
+											hostedButtonId: "3XJ2GD5AT26D6",
+										}).render(containerSelector);
+
+										if (renderResult && typeof renderResult.catch === "function") {
+											renderResult.catch(showPaymentFallback);
+										}
+									} catch (error) {
+										showPaymentFallback();
+									}
+								}
+
+								sdkScript.src = "https://www.paypal.com/sdk/js?client-id=BAA6YI4W_buXBKQjjGGelIpArrQhAb2r53eUBjENCXkqEdaGWLN3SfkHJsvN2gx-pC0zO4q_LZpzuhKRRM&components=hosted-buttons&enable-funding=venmo&currency=USD";
+								sdkScript.async = true;
+								sdkScript.onload = renderPayPalButton;
+								sdkScript.onerror = showPaymentFallback;
+								document.head.appendChild(sdkScript);
+							})();
 						</script>
 						<p class="text-xs text-slate-500 mt-4 relative z-10">You do not need a PayPal account to pay
 							with a credit card.</p>
