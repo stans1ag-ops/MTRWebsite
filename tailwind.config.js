@@ -2,7 +2,8 @@
 module.exports = {
   content: [
     "./*.html",
-    "./src/**/*.js"
+    "./src/**/*.js",
+    "./scripts/**/*.js"
   ],
   theme: {
     extend: {
@@ -18,6 +19,7 @@ module.exports = {
           700: '#3e564b',
           800: '#33463e',
           900: '#2a3a33',
+          950: '#1a2b22',
         },
         crimson: {
           50: '#fdf2f4',

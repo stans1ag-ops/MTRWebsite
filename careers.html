@@ -28,40 +28,80 @@
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
-		"@type": "MedicalBusiness",
-		"name": "Mountain Town Rehab",
-		"url": "https://mountaintownrehab.com/",
-		"telephone": "+1-989-779-2920",
-		"email": "info@mountaintownrehab.com",
-		"address": {
-			"@type": "PostalAddress",
-			"streetAddress": "1106 W High St",
-			"addressLocality": "Mt Pleasant",
-			"addressRegion": "MI",
-			"postalCode": "48858",
-			"addressCountry": "US"
-		},
-		"areaServed": [
-			"Mt Pleasant, MI",
-			"Mount Pleasant, MI",
-			"Central Michigan",
-			"Mid Michigan"
-		],
-		"medicalSpecialty": "Physical Therapy",
-		"description": "Family-owned physical therapy clinic in Mt Pleasant, MI providing personalized rehabilitation and one-on-one care.",
-		"priceRange": "$$",
-		"openingHoursSpecification": [
+		"@graph": [
 			{
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-				"opens": "07:00",
-				"closes": "17:30"
+				"@type": "MedicalBusiness",
+				"name": "Mountain Town Rehab",
+				"url": "https://mountaintownrehab.com/",
+				"telephone": "+1-989-779-2920",
+				"email": "info@mountaintownrehab.com",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1106 W High St",
+					"addressLocality": "Mt Pleasant",
+					"addressRegion": "MI",
+					"postalCode": "48858",
+					"addressCountry": "US"
+				},
+				"areaServed": [
+					"Mt Pleasant, MI",
+					"Mount Pleasant, MI",
+					"Central Michigan",
+					"Mid Michigan"
+				],
+				"medicalSpecialty": "Physical Therapy",
+				"description": "Family-owned physical therapy clinic in Mt Pleasant, MI providing personalized rehabilitation and one-on-one care.",
+				"priceRange": "$$",
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+						"opens": "07:00",
+						"closes": "17:30"
+					},
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": "Friday",
+						"opens": "07:00",
+						"closes": "13:00"
+					}
+				]
 			},
 			{
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": "Friday",
-				"opens": "07:00",
-				"closes": "13:00"
+				"@type": "JobPosting",
+				"title": "Physical Therapist (PT)",
+				"datePosted": "2026-05-27",
+				"hiringOrganization": {
+					"@type": "MedicalBusiness",
+					"name": "Mountain Town Rehab"
+				},
+				"jobLocation": {
+					"@type": "Place",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Mt Pleasant",
+						"addressRegion": "MI"
+					}
+				},
+				"employmentType": ["FULL_TIME", "PART_TIME"]
+			},
+			{
+				"@type": "JobPosting",
+				"title": "Physical Therapist Assistant (PTA)",
+				"datePosted": "2026-05-27",
+				"hiringOrganization": {
+					"@type": "MedicalBusiness",
+					"name": "Mountain Town Rehab"
+				},
+				"jobLocation": {
+					"@type": "Place",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Mt Pleasant",
+						"addressRegion": "MI"
+					}
+				},
+				"employmentType": ["FULL_TIME", "PART_TIME"]
 			}
 		]
 	}
@@ -69,6 +109,8 @@
 </head>
 
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
+
+<a href="#primary" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-slate-950 focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to content</a>
 
 	<!-- ====== TOP ANNOUNCEMENT BAR ====== -->
 	<div class="bg-gradient-to-r from-sage-950 via-sage-900 to-sage-950 border-b border-slate-800/40 text-slate-300 py-3 px-4 text-center text-xs sm:text-sm font-medium z-50 relative">
@@ -95,7 +137,7 @@
 					</a>
 				</div>
 				<!-- Desktop Menu -->
-				<nav class="hidden md:flex items-center gap-10">
+				<nav aria-label="Main navigation" class="hidden md:flex items-center gap-10">
 					<ul class="flex gap-8 text-sm font-medium text-slate-400">
 						<li><a href="index.html" class="nav-link hover:text-white transition-colors duration-200">Home</a></li>
 						<li><a href="about.html" class="nav-link hover:text-white transition-colors duration-200">About Us</a></li>
@@ -112,7 +154,7 @@
 				
 				<!-- Mobile Menu Button -->
 				<div class="md:hidden flex items-center">
-					<button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
+					<button id="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-controls="mobile-menu" aria-expanded="false" class="text-slate-300 hover:text-white p-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
 						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
 						</svg>
@@ -121,7 +163,7 @@
 			</div>
 
 			<!-- Mobile Menu Dropdown -->
-			<div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800/50 absolute w-full left-0 shadow-2xl">
+			<div id="mobile-menu" role="navigation" aria-label="Mobile navigation" class="hidden md:hidden bg-slate-900 border-t border-slate-800/50 absolute w-full left-0 shadow-2xl">
 				<div class="px-4 pt-4 pb-6 space-y-2 text-center">
 					<a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Home</a>
 					<a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About Us</a>
@@ -380,7 +422,7 @@
 										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
 									</svg>
 								</div>
-								<input type="url" id="resume-link" name="Resume Link" required class="w-full bg-slate-900/60 border border-slate-800 rounded-xl pl-12 pr-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-sage-500 focus:ring-1 focus:ring-sage-500/20 transition-all text-sm" placeholder="https://drive.google.com/file/d/... or Dropbox/OneDrive link">
+								<input type="url" id="resume-link" name="Resume Link" required aria-describedby="link-error-text" aria-invalid="false" class="w-full bg-slate-900/60 border border-slate-800 rounded-xl pl-12 pr-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-sage-500 focus:ring-1 focus:ring-sage-500/20 transition-all text-sm" placeholder="https://drive.google.com/file/d/... or Dropbox/OneDrive link">
 							</div>
 
 							<!-- Easy Link Sharing Instructions -->
@@ -403,7 +445,7 @@
 							</div>
 							
 							<!-- Client validation feedback -->
-							<div id="link-error" class="hidden text-xs text-crimson-500 mt-2 flex items-center gap-1">
+							<div id="link-error" class="hidden text-xs text-crimson-500 mt-2 flex items-center gap-1" role="alert" aria-live="assertive">
 								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
 								<span id="link-error-text">Please enter a valid sharing link.</span>
 							</div>
@@ -411,7 +453,7 @@
 
 						<!-- Submit Button -->
 						<div class="pt-4">
-							<button type="submit" id="submit-btn" class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-2xl text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-xl shadow-sage-600/10 hover:shadow-sage-500/25 transition-all duration-300 hover:-translate-y-0.5 focus:outline-none">
+							<button type="submit" id="submit-btn" class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-2xl text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-xl shadow-sage-600/10 hover:shadow-sage-500/25 transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
 								<span>Submit Application</span>
 								<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -427,13 +469,13 @@
 	</main>
 
 	<!-- ====== SUCCESS MODAL ====== -->
-	<div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md hidden transition-all duration-500 opacity-0 scale-95" aria-hidden="true" role="dialog">
+	<div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md hidden transition-all duration-500 opacity-0 scale-95" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="success-modal-title">
 		<div class="modal-backdrop absolute inset-0 cursor-pointer" data-target="success-modal"></div>
 		
 		<!-- Glass Card Container -->
 		<div class="glass-card max-w-md w-full rounded-3xl border border-sage-500/20 p-8 shadow-2xl relative z-10 text-center scale-95 transition-all duration-300">
 			<!-- Close button -->
-			<button class="modal-close absolute top-5 right-5 text-slate-500 hover:text-white transition-colors" data-target="success-modal" aria-label="Close success modal">
+			<button type="button" class="modal-close absolute top-5 right-5 text-slate-500 hover:text-white transition-colors" data-target="success-modal" aria-label="Close application status dialog">
 				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
 				</svg>
@@ -446,7 +488,7 @@
 				</svg>
 			</div>
 
-			<h3 class="text-2xl font-serif font-bold text-white mb-3">Application Received!</h3>
+			<h3 id="success-modal-title" class="text-2xl font-serif font-bold text-white mb-3">Application Status</h3>
 			
 			<div class="space-y-4 text-sm text-slate-400 leading-relaxed mb-8">
 				<p id="modal-success-msg">Thank you for submitting your application. We are excited about the opportunity to review your resume and will contact you shortly if your qualifications align with our clinical openings.</p>
@@ -455,18 +497,18 @@
 				<div id="modal-owner-alert" class="hidden bg-crimson-600/10 border border-crimson-500/30 rounded-2xl p-4 text-left space-y-2 mt-4">
 					<div class="flex items-center gap-2 text-crimson-400 font-semibold text-xs uppercase tracking-wider">
 						<svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-						Demo Mode Submission
+						Demo Mode
 					</div>
 					<p class="text-xs text-slate-300">
-						This submission was successfully validated and mock-simulated on the client side!
+						This form is validating fields locally but is not sending applications.
 					</p>
 					<p class="text-[11px] text-slate-400 leading-normal">
-						<strong>Clinic Owner:</strong> To receive actual submissions directly at <strong>info@mountaintownrehab.com</strong>, please request a free, 30-second access key from <a href="https://web3forms.com" target="_blank" class="text-sage-400 underline hover:text-sage-300">Web3Forms</a> and enter it in `careers.html` on the hidden `access_key` input field.
+						<strong>Clinic Owner:</strong> To receive actual submissions directly at <strong>info@mountaintownrehab.com</strong>, please request a free, 30-second access key from <a href="https://web3forms.com" target="_blank" rel="noopener" class="text-sage-400 underline hover:text-sage-300">Web3Forms</a> and enter it in `careers.html` on the hidden `access_key` input field.
 					</p>
 				</div>
 			</div>
 
-			<button class="modal-close w-full inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-2xl text-white bg-sage-600 hover:bg-sage-500 transition-all shadow-md" data-target="success-modal">
+			<button type="button" class="modal-close w-full inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-2xl text-white bg-sage-600 hover:bg-sage-500 transition-all shadow-md" data-target="success-modal">
 				Return to Site
 			</button>
 		</div>
@@ -552,6 +594,8 @@
 			const successModal = document.getElementById('success-modal');
 			const modalSuccessMsg = document.getElementById('modal-success-msg');
 			const modalOwnerAlert = document.getElementById('modal-owner-alert');
+			const modalFocusableSelector = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+			let lastFocusedElement = null;
 
 			// Check url parameter if specific position is pre-selected
 			const urlParams = new URLSearchParams(window.location.search);
@@ -567,12 +611,14 @@
 			function showLinkError(msg) {
 				linkErrorText.textContent = msg;
 				linkError.classList.remove('hidden');
+				resumeInput.setAttribute('aria-invalid', 'true');
 				resumeInput.classList.remove('border-slate-800');
 				resumeInput.classList.add('border-crimson-500/40', 'bg-crimson-600/5');
 			}
 
 			function hideLinkError() {
 				linkError.classList.add('hidden');
+				resumeInput.setAttribute('aria-invalid', 'false');
 				resumeInput.classList.remove('border-crimson-500/40', 'bg-crimson-600/5');
 				resumeInput.classList.add('border-slate-800');
 			}
@@ -616,13 +662,11 @@
 				if (isDemoMode) {
 					// Simulate network upload
 					setTimeout(() => {
-						// Show success modal in Demo Mode
-						modalSuccessMsg.innerHTML = `Thank you, <strong>${escapeHtml(formData.get('name'))}</strong>, for simulating an application for the <strong>${escapeHtml(formData.get('position'))}</strong> position! Your resume link <strong>${escapeHtml(formData.get('Resume Link'))}</strong> has been validated on the client side.`;
+						modalSuccessMsg.innerHTML = `This form is currently in demo mode, so your application was <strong>not submitted</strong>. Please email your resume link to <a href="mailto:info@mountaintownrehab.com" class="text-sage-400 hover:text-sage-300">info@mountaintownrehab.com</a> or call <a href="tel:+19897792920" class="text-sage-400 hover:text-sage-300">(989) 779-2920</a>.`;
 						modalOwnerAlert.classList.remove('hidden');
 						showModal();
 						
 						// Reset states
-						form.reset();
 						submitBtn.disabled = false;
 						submitBtn.innerHTML = originalBtnHtml;
 					}, 1500);
@@ -646,15 +690,14 @@
 						} else {
 							// Web3Forms reported an issue (e.g. invalid key or limits)
 							console.error("Web3Forms Submission Error: ", result);
-							modalSuccessMsg.innerHTML = `Thank you, <strong>${escapeHtml(formData.get('name'))}</strong>. Your application details were captured, but Web3Forms reported an issue: <em>${escapeHtml(result.message || "Unknown error")}</em>.<br><br>Please contact Mountain Town Rehab at info@mountaintownrehab.com directly.`;
-							modalOwnerAlert.classList.remove('hidden');
+							modalSuccessMsg.innerHTML = `We could not submit your application. Web3Forms reported: <em>${escapeHtml(result.message || "Unknown error")}</em>.<br><br>Please email your resume link to <a href="mailto:info@mountaintownrehab.com" class="text-sage-400 hover:text-sage-300">info@mountaintownrehab.com</a> or call <a href="tel:+19897792920" class="text-sage-400 hover:text-sage-300">(989) 779-2920</a>.`;
+							modalOwnerAlert.classList.add('hidden');
 							showModal();
 						}
 					} catch (error) {
 						console.error("Network Error: ", error);
-						// Fallback to simulation warning on absolute network failure
-						modalSuccessMsg.innerHTML = `Thank you, <strong>${escapeHtml(formData.get('name'))}</strong>. Connection failed, but your application has been verified in simulated local context. We will deliver this to Mount Town Rehab info email as soon as network is restored.`;
-						modalOwnerAlert.classList.remove('hidden');
+						modalSuccessMsg.innerHTML = `Connection failed, so your application was <strong>not submitted</strong>. Please email your resume link to <a href="mailto:info@mountaintownrehab.com" class="text-sage-400 hover:text-sage-300">info@mountaintownrehab.com</a> or call <a href="tel:+19897792920" class="text-sage-400 hover:text-sage-300">(989) 779-2920</a>.`;
+						modalOwnerAlert.classList.add('hidden');
 						showModal();
 					} finally {
 						submitBtn.disabled = false;
@@ -665,12 +708,17 @@
 
 			// --- MODAL UTILITIES ---
 			function showModal() {
+				lastFocusedElement = document.activeElement;
 				successModal.classList.remove('hidden');
 				// Trigger animations in microtask
 				setTimeout(() => {
 					successModal.classList.remove('opacity-0', 'scale-95');
 					successModal.classList.add('opacity-100', 'scale-100');
 					successModal.setAttribute('aria-hidden', 'false');
+					const closeButton = successModal.querySelector('.modal-close');
+					if (closeButton) {
+						closeButton.focus();
+					}
 				}, 10);
 			}
 
@@ -680,15 +728,52 @@
 				successModal.setAttribute('aria-hidden', 'true');
 				setTimeout(() => {
 					successModal.classList.add('hidden');
+					if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+						lastFocusedElement.focus();
+					}
+					lastFocusedElement = null;
 				}, 300);
 			}
 
+			function getModalFocusableElements() {
+				return Array.from(successModal.querySelectorAll(modalFocusableSelector)).filter((element) => {
+					return element.offsetParent !== null || element === document.activeElement;
+				});
+			}
+
+			function trapModalFocus(event) {
+				const focusable = getModalFocusableElements();
+				if (focusable.length === 0) return;
+
+				const firstElement = focusable[0];
+				const lastElement = focusable[focusable.length - 1];
+
+				if (event.shiftKey && document.activeElement === firstElement) {
+					event.preventDefault();
+					lastElement.focus();
+				} else if (!event.shiftKey && document.activeElement === lastElement) {
+					event.preventDefault();
+					firstElement.focus();
+				}
+			}
+
 			// Hook modal closes
-			document.querySelectorAll('.modal-close, .modal-backdrop').forEach(element => {
+			successModal.querySelectorAll('.modal-close, .modal-backdrop').forEach(element => {
 				element.addEventListener('click', (e) => {
 					e.preventDefault();
 					hideModal();
 				});
+			});
+
+			document.addEventListener('keydown', (event) => {
+				if (successModal.classList.contains('hidden')) return;
+
+				if (event.key === 'Escape') {
+					event.preventDefault();
+					hideModal();
+				} else if (event.key === 'Tab') {
+					trapModalFocus(event);
+				}
 			});
 
 			// Helper to prevent HTML injection in success display

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Tailwind CSS setup for Mountain Town Rehab WP Theme",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "author": "Antigravity",

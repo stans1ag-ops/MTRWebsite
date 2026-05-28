@@ -70,6 +70,8 @@
 </head>
 
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
+
+<a href="#primary" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-slate-950 focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to content</a>
 	<!-- ====== TOP ANNOUNCEMENT BAR ====== -->
 	<div class="bg-gradient-to-r from-sage-950 via-sage-900 to-sage-950 border-b border-slate-800/40 text-slate-300 py-3 px-4 text-center text-xs sm:text-sm font-medium z-50 relative">
 		<span class="inline-flex items-center gap-2">
@@ -102,7 +104,7 @@
 					</a>
 				</div>
 				<!-- Desktop Menu -->
-				<nav class="hidden md:flex items-center gap-6 lg:gap-10">
+				<nav aria-label="Main navigation" class="hidden md:flex items-center gap-6 lg:gap-10">
 					<ul class="flex gap-4 lg:gap-8 text-sm font-medium text-slate-400">
 						<li><a href="index.html"
 								class="nav-link hover:text-white transition-colors duration-200">Home</a></li>
@@ -128,7 +130,7 @@
 
 				<!-- Mobile Menu Button -->
 				<div class="md:hidden flex items-center">
-					<button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
+					<button id="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-controls="mobile-menu" aria-expanded="false" class="text-slate-300 hover:text-white p-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
 						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 								d="M4 6h16M4 12h16M4 18h16"></path>
@@ -138,7 +140,7 @@
 			</div>
 
 			<!-- Mobile Menu Dropdown -->
-			<div id="mobile-menu"
+			<div id="mobile-menu" role="navigation" aria-label="Mobile navigation"
 				class="hidden md:hidden bg-slate-900 border-t border-slate-800/50 absolute w-full left-0 shadow-2xl">
 				<div class="px-4 pt-4 pb-6 space-y-2 text-center">
 					<a href="index.html"
@@ -194,6 +196,9 @@
 		<section class="py-24 relative z-20">
 			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
+				<div class="text-center mb-12 animate-fade-in-up">
+					<h2 class="text-3xl md:text-4xl font-serif font-bold text-white">Payment Options</h2>
+				</div>
 				<div class="max-w-lg mx-auto">
 					<!-- PayPal Card -->
 					<div
