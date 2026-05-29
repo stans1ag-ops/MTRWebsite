@@ -8,7 +8,7 @@
 	<meta name="description" content="LSVT BIG therapy in Mt Pleasant, MI for Parkinson's disease. Structured exercises help improve walking, balance, posture, and daily movement with licensed PTs.">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="LSVT BIG Therapy in Mt Pleasant, MI | Mountain Town Rehab">
-	<meta property="og:description" content="LSVT BIG therapy in Mt Pleasant, MI for Parkinson's disease. Structured exercises help improve walking, balance, posture, and daily movement with licensed PTs.">
+	<meta property="og:description" content="LSVT BIG therapy in Mt Pleasant, MI for Parkinson's-related walking, posture, balance, and daily movement changes.">
 	<meta property="og:image" content="https://mountaintownrehab.com/images/lsvt.jpg">
 	<link rel="canonical" href="https://mountaintownrehab.com/service-lsvt-big.html">
 	<meta property="og:url" content="https://mountaintownrehab.com/service-lsvt-big.html">
@@ -17,42 +17,120 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/output.css">
-	<!-- Procedure Structured Data -->
+	<!-- Procedure and FAQ Structured Data -->
 	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "MedicalProcedure",
-		"name": "LSVT BIG",
-		"url": "https://mountaintownrehab.com/service-lsvt-big.html",
-		"description": "LSVT BIG therapy is designed for people living with Parkinson's disease who want to improve movement in daily life. It focuses on practicing bigger, more confident movements to help with walking, balance, posture, and everyday tasks. Your therapist will guide you through structured exercises and help you carry those movements into normal routines.",
-		"procedureType": "Physical Therapy",
-		"medicalSpecialty": "Physical Therapy",
-		"provider": {
-			"@type": "MedicalBusiness",
-			"name": "Mountain Town Rehab",
-			"url": "https://mountaintownrehab.com/",
-			"telephone": "+1-989-779-2920",
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "1106 W High St",
-				"addressLocality": "Mt Pleasant",
-				"addressRegion": "MI",
-				"postalCode": "48858",
-				"addressCountry": "US"
-			}
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "MedicalProcedure",
+			"@id": "https://mountaintownrehab.com/service-lsvt-big.html#procedure",
+			"name": "LSVT BIG",
+			"url": "https://mountaintownrehab.com/service-lsvt-big.html",
+			"description": "LSVT BIG is a specialized therapy program designed for people living with Parkinson's disease and related movement challenges. The program focuses on helping patients practice larger, more intentional movements that can carry over into walking, balance, posture, transfers, and everyday tasks. Parkinson's disease can make movements smaller or slower over time. A person may feel like they are moving normally even when steps, arm swing, posture, or gestures have become reduced. LSVT BIG uses high-effort, repetitive practice and feedback from a certified clinician to help recalibrate movement size. At Mountain Town Rehab, LSVT BIG is delivered one-on-one by a certified LSVT BIG therapist. Treatment is structured, but the functional activities are personalized to the patient. That may mean practicing bigger steps, safer turns, getting out of a chair, reaching, dressing, hobbies, or other daily tasks.",
+			"procedureType": "Physical Therapy",
+			"medicalSpecialty": "Physical Therapy",
+			"provider": {
+				"@type": "MedicalBusiness",
+				"name": "Mountain Town Rehab",
+				"url": "https://mountaintownrehab.com/",
+				"telephone": "+1-989-779-2920",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1106 W High St",
+					"addressLocality": "Mt Pleasant",
+					"addressRegion": "MI",
+					"postalCode": "48858",
+					"addressCountry": "US"
+				}
+			},
+			"areaServed": [
+				"Mt Pleasant, MI",
+				"Mount Pleasant, MI",
+				"Central Michigan",
+				"Mid Michigan"
+			]
 		},
-		"areaServed": [
-			"Mt Pleasant, MI",
-			"Mount Pleasant, MI",
-			"Central Michigan",
-			"Mid Michigan"
-		]
-	}
+		{
+			"@type": "FAQPage",
+			"@id": "https://mountaintownrehab.com/service-lsvt-big.html#faq",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "How many LSVT BIG sessions are required?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "The standard protocol is sixteen one-hour sessions over four consecutive weeks, typically four sessions per week, with daily homework and carryover practice."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Is LSVT BIG only for Parkinson's disease?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "It is best known for Parkinson's disease. A therapist can help determine whether the program is appropriate for your diagnosis, symptoms, and goals."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Is the program physically demanding?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Yes, it is designed to be intensive. Your therapist will monitor your safety and adjust activities to your abilities while still encouraging high-effort practice."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What happens after the four-week program?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "You will continue using the home and carryover exercises. Mountain Town Rehab also offers a monthly LSVT BIG group refresher session for patients who want continued guided practice."
+					}
+				}
+			]
+		},
+		{
+			"@type": "BreadcrumbList",
+			"@id": "https://mountaintownrehab.com/service-lsvt-big.html#breadcrumb",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://mountaintownrehab.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Physical Therapy",
+					"item": "https://mountaintownrehab.com/services.html"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "LSVT BIG",
+					"item": "https://mountaintownrehab.com/service-lsvt-big.html"
+				}
+			]
+		}
+	]
+}
 	</script>
 </head>
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
 
 <a href="#primary" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-slate-950 focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to content</a>
+
+<!-- ====== TOP ANNOUNCEMENT BAR ====== -->
+<div class="bg-gradient-to-r from-sage-950 via-sage-900 to-sage-950 border-b border-slate-800/40 text-slate-300 py-3 px-4 text-center text-xs sm:text-sm font-medium z-50 relative">
+	<span class="inline-flex items-center gap-2">
+		<span class="w-2.5 h-2.5 rounded-full bg-crimson-500 animate-pulse shrink-0"></span>
+		<span>We are Hiring! We are looking for passionate Physical Therapists and Assistants to join our team.</span>
+	</span>
+	<a href="careers.html" class="inline-flex items-center justify-center ml-3 px-3.5 py-1 text-xs font-semibold rounded-full text-white bg-sage-600 hover:bg-sage-500 transition-all shadow-sm hover:shadow hover:-translate-y-0.5">
+		Apply Now
+	</a>
+</div>
 
 <!-- ====== HEADER ====== -->
 <header class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 transition-all duration-300">
@@ -113,15 +191,107 @@
 <!-- ====== MAIN ====== -->
 <main id="primary" class="site-main flex-grow py-24">
 	<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+		<nav aria-label="Breadcrumb" class="mb-6 text-sm text-slate-400">
+			<ol class="flex flex-wrap items-center gap-2">
+				<li><a href="index.html" class="hover:text-sage-300 transition-colors">Home</a></li>
+				<li aria-hidden="true">/</li>
+				<li><a href="services.html" class="hover:text-sage-300 transition-colors">Physical Therapy</a></li>
+				<li aria-hidden="true">/</li>
+				<li class="text-slate-200" aria-current="page">LSVT BIG</li>
+			</ol>
+		</nav>
 		<div class="glass-card rounded-2xl border border-slate-700/50 p-8 md:p-12 animate-fade-in-up">
 			<div class="w-full aspect-video rounded-xl overflow-hidden mb-8 border border-slate-700/50">
 				<img src="images/lsvt.jpg" alt="LSVT BIG at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="1024" height="1024" loading="lazy" >
 			</div>
 			<h1 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">LSVT BIG</h1>
-			<div class="space-y-4 text-slate-300 leading-relaxed text-base md:text-lg">
-				<p>LSVT BIG therapy is designed for people living with Parkinson's disease who want to improve movement in daily life. It focuses on practicing bigger, more confident movements to help with walking, balance, posture, and everyday tasks. Your therapist will guide you through structured exercises and help you carry those movements into normal routines.</p>
-				<p>Your certified LSVT BIG therapist will guide you through an intense one-on-one treatment delivered over four consecutive weeks, with sixteen one-hour sessions held four times a week. In addition to the in-clinic sessions, daily homework and carryover exercises are essential. These exercises are practiced at home to reinforce what is learned in therapy and help integrate "bigger" movements into daily life. Patients are also welcome to a monthly LSVT BIG group refresher session at Mountain Town Rehab led by our staff to maintain improvements.</p>
+			<div class="space-y-10 text-slate-300 leading-relaxed text-base md:text-lg">
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What is LSVT BIG?</h2>
+					<p>LSVT BIG is a specialized therapy program designed for people living with Parkinson's disease and related movement challenges. The program focuses on helping patients practice larger, more intentional movements that can carry over into walking, balance, posture, transfers, and everyday tasks.</p>
+					<p>Parkinson's disease can make movements smaller or slower over time. A person may feel like they are moving normally even when steps, arm swing, posture, or gestures have become reduced. LSVT BIG uses high-effort, repetitive practice and feedback from a certified clinician to help recalibrate movement size.</p>
+					<p>At Mountain Town Rehab, LSVT BIG is delivered one-on-one by a certified LSVT BIG therapist. Treatment is structured, but the functional activities are personalized to the patient. That may mean practicing bigger steps, safer turns, getting out of a chair, reaching, dressing, hobbies, or other daily tasks.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Who benefits from LSVT BIG?</h2>
+					<p>LSVT BIG may help people with Parkinson's disease or Parkinsonian movement patterns who notice:</p>
+					<ul class="list-disc space-y-2 pl-6">
+						<li>Smaller steps or shuffling gait</li>
+						<li>Slower or smaller movements</li>
+						<li>Reduced arm swing</li>
+						<li>Balance or turning difficulty</li>
+						<li>Stooped posture</li>
+						<li>Trouble getting in or out of chairs, cars, or bed</li>
+						<li>Reduced confidence with walking or daily activities</li>
+						<li>A desire for a structured, intensive program</li>
+					</ul>
+					<p>LSVT BIG is often used earlier in the disease process, but patients at different stages may benefit depending on their health, goals, and ability to participate in the program.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What to expect during treatment</h2>
+					<p>The standard LSVT BIG protocol is intensive: sixteen individual, one-hour sessions over four consecutive weeks, typically four sessions per week. The program also includes daily homework and carryover exercises so the bigger movement practice becomes part of real life.</p>
+					<p>During sessions, your therapist guides you through standardized exercises, walking practice, and functional tasks that are meaningful to you. You will receive frequent feedback on effort, movement size, posture, and quality. The work is active and repetitive, but it is scaled to your abilities.</p>
+					<p>Mountain Town Rehab also notes that patients are welcome to a monthly LSVT BIG group refresher session led by staff to help maintain practice after the formal program.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Why choose Mountain Town Rehab for LSVT BIG?</h2>
+					<p>Mountain Town Rehab offers certified LSVT BIG therapy in a one-on-one setting. That matters because the program relies on skilled feedback, repetition, encouragement, and personalization.</p>
+					<p>Our team understands neurologic rehab, balance, gait training, and the practical challenges that can come with Parkinson's disease. As a family-owned Mt Pleasant clinic, we also value the ongoing relationship with patients and families. We want the program to feel structured, clear, and supportive.</p>
+				</section>
+				<section class="space-y-6">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">LSVT BIG FAQs</h2>
+					<div class="space-y-5">
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">How many LSVT BIG sessions are required?</h3>
+							<p>The standard protocol is sixteen one-hour sessions over four consecutive weeks, typically four sessions per week, with daily homework and carryover practice.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Is LSVT BIG only for Parkinson's disease?</h3>
+							<p>It is best known for Parkinson's disease. A therapist can help determine whether the program is appropriate for your diagnosis, symptoms, and goals.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Is the program physically demanding?</h3>
+							<p>Yes, it is designed to be intensive. Your therapist will monitor your safety and adjust activities to your abilities while still encouraging high-effort practice.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">What happens after the four-week program?</h3>
+							<p>You will continue using the home and carryover exercises. Mountain Town Rehab also offers a monthly LSVT BIG group refresher session for patients who want continued guided practice.</p>
+						</div>
+					</div>
+				</section>
 			</div>
+			<section class="mt-10 pt-8 border-t border-slate-700/50 space-y-4">
+				<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Related services</h2>
+				<ul class="space-y-4">
+					<li>
+						<a href="service-neurologic-rehab.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Neurologic Rehab</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Work on movement, walking, balance, and everyday function.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-vestibular-therapy.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Vestibular Therapy</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Improve steadiness and confidence when balance is affected.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-aquatic-therapy.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Aquatic Therapy</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Use low-impact movement to build confidence and activity tolerance.</span>
+						</a>
+					</li>
+				</ul>
+			</section>
 			<div class="mt-8 pt-8 border-t border-slate-700/50 flex flex-col sm:flex-row gap-4">
 				<a href="contact.html" class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg shadow-sage-600/20 transition-all duration-300">
 					Book Appointment

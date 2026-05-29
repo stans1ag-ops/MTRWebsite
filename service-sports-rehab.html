@@ -8,7 +8,7 @@
 	<meta name="description" content="Sports rehab in Mt Pleasant, MI for athletes and active adults. Treat sprains, strains, and overuse injuries and return to your sport with licensed PT guidance.">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Sports Rehab in Mt Pleasant, MI | Mountain Town Rehab">
-	<meta property="og:description" content="Sports rehab in Mt Pleasant, MI for athletes and active adults. Treat sprains, strains, and overuse injuries and return to your sport with licensed PT guidance.">
+	<meta property="og:description" content="Sports rehab in Mt Pleasant, MI for athletes and active adults recovering from sprains, strains, and overuse injuries.">
 	<meta property="og:image" content="https://mountaintownrehab.com/images/sports_rehab.png">
 	<link rel="canonical" href="https://mountaintownrehab.com/service-sports-rehab.html">
 	<meta property="og:url" content="https://mountaintownrehab.com/service-sports-rehab.html">
@@ -17,42 +17,120 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/output.css">
-	<!-- Procedure Structured Data -->
+	<!-- Procedure and FAQ Structured Data -->
 	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "MedicalProcedure",
-		"name": "Sports Rehab",
-		"url": "https://mountaintownrehab.com/service-sports-rehab.html",
-		"description": "Sports rehab helps athletes and active people recover from injuries and safely return to the activities they enjoy. This service can help with sprains, strains, overuse injuries, weakness, pain, or movement problems. Your therapist will guide you through exercises and treatment that match your sport, your goals, and your current stage of recovery.",
-		"procedureType": "Physical Therapy",
-		"medicalSpecialty": "Physical Therapy",
-		"provider": {
-			"@type": "MedicalBusiness",
-			"name": "Mountain Town Rehab",
-			"url": "https://mountaintownrehab.com/",
-			"telephone": "+1-989-779-2920",
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "1106 W High St",
-				"addressLocality": "Mt Pleasant",
-				"addressRegion": "MI",
-				"postalCode": "48858",
-				"addressCountry": "US"
-			}
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "MedicalProcedure",
+			"@id": "https://mountaintownrehab.com/service-sports-rehab.html#procedure",
+			"name": "Sports Rehab",
+			"url": "https://mountaintownrehab.com/service-sports-rehab.html",
+			"description": "Sports rehab is physical therapy for athletes and active people who want to recover from injury, rebuild performance, and return to the activities they enjoy. This can include organized sports, gym training, running, hiking, recreational leagues, weekend activities, physically demanding jobs, or simply staying active with family and friends. Sports injuries often involve more than one sore spot. A sprained ankle can change how you run. Shoulder pain can affect throwing, lifting, or swimming. Knee pain can come from strength, mobility, balance, landing mechanics, or training load. Sports rehab looks at the full movement pattern so treatment can address the reason an injury happened, not just the painful area. At Mountain Town Rehab, your therapist builds a plan around your sport, season, position, activity level, and goals. Treatment may include pain management, mobility work, strength training, balance and agility drills, sport-specific movement, and a gradual return-to-activity plan.",
+			"procedureType": "Physical Therapy",
+			"medicalSpecialty": "Physical Therapy",
+			"provider": {
+				"@type": "MedicalBusiness",
+				"name": "Mountain Town Rehab",
+				"url": "https://mountaintownrehab.com/",
+				"telephone": "+1-989-779-2920",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1106 W High St",
+					"addressLocality": "Mt Pleasant",
+					"addressRegion": "MI",
+					"postalCode": "48858",
+					"addressCountry": "US"
+				}
+			},
+			"areaServed": [
+				"Mt Pleasant, MI",
+				"Mount Pleasant, MI",
+				"Central Michigan",
+				"Mid Michigan"
+			]
 		},
-		"areaServed": [
-			"Mt Pleasant, MI",
-			"Mount Pleasant, MI",
-			"Central Michigan",
-			"Mid Michigan"
-		]
-	}
+		{
+			"@type": "FAQPage",
+			"@id": "https://mountaintownrehab.com/service-sports-rehab.html#faq",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "When can I return to my sport?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Return-to-sport timing depends on the injury, tissue healing, strength, mobility, pain level, and sport demands. Your therapist will help you work toward measurable milestones rather than relying only on the calendar."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Can sports rehab help prevent re-injury?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "It can help reduce risk by addressing strength, balance, movement mechanics, flexibility, and workload issues that may contribute to injury. No program can prevent every injury, but a targeted plan can prepare your body more effectively."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Do I have to stop all activity during rehab?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Not always. Many patients can continue modified activity while recovering. Your therapist will help you decide what is safe, what should be changed, and what should pause temporarily."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Is sports rehab only for young athletes?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "No. Sports rehab can help active people of many ages, including recreational athletes and adults who want to stay strong, mobile, and confident."
+					}
+				}
+			]
+		},
+		{
+			"@type": "BreadcrumbList",
+			"@id": "https://mountaintownrehab.com/service-sports-rehab.html#breadcrumb",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://mountaintownrehab.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Physical Therapy",
+					"item": "https://mountaintownrehab.com/services.html"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Sports Rehab",
+					"item": "https://mountaintownrehab.com/service-sports-rehab.html"
+				}
+			]
+		}
+	]
+}
 	</script>
 </head>
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
 
 <a href="#primary" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-slate-950 focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to content</a>
+
+<!-- ====== TOP ANNOUNCEMENT BAR ====== -->
+<div class="bg-gradient-to-r from-sage-950 via-sage-900 to-sage-950 border-b border-slate-800/40 text-slate-300 py-3 px-4 text-center text-xs sm:text-sm font-medium z-50 relative">
+	<span class="inline-flex items-center gap-2">
+		<span class="w-2.5 h-2.5 rounded-full bg-crimson-500 animate-pulse shrink-0"></span>
+		<span>We are Hiring! We are looking for passionate Physical Therapists and Assistants to join our team.</span>
+	</span>
+	<a href="careers.html" class="inline-flex items-center justify-center ml-3 px-3.5 py-1 text-xs font-semibold rounded-full text-white bg-sage-600 hover:bg-sage-500 transition-all shadow-sm hover:shadow hover:-translate-y-0.5">
+		Apply Now
+	</a>
+</div>
 
 <!-- ====== HEADER ====== -->
 <header class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 transition-all duration-300">
@@ -113,14 +191,107 @@
 <!-- ====== MAIN ====== -->
 <main id="primary" class="site-main flex-grow py-24">
 	<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+		<nav aria-label="Breadcrumb" class="mb-6 text-sm text-slate-400">
+			<ol class="flex flex-wrap items-center gap-2">
+				<li><a href="index.html" class="hover:text-sage-300 transition-colors">Home</a></li>
+				<li aria-hidden="true">/</li>
+				<li><a href="services.html" class="hover:text-sage-300 transition-colors">Physical Therapy</a></li>
+				<li aria-hidden="true">/</li>
+				<li class="text-slate-200" aria-current="page">Sports Rehab</li>
+			</ol>
+		</nav>
 		<div class="glass-card rounded-2xl border border-slate-700/50 p-8 md:p-12 animate-fade-in-up">
 			<div class="w-full aspect-video rounded-xl overflow-hidden mb-8 border border-slate-700/50">
 				<img src="images/sports_rehab.png" alt="Sports Rehab at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="575" height="575" loading="lazy" >
 			</div>
 			<h1 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Sports Rehab</h1>
-			<div class="space-y-4 text-slate-300 leading-relaxed text-base md:text-lg">
-				<p>Sports rehab helps athletes and active people recover from injuries and safely return to the activities they enjoy. This service can help with sprains, strains, overuse injuries, weakness, pain, or movement problems. Your therapist will guide you through exercises and treatment that match your sport, your goals, and your current stage of recovery.</p>
+			<div class="space-y-10 text-slate-300 leading-relaxed text-base md:text-lg">
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What is sports rehab?</h2>
+					<p>Sports rehab is physical therapy for athletes and active people who want to recover from injury, rebuild performance, and return to the activities they enjoy. This can include organized sports, gym training, running, hiking, recreational leagues, weekend activities, physically demanding jobs, or simply staying active with family and friends.</p>
+					<p>Sports injuries often involve more than one sore spot. A sprained ankle can change how you run. Shoulder pain can affect throwing, lifting, or swimming. Knee pain can come from strength, mobility, balance, landing mechanics, or training load. Sports rehab looks at the full movement pattern so treatment can address the reason an injury happened, not just the painful area.</p>
+					<p>At Mountain Town Rehab, your therapist builds a plan around your sport, season, position, activity level, and goals. Treatment may include pain management, mobility work, strength training, balance and agility drills, sport-specific movement, and a gradual return-to-activity plan.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Who benefits from sports rehab?</h2>
+					<p>Sports rehab may help with:</p>
+					<ul class="list-disc space-y-2 pl-6">
+						<li>Ankle sprains and foot injuries</li>
+						<li>Knee pain, ACL recovery, meniscus injuries, or patellar tendon pain</li>
+						<li>Hip pain, groin strains, or running-related injuries</li>
+						<li>Shoulder pain, throwing injuries, or rotator cuff problems</li>
+						<li>Muscle strains and tendon irritation</li>
+						<li>Overuse injuries from training volume or repetitive motion</li>
+						<li>Balance, landing, cutting, or jumping mechanics</li>
+						<li>Safe return to sport after surgery or time away</li>
+					</ul>
+					<p>This service is not only for competitive athletes. Active adults, students, recreational runners, lifters, and people who want to return to hobbies can all benefit from a structured rehab plan.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What to expect during treatment</h2>
+					<p>Your first visit starts with a review of your injury, sport or activity demands, training history, and goals. Your therapist will assess range of motion, strength, balance, coordination, movement quality, and the tasks that reproduce your symptoms.</p>
+					<p>Early treatment may focus on calming pain, restoring comfortable movement, and protecting the injured tissue. As your body is ready, sessions progress into strengthening, power, endurance, balance, agility, and sport-specific drills. Your therapist may also help you adjust training volume, warmups, recovery habits, and home exercises so your return is gradual and realistic.</p>
+					<p>The process is collaborative. We want you to understand what you can do now, what needs to wait, and what milestones matter before returning to full participation.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Why choose Mountain Town Rehab for sports rehab?</h2>
+					<p>Mountain Town Rehab provides one-on-one care with licensed therapists who understand orthopedic and sports-related injuries. Our team includes providers with interests and training in sports rehab, orthopedic care, blood flow restriction training, dry needling, manual therapy, and post-surgical progression.</p>
+					<p>Because we are a family-owned clinic, we take time to learn what &quot;back to sport&quot; means for you. For one person, it may mean varsity competition. For another, it may mean golfing without pain, returning to the gym, or hiking comfortably again. Your plan is built around your life.</p>
+				</section>
+				<section class="space-y-6">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Sports rehab FAQs</h2>
+					<div class="space-y-5">
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">When can I return to my sport?</h3>
+							<p>Return-to-sport timing depends on the injury, tissue healing, strength, mobility, pain level, and sport demands. Your therapist will help you work toward measurable milestones rather than relying only on the calendar.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Can sports rehab help prevent re-injury?</h3>
+							<p>It can help reduce risk by addressing strength, balance, movement mechanics, flexibility, and workload issues that may contribute to injury. No program can prevent every injury, but a targeted plan can prepare your body more effectively.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Do I have to stop all activity during rehab?</h3>
+							<p>Not always. Many patients can continue modified activity while recovering. Your therapist will help you decide what is safe, what should be changed, and what should pause temporarily.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Is sports rehab only for young athletes?</h3>
+							<p>No. Sports rehab can help active people of many ages, including recreational athletes and adults who want to stay strong, mobile, and confident.</p>
+						</div>
+					</div>
+				</section>
 			</div>
+			<section class="mt-10 pt-8 border-t border-slate-700/50 space-y-4">
+				<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Related services</h2>
+				<ul class="space-y-4">
+					<li>
+						<a href="service-orthopedic-rehab.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Orthopedic Rehab</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Treat joint, muscle, and movement problems that limit activity.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-blood-flow-restriction.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Blood Flow Restriction</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Build strength with lighter loads when heavy resistance is not ideal.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-dry-needling.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Dry Needling</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Target muscle pain and mobility restrictions during recovery.</span>
+						</a>
+					</li>
+				</ul>
+			</section>
 			<div class="mt-8 pt-8 border-t border-slate-700/50 flex flex-col sm:flex-row gap-4">
 				<a href="contact.html" class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg shadow-sage-600/20 transition-all duration-300">
 					Book Appointment

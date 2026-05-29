@@ -8,7 +8,7 @@
 	<meta name="description" content="Post-surgical physical therapy in Mt Pleasant, MI. Safe movement and gradual strengthening after surgery to reduce pain and return to daily activities.">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Post-Surgical Care in Mt Pleasant, MI | Mountain Town Rehab">
-	<meta property="og:description" content="Post-surgical physical therapy in Mt Pleasant, MI. Safe movement and gradual strengthening after surgery to reduce pain and return to daily activities.">
+	<meta property="og:description" content="Post-surgical physical therapy in Mt Pleasant, MI to rebuild movement, strength, and confidence after surgery.">
 	<meta property="og:image" content="https://mountaintownrehab.com/images/post_surgical_care.png">
 	<link rel="canonical" href="https://mountaintownrehab.com/service-post-surgical-care.html">
 	<meta property="og:url" content="https://mountaintownrehab.com/service-post-surgical-care.html">
@@ -17,42 +17,120 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/output.css">
-	<!-- Procedure Structured Data -->
+	<!-- Procedure and FAQ Structured Data -->
 	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "MedicalProcedure",
-		"name": "Post-Surgical Care",
-		"url": "https://mountaintownrehab.com/service-post-surgical-care.html",
-		"description": "Post-surgical care helps you heal and regain strength after surgery. Your therapist will follow your doctor's instructions and guide you through safe movement, gentle exercises, and gradual strengthening. The goal is to help reduce pain and stiffness, protect the surgical area, and help you get back to daily activities as safely as possible.",
-		"procedureType": "Physical Therapy",
-		"medicalSpecialty": "Physical Therapy",
-		"provider": {
-			"@type": "MedicalBusiness",
-			"name": "Mountain Town Rehab",
-			"url": "https://mountaintownrehab.com/",
-			"telephone": "+1-989-779-2920",
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "1106 W High St",
-				"addressLocality": "Mt Pleasant",
-				"addressRegion": "MI",
-				"postalCode": "48858",
-				"addressCountry": "US"
-			}
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "MedicalProcedure",
+			"@id": "https://mountaintownrehab.com/service-post-surgical-care.html#procedure",
+			"name": "Post-Surgical Care",
+			"url": "https://mountaintownrehab.com/service-post-surgical-care.html",
+			"description": "Post-surgical physical therapy helps you recover safely after an operation by restoring movement, strength, balance, and confidence step by step. Surgery often changes how the body moves. You may have pain, swelling, stiffness, weakness, lifting restrictions, weight-bearing precautions, or a protocol from your surgeon. Physical therapy helps you follow those instructions while gradually rebuilding function. At Mountain Town Rehab, post-surgical care is guided by your surgery type, your surgeon's protocol, your healing timeline, and your personal goals. Your therapist will help you understand what is normal during recovery, what activities are safe, and how to progress without doing too much too soon. The goal is to protect the surgical area while helping you return to daily activities, work, hobbies, and recreation with better strength and control.",
+			"procedureType": "Physical Therapy",
+			"medicalSpecialty": "Physical Therapy",
+			"provider": {
+				"@type": "MedicalBusiness",
+				"name": "Mountain Town Rehab",
+				"url": "https://mountaintownrehab.com/",
+				"telephone": "+1-989-779-2920",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1106 W High St",
+					"addressLocality": "Mt Pleasant",
+					"addressRegion": "MI",
+					"postalCode": "48858",
+					"addressCountry": "US"
+				}
+			},
+			"areaServed": [
+				"Mt Pleasant, MI",
+				"Mount Pleasant, MI",
+				"Central Michigan",
+				"Mid Michigan"
+			]
 		},
-		"areaServed": [
-			"Mt Pleasant, MI",
-			"Mount Pleasant, MI",
-			"Central Michigan",
-			"Mid Michigan"
-		]
-	}
+		{
+			"@type": "FAQPage",
+			"@id": "https://mountaintownrehab.com/service-post-surgical-care.html#faq",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "When should I start physical therapy after surgery?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "The timing depends on your surgery and your surgeon's instructions. Some patients begin very soon after surgery, while others wait until a specific healing milestone. We follow your medical guidance."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What should I bring to my first post-surgical appointment?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Bring your surgery information, referral or protocol if you have one, insurance information, and any restrictions provided by your surgeon."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Can physical therapy help with swelling and stiffness?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Yes, therapy often includes movement, positioning, education, and exercises that support swelling control and mobility. Your therapist will tailor this to your surgery and precautions."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What if I am nervous about moving after surgery?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "That is common. Your therapist will start with safe, manageable movements and explain what is allowed so you can rebuild confidence gradually."
+					}
+				}
+			]
+		},
+		{
+			"@type": "BreadcrumbList",
+			"@id": "https://mountaintownrehab.com/service-post-surgical-care.html#breadcrumb",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://mountaintownrehab.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Physical Therapy",
+					"item": "https://mountaintownrehab.com/services.html"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Post-Surgical Care",
+					"item": "https://mountaintownrehab.com/service-post-surgical-care.html"
+				}
+			]
+		}
+	]
+}
 	</script>
 </head>
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
 
 <a href="#primary" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-slate-950 focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to content</a>
+
+<!-- ====== TOP ANNOUNCEMENT BAR ====== -->
+<div class="bg-gradient-to-r from-sage-950 via-sage-900 to-sage-950 border-b border-slate-800/40 text-slate-300 py-3 px-4 text-center text-xs sm:text-sm font-medium z-50 relative">
+	<span class="inline-flex items-center gap-2">
+		<span class="w-2.5 h-2.5 rounded-full bg-crimson-500 animate-pulse shrink-0"></span>
+		<span>We are Hiring! We are looking for passionate Physical Therapists and Assistants to join our team.</span>
+	</span>
+	<a href="careers.html" class="inline-flex items-center justify-center ml-3 px-3.5 py-1 text-xs font-semibold rounded-full text-white bg-sage-600 hover:bg-sage-500 transition-all shadow-sm hover:shadow hover:-translate-y-0.5">
+		Apply Now
+	</a>
+</div>
 
 <!-- ====== HEADER ====== -->
 <header class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 transition-all duration-300">
@@ -113,14 +191,107 @@
 <!-- ====== MAIN ====== -->
 <main id="primary" class="site-main flex-grow py-24">
 	<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+		<nav aria-label="Breadcrumb" class="mb-6 text-sm text-slate-400">
+			<ol class="flex flex-wrap items-center gap-2">
+				<li><a href="index.html" class="hover:text-sage-300 transition-colors">Home</a></li>
+				<li aria-hidden="true">/</li>
+				<li><a href="services.html" class="hover:text-sage-300 transition-colors">Physical Therapy</a></li>
+				<li aria-hidden="true">/</li>
+				<li class="text-slate-200" aria-current="page">Post-Surgical Care</li>
+			</ol>
+		</nav>
 		<div class="glass-card rounded-2xl border border-slate-700/50 p-8 md:p-12 animate-fade-in-up">
 			<div class="w-full aspect-video rounded-xl overflow-hidden mb-8 border border-slate-700/50">
 				<img src="images/post_surgical_care.png" alt="Post-Surgical Care at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="767" height="768" loading="lazy" >
 			</div>
 			<h1 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Post-Surgical Care</h1>
-			<div class="space-y-4 text-slate-300 leading-relaxed text-base md:text-lg">
-				<p>Post-surgical care helps you heal and regain strength after surgery. Your therapist will follow your doctor's instructions and guide you through safe movement, gentle exercises, and gradual strengthening. The goal is to help reduce pain and stiffness, protect the surgical area, and help you get back to daily activities as safely as possible.</p>
+			<div class="space-y-10 text-slate-300 leading-relaxed text-base md:text-lg">
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What is post-surgical physical therapy?</h2>
+					<p>Post-surgical physical therapy helps you recover safely after an operation by restoring movement, strength, balance, and confidence step by step. Surgery often changes how the body moves. You may have pain, swelling, stiffness, weakness, lifting restrictions, weight-bearing precautions, or a protocol from your surgeon. Physical therapy helps you follow those instructions while gradually rebuilding function.</p>
+					<p>At Mountain Town Rehab, post-surgical care is guided by your surgery type, your surgeon's protocol, your healing timeline, and your personal goals. Your therapist will help you understand what is normal during recovery, what activities are safe, and how to progress without doing too much too soon.</p>
+					<p>The goal is to protect the surgical area while helping you return to daily activities, work, hobbies, and recreation with better strength and control.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Who benefits from post-surgical care?</h2>
+					<p>Post-surgical physical therapy may help after:</p>
+					<ul class="list-disc space-y-2 pl-6">
+						<li>Total knee, hip, or shoulder replacement</li>
+						<li>Rotator cuff repair or shoulder surgery</li>
+						<li>ACL reconstruction or knee surgery</li>
+						<li>Meniscus repair or meniscectomy</li>
+						<li>Hip, ankle, foot, or hand procedures</li>
+						<li>Spine-related procedures when therapy is recommended</li>
+						<li>Fracture repair or other orthopedic surgery</li>
+						<li>Sports injury surgery</li>
+					</ul>
+					<p>Your surgeon may recommend therapy soon after surgery or after an initial healing period. Timing varies based on the procedure and your medical history.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What to expect during treatment</h2>
+					<p>Your therapist will review your surgical history, restrictions, medications or precautions relevant to therapy, and the goals from your surgeon. The first sessions often focus on safe movement, swelling management, gentle range of motion, walking or transfer safety, and learning a home program.</p>
+					<p>As healing allows, therapy progresses to strengthening, balance, endurance, mobility, scar and soft tissue work when appropriate, and return-to-activity training. Your therapist will watch how your body responds and communicate clearly about what to practice at home.</p>
+					<p>Post-surgical rehab is a gradual process. Some weeks are about protecting healing tissue, while other weeks are about rebuilding strength and confidence. We help you understand the phase you are in so recovery feels less uncertain.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Why choose Mountain Town Rehab for post-surgical care?</h2>
+					<p>Mountain Town Rehab provides personal, one-on-one care throughout your recovery. You will work directly with a licensed provider who can monitor your progress, adjust your plan, and help you follow the instructions from your surgeon.</p>
+					<p>Our therapists have experience with orthopedic injuries, joint conditions, sports-related surgery, and progressive strengthening. Because we have served the Mt Pleasant community since 2001, we understand how important it is for patients to have clear guidance close to home.</p>
+				</section>
+				<section class="space-y-6">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Post-surgical care FAQs</h2>
+					<div class="space-y-5">
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">When should I start physical therapy after surgery?</h3>
+							<p>The timing depends on your surgery and your surgeon's instructions. Some patients begin very soon after surgery, while others wait until a specific healing milestone. We follow your medical guidance.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">What should I bring to my first post-surgical appointment?</h3>
+							<p>Bring your surgery information, referral or protocol if you have one, insurance information, and any restrictions provided by your surgeon.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Can physical therapy help with swelling and stiffness?</h3>
+							<p>Yes, therapy often includes movement, positioning, education, and exercises that support swelling control and mobility. Your therapist will tailor this to your surgery and precautions.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">What if I am nervous about moving after surgery?</h3>
+							<p>That is common. Your therapist will start with safe, manageable movements and explain what is allowed so you can rebuild confidence gradually.</p>
+						</div>
+					</div>
+				</section>
 			</div>
+			<section class="mt-10 pt-8 border-t border-slate-700/50 space-y-4">
+				<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Related services</h2>
+				<ul class="space-y-4">
+					<li>
+						<a href="service-orthopedic-rehab.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Orthopedic Rehab</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Rebuild everyday movement after joint, muscle, or bone injuries.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-blood-flow-restriction.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Blood Flow Restriction</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Support strengthening when heavier loading is not yet appropriate.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-aquatic-therapy.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Aquatic Therapy</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Use low-impact water-based exercise during recovery.</span>
+						</a>
+					</li>
+				</ul>
+			</section>
 			<div class="mt-8 pt-8 border-t border-slate-700/50 flex flex-col sm:flex-row gap-4">
 				<a href="contact.html" class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg shadow-sage-600/20 transition-all duration-300">
 					Book Appointment

@@ -28,14 +28,20 @@
   .animate-fade-in    { animation: fadeIn 1s ease-out both; }
 
   /* Animation delays */
-  .delay-100 { animation-delay: 0.1s; }
-  .delay-200 { animation-delay: 0.2s; }
-  .delay-300 { animation-delay: 0.3s; }
-  .delay-400 { animation-delay: 0.4s; }
-  .delay-500 { animation-delay: 0.5s; }
-  .delay-600 { animation-delay: 0.6s; }
-  .delay-700 { animation-delay: 0.7s; }
-  .delay-800 { animation-delay: 0.8s; }
+  .anim-delay-100 { animation-delay: 0.1s; }
+  .anim-delay-200 { animation-delay: 0.2s; }
+  .anim-delay-300 { animation-delay: 0.3s; }
+  .anim-delay-400 { animation-delay: 0.4s; }
+  .anim-delay-500 { animation-delay: 0.5s; }
+  .anim-delay-600 { animation-delay: 0.6s; }
+  .anim-delay-700 { animation-delay: 0.7s; }
+  .anim-delay-800 { animation-delay: 0.8s; }
+
+  /* ===== PayPal hosted button overrides ===== */
+  #paypal-container-3XJ2GD5AT26D6 input,
+  #amount {
+    color: #000000 !important;
+  }
 
   /* ===== Glassmorphism card ===== */
   .glass-card {

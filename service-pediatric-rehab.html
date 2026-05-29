@@ -8,7 +8,7 @@
 	<meta name="description" content="Pediatric physical therapy in Mt Pleasant, MI. Play-based rehab for children builds gross motor skills, strength, and coordination with family-centered PT care.">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Pediatric Rehab in Mt Pleasant, MI | Mountain Town Rehab">
-	<meta property="og:description" content="Pediatric physical therapy in Mt Pleasant, MI. Play-based rehab for children builds gross motor skills, strength, and coordination with family-centered PT care.">
+	<meta property="og:description" content="Pediatric physical therapy in Mt Pleasant, MI for children building strength, coordination, and motor skills.">
 	<meta property="og:image" content="https://mountaintownrehab.com/images/pediatric_rehab.jpg">
 	<link rel="canonical" href="https://mountaintownrehab.com/service-pediatric-rehab.html">
 	<meta property="og:url" content="https://mountaintownrehab.com/service-pediatric-rehab.html">
@@ -17,42 +17,120 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/output.css">
-	<!-- Procedure Structured Data -->
+	<!-- Procedure and FAQ Structured Data -->
 	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "MedicalProcedure",
-		"name": "Pediatric Rehab",
-		"url": "https://mountaintownrehab.com/service-pediatric-rehab.html",
-		"description": "Pediatric physical therapy is specifically designed to help children and adolescents overcome physical challenges and reach their developmental milestones. Our compassionate therapists work closely with families to create engaging, play-based treatment plans that address gross motor skills, strength, balance, and coordination. Whether recovering from an injury or managing a congenital condition, we provide a safe and supportive environment for your child to thrive.",
-		"procedureType": "Physical Therapy",
-		"medicalSpecialty": "Physical Therapy",
-		"provider": {
-			"@type": "MedicalBusiness",
-			"name": "Mountain Town Rehab",
-			"url": "https://mountaintownrehab.com/",
-			"telephone": "+1-989-779-2920",
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "1106 W High St",
-				"addressLocality": "Mt Pleasant",
-				"addressRegion": "MI",
-				"postalCode": "48858",
-				"addressCountry": "US"
-			}
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "MedicalProcedure",
+			"@id": "https://mountaintownrehab.com/service-pediatric-rehab.html#procedure",
+			"name": "Pediatric Rehab",
+			"url": "https://mountaintownrehab.com/service-pediatric-rehab.html",
+			"description": "Pediatric physical therapy helps infants, children, and adolescents improve movement, strength, balance, coordination, posture, and gross motor skills. Because children learn through play, pediatric rehab often looks different from adult therapy. Sessions may include games, obstacle courses, climbing, balance challenges, strengthening activities, gait practice, stretching, and family education. The goal is to help children participate more fully at home, school, in sports, on the playground, and in daily routines. Therapy may support developmental milestones, recovery from injury, confidence with movement, or management of a condition that affects strength or coordination. At Mountain Town Rehab, pediatric rehab is family-centered. We work with caregivers to understand the child's needs, personality, routines, and goals, then create a plan that feels engaging and practical.",
+			"procedureType": "Physical Therapy",
+			"medicalSpecialty": "Physical Therapy",
+			"provider": {
+				"@type": "MedicalBusiness",
+				"name": "Mountain Town Rehab",
+				"url": "https://mountaintownrehab.com/",
+				"telephone": "+1-989-779-2920",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1106 W High St",
+					"addressLocality": "Mt Pleasant",
+					"addressRegion": "MI",
+					"postalCode": "48858",
+					"addressCountry": "US"
+				}
+			},
+			"areaServed": [
+				"Mt Pleasant, MI",
+				"Mount Pleasant, MI",
+				"Central Michigan",
+				"Mid Michigan"
+			]
 		},
-		"areaServed": [
-			"Mt Pleasant, MI",
-			"Mount Pleasant, MI",
-			"Central Michigan",
-			"Mid Michigan"
-		]
-	}
+		{
+			"@type": "FAQPage",
+			"@id": "https://mountaintownrehab.com/service-pediatric-rehab.html#faq",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "How do I know if my child needs physical therapy?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "If your child has delayed milestones, frequent falls, pain, weakness, trouble with balance, difficulty keeping up, or changes after injury, an evaluation can help determine whether therapy is appropriate."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Will therapy feel like exercise to my child?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Sometimes, but pediatric therapy often uses play-based activities to build strength, coordination, and movement skills in an engaging way."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Can parents stay during the session?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "In many cases, yes. Caregiver involvement can help children feel comfortable and helps families learn activities to practice at home."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Does pediatric rehab include sports injuries?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Yes. Pediatric rehab can support children and teens recovering from sprains, strains, overuse injuries, surgery, or pain that limits activity."
+					}
+				}
+			]
+		},
+		{
+			"@type": "BreadcrumbList",
+			"@id": "https://mountaintownrehab.com/service-pediatric-rehab.html#breadcrumb",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://mountaintownrehab.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Physical Therapy",
+					"item": "https://mountaintownrehab.com/services.html"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Pediatric Rehab",
+					"item": "https://mountaintownrehab.com/service-pediatric-rehab.html"
+				}
+			]
+		}
+	]
+}
 	</script>
 </head>
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
 
 <a href="#primary" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-slate-950 focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to content</a>
+
+<!-- ====== TOP ANNOUNCEMENT BAR ====== -->
+<div class="bg-gradient-to-r from-sage-950 via-sage-900 to-sage-950 border-b border-slate-800/40 text-slate-300 py-3 px-4 text-center text-xs sm:text-sm font-medium z-50 relative">
+	<span class="inline-flex items-center gap-2">
+		<span class="w-2.5 h-2.5 rounded-full bg-crimson-500 animate-pulse shrink-0"></span>
+		<span>We are Hiring! We are looking for passionate Physical Therapists and Assistants to join our team.</span>
+	</span>
+	<a href="careers.html" class="inline-flex items-center justify-center ml-3 px-3.5 py-1 text-xs font-semibold rounded-full text-white bg-sage-600 hover:bg-sage-500 transition-all shadow-sm hover:shadow hover:-translate-y-0.5">
+		Apply Now
+	</a>
+</div>
 
 <!-- ====== HEADER ====== -->
 <header class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 transition-all duration-300">
@@ -113,14 +191,108 @@
 <!-- ====== MAIN ====== -->
 <main id="primary" class="site-main flex-grow py-24">
 	<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+		<nav aria-label="Breadcrumb" class="mb-6 text-sm text-slate-400">
+			<ol class="flex flex-wrap items-center gap-2">
+				<li><a href="index.html" class="hover:text-sage-300 transition-colors">Home</a></li>
+				<li aria-hidden="true">/</li>
+				<li><a href="services.html" class="hover:text-sage-300 transition-colors">Physical Therapy</a></li>
+				<li aria-hidden="true">/</li>
+				<li class="text-slate-200" aria-current="page">Pediatric Rehab</li>
+			</ol>
+		</nav>
 		<div class="glass-card rounded-2xl border border-slate-700/50 p-8 md:p-12 animate-fade-in-up">
 			<div class="w-full aspect-video rounded-xl overflow-hidden mb-8 border border-slate-700/50">
 				<img src="images/pediatric_rehab.jpg" alt="Pediatric Rehab at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="375" height="375" loading="lazy" >
 			</div>
 			<h1 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Pediatric Rehab</h1>
-			<div class="space-y-4 text-slate-300 leading-relaxed text-base md:text-lg">
-				<p>Pediatric physical therapy is specifically designed to help children and adolescents overcome physical challenges and reach their developmental milestones. Our compassionate therapists work closely with families to create engaging, play-based treatment plans that address gross motor skills, strength, balance, and coordination. Whether recovering from an injury or managing a congenital condition, we provide a safe and supportive environment for your child to thrive.</p>
+			<div class="space-y-10 text-slate-300 leading-relaxed text-base md:text-lg">
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What is pediatric physical therapy?</h2>
+					<p>Pediatric physical therapy helps infants, children, and adolescents improve movement, strength, balance, coordination, posture, and gross motor skills. Because children learn through play, pediatric rehab often looks different from adult therapy. Sessions may include games, obstacle courses, climbing, balance challenges, strengthening activities, gait practice, stretching, and family education.</p>
+					<p>The goal is to help children participate more fully at home, school, in sports, on the playground, and in daily routines. Therapy may support developmental milestones, recovery from injury, confidence with movement, or management of a condition that affects strength or coordination.</p>
+					<p>At Mountain Town Rehab, pediatric rehab is family-centered. We work with caregivers to understand the child's needs, personality, routines, and goals, then create a plan that feels engaging and practical.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Who benefits from pediatric rehab?</h2>
+					<p>Pediatric physical therapy may help children with:</p>
+					<ul class="list-disc space-y-2 pl-6">
+						<li>Gross motor delays</li>
+						<li>Balance or coordination challenges</li>
+						<li>Toe walking or gait concerns</li>
+						<li>Torticollis or positioning concerns in infants</li>
+						<li>Sports injuries or orthopedic pain</li>
+						<li>Neurologic or genetic conditions affecting movement</li>
+						<li>Strength, endurance, or mobility limitations</li>
+						<li>Recovery after injury or surgery</li>
+						<li>Difficulty keeping up with age-appropriate physical activities</li>
+					</ul>
+					<p>Children do not need to &quot;fail&quot; at movement before therapy is appropriate. If parents, caregivers, physicians, or teachers notice a concern, an evaluation can help clarify whether therapy may be useful.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What to expect during treatment</h2>
+					<p>The first visit includes a conversation with caregivers and an age-appropriate movement assessment. Your therapist may look at posture, strength, range of motion, balance, coordination, walking, running, jumping, transitions, and functional skills based on the child's age.</p>
+					<p>Treatment is designed to be active and encouraging. A session might include balance games, strengthening through play, stretching, practice with stairs, jumping or hopping activities, ball skills, coordination tasks, or movement patterns that support developmental goals.</p>
+					<p>Caregiver education is an important part of pediatric therapy. Your therapist may suggest simple home activities that fit naturally into playtime, school routines, sports practice, or daily life.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Why choose Mountain Town Rehab for pediatric rehab?</h2>
+					<p>Mountain Town Rehab offers compassionate, one-on-one pediatric care in a family-owned clinic. Our team includes providers with pediatric therapy experience as well as aquatic therapy, orthopedic rehab, neurologic rehab, and sports rehab backgrounds.</p>
+					<p>We understand that children are not small adults. Therapy should meet them where they are, build trust, and help families feel supported. Our goal is to make progress feel positive, understandable, and connected to real life.</p>
+				</section>
+				<section class="space-y-6">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Pediatric rehab FAQs</h2>
+					<div class="space-y-5">
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">How do I know if my child needs physical therapy?</h3>
+							<p>If your child has delayed milestones, frequent falls, pain, weakness, trouble with balance, difficulty keeping up, or changes after injury, an evaluation can help determine whether therapy is appropriate.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Will therapy feel like exercise to my child?</h3>
+							<p>Sometimes, but pediatric therapy often uses play-based activities to build strength, coordination, and movement skills in an engaging way.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Can parents stay during the session?</h3>
+							<p>In many cases, yes. Caregiver involvement can help children feel comfortable and helps families learn activities to practice at home.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Does pediatric rehab include sports injuries?</h3>
+							<p>Yes. Pediatric rehab can support children and teens recovering from sprains, strains, overuse injuries, surgery, or pain that limits activity.</p>
+						</div>
+					</div>
+				</section>
 			</div>
+			<section class="mt-10 pt-8 border-t border-slate-700/50 space-y-4">
+				<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Related services</h2>
+				<ul class="space-y-4">
+					<li>
+						<a href="service-neurologic-rehab.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Neurologic Rehab</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Support movement, balance, and coordination goals.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-aquatic-therapy.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Aquatic Therapy</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Use low-impact water-based therapy for comfortable movement.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-orthopedic-rehab.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Orthopedic Rehab</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Address pain, weakness, or movement limitations.</span>
+						</a>
+					</li>
+				</ul>
+			</section>
 			<div class="mt-8 pt-8 border-t border-slate-700/50 flex flex-col sm:flex-row gap-4">
 				<a href="contact.html" class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg shadow-sage-600/20 transition-all duration-300">
 					Book Appointment

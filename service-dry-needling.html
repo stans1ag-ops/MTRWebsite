@@ -8,7 +8,7 @@
 	<meta name="description" content="Dry needling therapy in Mt Pleasant, MI. Licensed PTs use thin needles on trigger points to relieve muscle pain and improve mobility as part of your rehab plan.">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Dry Needling Therapy in Mt Pleasant, MI | Mountain Town Rehab">
-	<meta property="og:description" content="Dry needling therapy in Mt Pleasant, MI. Licensed PTs use thin needles on trigger points to relieve muscle pain and improve mobility as part of your rehab plan.">
+	<meta property="og:description" content="Dry needling therapy in Mt Pleasant, MI for muscle pain and mobility limits as part of a physical therapy plan.">
 	<meta property="og:image" content="https://mountaintownrehab.com/images/dry_needling.png">
 	<link rel="canonical" href="https://mountaintownrehab.com/service-dry-needling.html">
 	<meta property="og:url" content="https://mountaintownrehab.com/service-dry-needling.html">
@@ -17,42 +17,120 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/output.css">
-	<!-- Procedure Structured Data -->
+	<!-- Procedure and FAQ Structured Data -->
 	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "MedicalProcedure",
-		"name": "Dry Needling",
-		"url": "https://mountaintownrehab.com/service-dry-needling.html",
-		"description": "Dry needling therapy in Mt Pleasant, MI. Licensed PTs use thin needles on trigger points to relieve muscle pain and improve mobility as part of your rehab plan.",
-		"procedureType": "Physical Therapy",
-		"medicalSpecialty": "Physical Therapy",
-		"provider": {
-			"@type": "MedicalBusiness",
-			"name": "Mountain Town Rehab",
-			"url": "https://mountaintownrehab.com/",
-			"telephone": "+1-989-779-2920",
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "1106 W High St",
-				"addressLocality": "Mt Pleasant",
-				"addressRegion": "MI",
-				"postalCode": "48858",
-				"addressCountry": "US"
-			}
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "MedicalProcedure",
+			"@id": "https://mountaintownrehab.com/service-dry-needling.html#procedure",
+			"name": "Dry Needling",
+			"url": "https://mountaintownrehab.com/service-dry-needling.html",
+			"description": "Dry needling is a physical therapy technique that uses very thin, solid needles to target tight, tender, or irritable areas of muscle often called trigger points. Nothing is injected into the body, which is why it is called \"dry\" needling. Trigger points can contribute to local pain, referred pain, muscle tightness, limited motion, and difficulty using an area normally. Dry needling is intended to help reduce muscle tension, improve movement, and make it easier to participate in the rest of your therapy plan. At Mountain Town Rehab, dry needling is not used as a stand-alone quick fix. It is paired with movement, stretching, strengthening, posture or activity education, and other therapy strategies so the improvement can carry into daily life.",
+			"procedureType": "Physical Therapy",
+			"medicalSpecialty": "Physical Therapy",
+			"provider": {
+				"@type": "MedicalBusiness",
+				"name": "Mountain Town Rehab",
+				"url": "https://mountaintownrehab.com/",
+				"telephone": "+1-989-779-2920",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1106 W High St",
+					"addressLocality": "Mt Pleasant",
+					"addressRegion": "MI",
+					"postalCode": "48858",
+					"addressCountry": "US"
+				}
+			},
+			"areaServed": [
+				"Mt Pleasant, MI",
+				"Mount Pleasant, MI",
+				"Central Michigan",
+				"Mid Michigan"
+			]
 		},
-		"areaServed": [
-			"Mt Pleasant, MI",
-			"Mount Pleasant, MI",
-			"Central Michigan",
-			"Mid Michigan"
-		]
-	}
+		{
+			"@type": "FAQPage",
+			"@id": "https://mountaintownrehab.com/service-dry-needling.html#faq",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "Is dry needling the same as acupuncture?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "No. Both use thin needles, but dry needling is based on musculoskeletal evaluation and targets muscle and movement problems within a physical therapy plan."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Does dry needling hurt?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "You may feel a prick, pressure, aching, or a twitch response. Some soreness afterward can happen. Your therapist will talk you through the process and adjust based on your comfort."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "How many dry needling sessions will I need?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "It depends on your condition and how your body responds. Dry needling is usually combined with exercise and other treatment, so the full plan matters more than the number of needling visits alone."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Can anyone receive dry needling?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "No. Some medical conditions, medications, skin issues, needle anxiety, or other factors may make dry needling inappropriate. Your therapist will screen before treatment."
+					}
+				}
+			]
+		},
+		{
+			"@type": "BreadcrumbList",
+			"@id": "https://mountaintownrehab.com/service-dry-needling.html#breadcrumb",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://mountaintownrehab.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Physical Therapy",
+					"item": "https://mountaintownrehab.com/services.html"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Dry Needling",
+					"item": "https://mountaintownrehab.com/service-dry-needling.html"
+				}
+			]
+		}
+	]
+}
 	</script>
 </head>
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
 
 <a href="#primary" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-slate-950 focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to content</a>
+
+<!-- ====== TOP ANNOUNCEMENT BAR ====== -->
+<div class="bg-gradient-to-r from-sage-950 via-sage-900 to-sage-950 border-b border-slate-800/40 text-slate-300 py-3 px-4 text-center text-xs sm:text-sm font-medium z-50 relative">
+	<span class="inline-flex items-center gap-2">
+		<span class="w-2.5 h-2.5 rounded-full bg-crimson-500 animate-pulse shrink-0"></span>
+		<span>We are Hiring! We are looking for passionate Physical Therapists and Assistants to join our team.</span>
+	</span>
+	<a href="careers.html" class="inline-flex items-center justify-center ml-3 px-3.5 py-1 text-xs font-semibold rounded-full text-white bg-sage-600 hover:bg-sage-500 transition-all shadow-sm hover:shadow hover:-translate-y-0.5">
+		Apply Now
+	</a>
+</div>
 
 <!-- ====== HEADER ====== -->
 <header class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 transition-all duration-300">
@@ -113,14 +191,106 @@
 <!-- ====== MAIN ====== -->
 <main id="primary" class="site-main flex-grow py-24">
 	<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+		<nav aria-label="Breadcrumb" class="mb-6 text-sm text-slate-400">
+			<ol class="flex flex-wrap items-center gap-2">
+				<li><a href="index.html" class="hover:text-sage-300 transition-colors">Home</a></li>
+				<li aria-hidden="true">/</li>
+				<li><a href="services.html" class="hover:text-sage-300 transition-colors">Physical Therapy</a></li>
+				<li aria-hidden="true">/</li>
+				<li class="text-slate-200" aria-current="page">Dry Needling</li>
+			</ol>
+		</nav>
 		<div class="glass-card rounded-2xl border border-slate-700/50 p-8 md:p-12 animate-fade-in-up">
 			<div class="w-full aspect-video rounded-xl overflow-hidden mb-8 border border-slate-700/50">
 				<img src="images/dry_needling.png" alt="Dry Needling at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="628" height="628" loading="lazy" >
 			</div>
 			<h1 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Dry Needling</h1>
-			<div class="space-y-4 text-slate-300 leading-relaxed text-base md:text-lg">
-				<p>Dry needling is a treatment that uses very thin needles to help reduce muscle tightness and pain. The needle is placed into tight or tender spots in the muscle to help the area relax and move better. It is often used along with exercise, stretching, and other therapy so you can make progress with less discomfort.</p>
+			<div class="space-y-10 text-slate-300 leading-relaxed text-base md:text-lg">
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What is dry needling?</h2>
+					<p>Dry needling is a physical therapy technique that uses very thin, solid needles to target tight, tender, or irritable areas of muscle often called trigger points. Nothing is injected into the body, which is why it is called &quot;dry&quot; needling.</p>
+					<p>Trigger points can contribute to local pain, referred pain, muscle tightness, limited motion, and difficulty using an area normally. Dry needling is intended to help reduce muscle tension, improve movement, and make it easier to participate in the rest of your therapy plan.</p>
+					<p>At Mountain Town Rehab, dry needling is not used as a stand-alone quick fix. It is paired with movement, stretching, strengthening, posture or activity education, and other therapy strategies so the improvement can carry into daily life.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Who benefits from dry needling?</h2>
+					<p>Dry needling may be considered for people with:</p>
+					<ul class="list-disc space-y-2 pl-6">
+						<li>Muscle tightness or trigger points</li>
+						<li>Neck, shoulder, back, hip, or leg pain related to muscle irritability</li>
+						<li>Headache patterns associated with muscular tension</li>
+						<li>Tendon or overuse-related pain when appropriate</li>
+						<li>Limited range of motion due to muscle guarding</li>
+						<li>Sports or orthopedic injuries with persistent soft tissue tightness</li>
+						<li>Pain that makes exercise or movement progression difficult</li>
+					</ul>
+					<p>Dry needling is not appropriate for every patient or every condition. Your therapist will review your history, symptoms, comfort level, and any precautions before recommending it.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What to expect during treatment</h2>
+					<p>Your therapist will first evaluate your symptoms and explain why dry needling may or may not be helpful. If it is appropriate and you agree to the treatment, the therapist will identify the target muscle area, clean the skin, and place a thin needle into or near the trigger point.</p>
+					<p>You may feel a small prick, pressure, aching, or a brief muscle twitch. Some people feel sore afterward, similar to post-exercise soreness. Your therapist will explain what to expect and what movements or stretches may help after the session.</p>
+					<p>Dry needling is usually followed by exercise or movement practice. That step matters because the goal is to help your body use the improved mobility or reduced tightness in a functional way.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Why choose Mountain Town Rehab for dry needling?</h2>
+					<p>Mountain Town Rehab provides dry needling as part of individualized physical therapy, not as a generic add-on. Our team includes providers with training in intramuscular manual therapy and dry needling, along with orthopedic and sports rehab experience.</p>
+					<p>Because your visit is one-on-one, your therapist can monitor your response, adjust the plan, and connect the technique to your bigger goals, such as lifting, walking, sleeping, exercising, or returning to sport.</p>
+				</section>
+				<section class="space-y-6">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Dry needling FAQs</h2>
+					<div class="space-y-5">
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Is dry needling the same as acupuncture?</h3>
+							<p>No. Both use thin needles, but dry needling is based on musculoskeletal evaluation and targets muscle and movement problems within a physical therapy plan.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Does dry needling hurt?</h3>
+							<p>You may feel a prick, pressure, aching, or a twitch response. Some soreness afterward can happen. Your therapist will talk you through the process and adjust based on your comfort.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">How many dry needling sessions will I need?</h3>
+							<p>It depends on your condition and how your body responds. Dry needling is usually combined with exercise and other treatment, so the full plan matters more than the number of needling visits alone.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Can anyone receive dry needling?</h3>
+							<p>No. Some medical conditions, medications, skin issues, needle anxiety, or other factors may make dry needling inappropriate. Your therapist will screen before treatment.</p>
+						</div>
+					</div>
+				</section>
 			</div>
+			<section class="mt-10 pt-8 border-t border-slate-700/50 space-y-4">
+				<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Related services</h2>
+				<ul class="space-y-4">
+					<li>
+						<a href="service-orthopedic-rehab.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Orthopedic Rehab</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Treat joint, muscle, and spine-related pain and stiffness.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-sports-rehab.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Sports Rehab</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Recover from athletic injuries and return to activity.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-post-surgical-care.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Post-Surgical Care</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Progress mobility and strength after surgery.</span>
+						</a>
+					</li>
+				</ul>
+			</section>
 			<div class="mt-8 pt-8 border-t border-slate-700/50 flex flex-col sm:flex-row gap-4">
 				<a href="contact.html" class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg shadow-sage-600/20 transition-all duration-300">
 					Book Appointment

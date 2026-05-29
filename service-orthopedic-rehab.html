@@ -8,7 +8,7 @@
 	<meta name="description" content="Orthopedic rehab in Mt Pleasant, MI for back, neck, shoulder, hip, knee, and joint pain. Reduce pain, restore movement, and rebuild strength with licensed PTs.">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Orthopedic Rehab in Mt Pleasant, MI | Mountain Town Rehab">
-	<meta property="og:description" content="Orthopedic rehab in Mt Pleasant, MI for back, neck, shoulder, hip, knee, and joint pain. Reduce pain, restore movement, and rebuild strength with licensed PTs.">
+	<meta property="og:description" content="Orthopedic rehab for joint, spine, and muscle pain in Mt Pleasant, MI, with one-on-one physical therapy.">
 	<meta property="og:image" content="https://mountaintownrehab.com/images/orthopedic_rehab.png">
 	<link rel="canonical" href="https://mountaintownrehab.com/service-orthopedic-rehab.html">
 	<meta property="og:url" content="https://mountaintownrehab.com/service-orthopedic-rehab.html">
@@ -17,42 +17,120 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/output.css">
-	<!-- Procedure Structured Data -->
+	<!-- Procedure and FAQ Structured Data -->
 	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "MedicalProcedure",
-		"name": "Orthopedic Rehab",
-		"url": "https://mountaintownrehab.com/service-orthopedic-rehab.html",
-		"description": "Orthopedic rehab helps people recover from injuries or pain in the muscles, joints, bones, ligaments, or tendons. This may include problems with the back, neck, shoulder, hip, knee, ankle, or other areas of the body. Your therapist works with you to reduce pain, improve movement, rebuild strength, and help you return to everyday activities with more comfort and confidence.",
-		"procedureType": "Physical Therapy",
-		"medicalSpecialty": "Physical Therapy",
-		"provider": {
-			"@type": "MedicalBusiness",
-			"name": "Mountain Town Rehab",
-			"url": "https://mountaintownrehab.com/",
-			"telephone": "+1-989-779-2920",
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "1106 W High St",
-				"addressLocality": "Mt Pleasant",
-				"addressRegion": "MI",
-				"postalCode": "48858",
-				"addressCountry": "US"
-			}
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "MedicalProcedure",
+			"@id": "https://mountaintownrehab.com/service-orthopedic-rehab.html#procedure",
+			"name": "Orthopedic Rehab",
+			"url": "https://mountaintownrehab.com/service-orthopedic-rehab.html",
+			"description": "Orthopedic rehab is physical therapy for pain, injury, stiffness, weakness, or movement problems involving the muscles, joints, bones, ligaments, and tendons. If your back, neck, shoulder, hip, knee, ankle, or another area is limiting the way you move, orthopedic physical therapy helps identify what is contributing to the problem and builds a plan to improve it. At Mountain Town Rehab, orthopedic rehab starts with a detailed evaluation of your pain, strength, flexibility, balance, posture, walking pattern, and everyday activities. Your therapist looks beyond the painful area to understand how the whole body is moving. From there, treatment may include hands-on care, therapeutic exercise, mobility work, balance training, activity modification, and a home program that fits your goals. The goal is not just to reduce symptoms for a day. The goal is to help you move with more confidence, build strength where your body needs support, and return to the activities that matter to you.",
+			"procedureType": "Physical Therapy",
+			"medicalSpecialty": "Physical Therapy",
+			"provider": {
+				"@type": "MedicalBusiness",
+				"name": "Mountain Town Rehab",
+				"url": "https://mountaintownrehab.com/",
+				"telephone": "+1-989-779-2920",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1106 W High St",
+					"addressLocality": "Mt Pleasant",
+					"addressRegion": "MI",
+					"postalCode": "48858",
+					"addressCountry": "US"
+				}
+			},
+			"areaServed": [
+				"Mt Pleasant, MI",
+				"Mount Pleasant, MI",
+				"Central Michigan",
+				"Mid Michigan"
+			]
 		},
-		"areaServed": [
-			"Mt Pleasant, MI",
-			"Mount Pleasant, MI",
-			"Central Michigan",
-			"Mid Michigan"
-		]
-	}
+		{
+			"@type": "FAQPage",
+			"@id": "https://mountaintownrehab.com/service-orthopedic-rehab.html#faq",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "Do I need a referral for orthopedic physical therapy?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Referral requirements can depend on your insurance and your situation. If you are unsure, contact Mountain Town Rehab and we can help you understand what may be needed before scheduling."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "How long does orthopedic rehab take?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "It depends on your condition, symptoms, goals, and how long the problem has been present. Some patients need only a short plan of care, while others benefit from several weeks of progressive strengthening and movement retraining."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Will physical therapy hurt?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Physical therapy should be challenging at times, but it should not feel careless or overwhelming. Your therapist will adjust treatment based on your response and teach you the difference between productive effort and pain that needs modification."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Can orthopedic rehab help with arthritis?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Physical therapy cannot remove arthritis, but it can often help improve strength, joint mobility, balance, and activity tolerance so daily movement feels more manageable."
+					}
+				}
+			]
+		},
+		{
+			"@type": "BreadcrumbList",
+			"@id": "https://mountaintownrehab.com/service-orthopedic-rehab.html#breadcrumb",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://mountaintownrehab.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Physical Therapy",
+					"item": "https://mountaintownrehab.com/services.html"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Orthopedic Rehab",
+					"item": "https://mountaintownrehab.com/service-orthopedic-rehab.html"
+				}
+			]
+		}
+	]
+}
 	</script>
 </head>
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
 
 <a href="#primary" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-slate-950 focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to content</a>
+
+<!-- ====== TOP ANNOUNCEMENT BAR ====== -->
+<div class="bg-gradient-to-r from-sage-950 via-sage-900 to-sage-950 border-b border-slate-800/40 text-slate-300 py-3 px-4 text-center text-xs sm:text-sm font-medium z-50 relative">
+	<span class="inline-flex items-center gap-2">
+		<span class="w-2.5 h-2.5 rounded-full bg-crimson-500 animate-pulse shrink-0"></span>
+		<span>We are Hiring! We are looking for passionate Physical Therapists and Assistants to join our team.</span>
+	</span>
+	<a href="careers.html" class="inline-flex items-center justify-center ml-3 px-3.5 py-1 text-xs font-semibold rounded-full text-white bg-sage-600 hover:bg-sage-500 transition-all shadow-sm hover:shadow hover:-translate-y-0.5">
+		Apply Now
+	</a>
+</div>
 
 <!-- ====== HEADER ====== -->
 <header class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 transition-all duration-300">
@@ -113,14 +191,106 @@
 <!-- ====== MAIN ====== -->
 <main id="primary" class="site-main flex-grow py-24">
 	<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+		<nav aria-label="Breadcrumb" class="mb-6 text-sm text-slate-400">
+			<ol class="flex flex-wrap items-center gap-2">
+				<li><a href="index.html" class="hover:text-sage-300 transition-colors">Home</a></li>
+				<li aria-hidden="true">/</li>
+				<li><a href="services.html" class="hover:text-sage-300 transition-colors">Physical Therapy</a></li>
+				<li aria-hidden="true">/</li>
+				<li class="text-slate-200" aria-current="page">Orthopedic Rehab</li>
+			</ol>
+		</nav>
 		<div class="glass-card rounded-2xl border border-slate-700/50 p-8 md:p-12 animate-fade-in-up">
 			<div class="w-full aspect-video rounded-xl overflow-hidden mb-8 border border-slate-700/50">
 				<img src="images/orthopedic_rehab.png" alt="Orthopedic Rehab at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="569" height="569" loading="lazy" >
 			</div>
 			<h1 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Orthopedic Rehab</h1>
-			<div class="space-y-4 text-slate-300 leading-relaxed text-base md:text-lg">
-				<p>Orthopedic rehab helps people recover from injuries or pain in the muscles, joints, bones, ligaments, or tendons. This may include problems with the back, neck, shoulder, hip, knee, ankle, or other areas of the body. Your therapist works with you to reduce pain, improve movement, rebuild strength, and help you return to everyday activities with more comfort and confidence.</p>
+			<div class="space-y-10 text-slate-300 leading-relaxed text-base md:text-lg">
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What is orthopedic rehab?</h2>
+					<p>Orthopedic rehab is physical therapy for pain, injury, stiffness, weakness, or movement problems involving the muscles, joints, bones, ligaments, and tendons. If your back, neck, shoulder, hip, knee, ankle, or another area is limiting the way you move, orthopedic physical therapy helps identify what is contributing to the problem and builds a plan to improve it.</p>
+					<p>At Mountain Town Rehab, orthopedic rehab starts with a detailed evaluation of your pain, strength, flexibility, balance, posture, walking pattern, and everyday activities. Your therapist looks beyond the painful area to understand how the whole body is moving. From there, treatment may include hands-on care, therapeutic exercise, mobility work, balance training, activity modification, and a home program that fits your goals.</p>
+					<p>The goal is not just to reduce symptoms for a day. The goal is to help you move with more confidence, build strength where your body needs support, and return to the activities that matter to you.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Who benefits from orthopedic rehab?</h2>
+					<p>Orthopedic rehab may help people with:</p>
+					<ul class="list-disc space-y-2 pl-6">
+						<li>Back or neck pain</li>
+						<li>Shoulder pain, rotator cuff injuries, or frozen shoulder</li>
+						<li>Hip, knee, ankle, or foot pain</li>
+						<li>Arthritis-related stiffness or weakness</li>
+						<li>Sprains, strains, tendon pain, or overuse injuries</li>
+						<li>Work, home, or recreational injuries</li>
+						<li>Balance changes related to pain, weakness, or deconditioning</li>
+						<li>Ongoing pain that has not improved with rest alone</li>
+					</ul>
+					<p>You do not need to be an athlete or have a recent injury to benefit. Many patients come to physical therapy because normal daily tasks, such as walking, climbing stairs, lifting, sleeping, driving, or working, have become harder than they should be.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What to expect during treatment</h2>
+					<p>Your first visit includes a conversation about your symptoms, medical history, goals, and what you want to get back to doing. Your therapist will assess how you move and explain what they find in clear language. Together, you will set practical goals and begin treatment at a level that is appropriate for your body.</p>
+					<p>Treatment may include joint and soft tissue techniques, stretching, strengthening, balance work, movement retraining, and education on positions or habits that may be contributing to symptoms. As you improve, your plan progresses so you can tolerate more activity, lift more confidently, move with better control, and reduce the chance of the same issue returning.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Why choose Mountain Town Rehab for orthopedic rehab?</h2>
+					<p>Mountain Town Rehab is a family-owned physical therapy clinic serving Mt Pleasant and Central Michigan since 2001. Our care is personal and one-on-one, so you spend your visit working directly with a licensed provider who knows your story and your goals.</p>
+					<p>Our team brings strong orthopedic experience, including advanced manual therapy training, orthopedic clinical specialization, sports and post-surgical care experience, blood flow restriction training, dry needling, and other treatment options when appropriate. We match the plan to the person, not just the diagnosis.</p>
+				</section>
+				<section class="space-y-6">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Orthopedic rehab FAQs</h2>
+					<div class="space-y-5">
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Do I need a referral for orthopedic physical therapy?</h3>
+							<p>Referral requirements can depend on your insurance and your situation. If you are unsure, contact Mountain Town Rehab and we can help you understand what may be needed before scheduling.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">How long does orthopedic rehab take?</h3>
+							<p>It depends on your condition, symptoms, goals, and how long the problem has been present. Some patients need only a short plan of care, while others benefit from several weeks of progressive strengthening and movement retraining.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Will physical therapy hurt?</h3>
+							<p>Physical therapy should be challenging at times, but it should not feel careless or overwhelming. Your therapist will adjust treatment based on your response and teach you the difference between productive effort and pain that needs modification.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Can orthopedic rehab help with arthritis?</h3>
+							<p>Physical therapy cannot remove arthritis, but it can often help improve strength, joint mobility, balance, and activity tolerance so daily movement feels more manageable.</p>
+						</div>
+					</div>
+				</section>
 			</div>
+			<section class="mt-10 pt-8 border-t border-slate-700/50 space-y-4">
+				<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Related services</h2>
+				<ul class="space-y-4">
+					<li>
+						<a href="service-sports-rehab.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Sports Rehab</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Return to sport with progressive strength and movement training.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-post-surgical-care.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Post-Surgical Care</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Recover after surgery with guided mobility and strengthening.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-dry-needling.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Dry Needling</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Address muscle pain and trigger points as part of your rehab plan.</span>
+						</a>
+					</li>
+				</ul>
+			</section>
 			<div class="mt-8 pt-8 border-t border-slate-700/50 flex flex-col sm:flex-row gap-4">
 				<a href="contact.html" class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg shadow-sage-600/20 transition-all duration-300">
 					Book Appointment

@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex, nofollow">
 	<title>Online Payments | Mountain Town Rehab</title>
 	<link rel="icon" type="image/png" href="images/Favicon.png">
 	<meta name="description" content="Pay your Mountain Town Rehab bills online with PayPal or credit card. Secure, convenient physical therapy billing for patients in Mt Pleasant, MI.">
@@ -60,13 +61,6 @@
 		]
 	}
 	</script>
-	<style>
-		/* PayPal custom overrides */
-		#paypal-container-3XJ2GD5AT26D6 input,
-		#amount {
-			color: #000000 !important;
-		}
-	</style>
 </head>
 
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
@@ -118,7 +112,7 @@
 						<li><a href="patient-info.html"
 								class="nav-link hover:text-white transition-colors duration-200">Patient Info</a></li>
 						<li><a href="payments.html"
-								class="nav-link active text-white transition-colors duration-200">Payments</a></li>
+								class="nav-link active text-white transition-colors duration-200" aria-current="page">Payments</a></li>
 						<li><a href="contact.html"
 								class="nav-link hover:text-white transition-colors duration-200">Contact</a></li>
 					</ul>
@@ -172,8 +166,7 @@
 	<main id="primary" class="site-main flex-grow">
 		<!-- Hero Section -->
 		<section class="relative overflow-hidden min-h-[50vh] flex items-center">
-			<div class="absolute inset-0 z-0 bg-cover bg-center"
-				style="background-image: url('images/hero-clinic.jpg'); opacity: 0.3;"></div>
+			<img src="images/hero-clinic.jpg" alt="Mountain Town Rehab clinic exterior in Mt Pleasant, MI" class="absolute inset-0 z-0 w-full h-full object-cover opacity-30" width="1200" height="674" loading="eager" fetchpriority="high" decoding="async">
 			<div class="absolute inset-0 z-[1] hero-gradient"></div>
 			<!-- Decorative Elements -->
 			<div class="absolute top-20 left-10 w-72 h-72 bg-sage-500/10 rounded-full blur-3xl z-[2]"></div>
@@ -186,7 +179,7 @@
 					class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-4 max-w-4xl animate-fade-in-up">
 					Online <span class="gradient-text">Payments</span>
 				</h1>
-				<p class="text-lg text-slate-400 max-w-2xl leading-relaxed animate-fade-in-up delay-100">
+				<p class="text-lg text-slate-400 max-w-2xl leading-relaxed animate-fade-in-up anim-delay-100">
 					Securely pay your physical therapy bills online.
 				</p>
 			</div>
@@ -202,7 +195,7 @@
 				<div class="max-w-lg mx-auto">
 					<!-- PayPal Card -->
 					<div
-						class="glass-card rounded-2xl border border-sage-500/30 p-8 flex flex-col items-center text-center animate-fade-in-up delay-200 relative overflow-hidden group">
+						class="glass-card rounded-2xl border border-sage-500/30 p-8 flex flex-col items-center text-center animate-fade-in-up anim-delay-200 relative overflow-hidden group">
 						<div
 							class="absolute inset-0 bg-gradient-to-br from-sage-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 						</div>
@@ -269,7 +262,7 @@
 				</div>
 
 				<!-- Instructions -->
-				<div class="mt-16 text-center animate-fade-in-up delay-400">
+				<div class="mt-16 text-center animate-fade-in-up anim-delay-400">
 					<p class="text-slate-400 text-sm leading-relaxed max-w-2xl mx-auto">
 						<strong>Note on PayPal:</strong> Once redirected, you can log in to send payment, or select "Pay
 						with Debit or Credit Card" to checkout as a guest. Please ensure you reference your invoice

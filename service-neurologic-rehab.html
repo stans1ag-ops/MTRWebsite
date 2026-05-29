@@ -8,7 +8,7 @@
 	<meta name="description" content="Neurologic rehab in Mt Pleasant, MI for stroke, brain injury, and spinal cord conditions. Rebuild movement, balance, and daily skills with one-on-one PT care.">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Neurologic Rehab in Mt Pleasant, MI | Mountain Town Rehab">
-	<meta property="og:description" content="Neurologic rehab in Mt Pleasant, MI for stroke, brain injury, and spinal cord conditions. Rebuild movement, balance, and daily skills with one-on-one PT care.">
+	<meta property="og:description" content="Neurologic rehab in Mt Pleasant, MI for balance, walking, coordination, and daily movement after neurologic conditions.">
 	<meta property="og:image" content="https://mountaintownrehab.com/images/Neurologic_rehab.jpg">
 	<link rel="canonical" href="https://mountaintownrehab.com/service-neurologic-rehab.html">
 	<meta property="og:url" content="https://mountaintownrehab.com/service-neurologic-rehab.html">
@@ -17,42 +17,120 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/output.css">
-	<!-- Procedure Structured Data -->
+	<!-- Procedure and FAQ Structured Data -->
 	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "MedicalProcedure",
-		"name": "Neurologic Rehab",
-		"url": "https://mountaintownrehab.com/service-neurologic-rehab.html",
-		"description": "Neurologic rehab helps people who have movement, balance, strength, or coordination problems related to the nervous system. This may include recovery after a stroke, brain injury, spinal cord injury, or other neurologic condition. Your therapist works with you on safe exercises and daily movement skills to help improve independence and confidence.",
-		"procedureType": "Physical Therapy",
-		"medicalSpecialty": "Physical Therapy",
-		"provider": {
-			"@type": "MedicalBusiness",
-			"name": "Mountain Town Rehab",
-			"url": "https://mountaintownrehab.com/",
-			"telephone": "+1-989-779-2920",
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "1106 W High St",
-				"addressLocality": "Mt Pleasant",
-				"addressRegion": "MI",
-				"postalCode": "48858",
-				"addressCountry": "US"
-			}
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "MedicalProcedure",
+			"@id": "https://mountaintownrehab.com/service-neurologic-rehab.html#procedure",
+			"name": "Neurologic Rehab",
+			"url": "https://mountaintownrehab.com/service-neurologic-rehab.html",
+			"description": "Neurologic rehab is physical therapy for people whose movement, balance, strength, coordination, walking, or daily function has been affected by the nervous system. This can include conditions involving the brain, spinal cord, nerves, or the way the body processes movement and balance. Neurologic conditions can affect people in very different ways. One person may need help walking more safely after a stroke. Another may need balance training, endurance work, coordination practice, or strategies for managing fatigue. Neurologic rehab starts with a careful evaluation so the plan can match the person's abilities, goals, and safety needs. At Mountain Town Rehab, treatment focuses on practical function: moving around the home, walking outdoors, getting up from a chair, using stairs, improving balance, building strength, and participating more fully in daily life.",
+			"procedureType": "Physical Therapy",
+			"medicalSpecialty": "Physical Therapy",
+			"provider": {
+				"@type": "MedicalBusiness",
+				"name": "Mountain Town Rehab",
+				"url": "https://mountaintownrehab.com/",
+				"telephone": "+1-989-779-2920",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1106 W High St",
+					"addressLocality": "Mt Pleasant",
+					"addressRegion": "MI",
+					"postalCode": "48858",
+					"addressCountry": "US"
+				}
+			},
+			"areaServed": [
+				"Mt Pleasant, MI",
+				"Mount Pleasant, MI",
+				"Central Michigan",
+				"Mid Michigan"
+			]
 		},
-		"areaServed": [
-			"Mt Pleasant, MI",
-			"Mount Pleasant, MI",
-			"Central Michigan",
-			"Mid Michigan"
-		]
-	}
+		{
+			"@type": "FAQPage",
+			"@id": "https://mountaintownrehab.com/service-neurologic-rehab.html#faq",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "Can physical therapy help long after a neurologic diagnosis?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Many people can still benefit from therapy months or years after a diagnosis or event, especially when goals involve strength, balance, walking, endurance, safety, or activity participation."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What if I get tired quickly?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Fatigue is common with many neurologic conditions. Your therapist will pace activities, plan rest breaks, and help build endurance gradually."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Can family members attend therapy sessions?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Yes, family or caregivers may be included when it helps with education, home safety, or carryover of exercises and mobility strategies."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Is neurologic rehab the same for every condition?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "No. Treatment is based on your evaluation, diagnosis, symptoms, safety needs, and goals. Two people with the same diagnosis may have very different therapy plans."
+					}
+				}
+			]
+		},
+		{
+			"@type": "BreadcrumbList",
+			"@id": "https://mountaintownrehab.com/service-neurologic-rehab.html#breadcrumb",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://mountaintownrehab.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Physical Therapy",
+					"item": "https://mountaintownrehab.com/services.html"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Neurologic Rehab",
+					"item": "https://mountaintownrehab.com/service-neurologic-rehab.html"
+				}
+			]
+		}
+	]
+}
 	</script>
 </head>
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
 
 <a href="#primary" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-slate-950 focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to content</a>
+
+<!-- ====== TOP ANNOUNCEMENT BAR ====== -->
+<div class="bg-gradient-to-r from-sage-950 via-sage-900 to-sage-950 border-b border-slate-800/40 text-slate-300 py-3 px-4 text-center text-xs sm:text-sm font-medium z-50 relative">
+	<span class="inline-flex items-center gap-2">
+		<span class="w-2.5 h-2.5 rounded-full bg-crimson-500 animate-pulse shrink-0"></span>
+		<span>We are Hiring! We are looking for passionate Physical Therapists and Assistants to join our team.</span>
+	</span>
+	<a href="careers.html" class="inline-flex items-center justify-center ml-3 px-3.5 py-1 text-xs font-semibold rounded-full text-white bg-sage-600 hover:bg-sage-500 transition-all shadow-sm hover:shadow hover:-translate-y-0.5">
+		Apply Now
+	</a>
+</div>
 
 <!-- ====== HEADER ====== -->
 <header class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 transition-all duration-300">
@@ -113,14 +191,108 @@
 <!-- ====== MAIN ====== -->
 <main id="primary" class="site-main flex-grow py-24">
 	<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+		<nav aria-label="Breadcrumb" class="mb-6 text-sm text-slate-400">
+			<ol class="flex flex-wrap items-center gap-2">
+				<li><a href="index.html" class="hover:text-sage-300 transition-colors">Home</a></li>
+				<li aria-hidden="true">/</li>
+				<li><a href="services.html" class="hover:text-sage-300 transition-colors">Physical Therapy</a></li>
+				<li aria-hidden="true">/</li>
+				<li class="text-slate-200" aria-current="page">Neurologic Rehab</li>
+			</ol>
+		</nav>
 		<div class="glass-card rounded-2xl border border-slate-700/50 p-8 md:p-12 animate-fade-in-up">
 			<div class="w-full aspect-video rounded-xl overflow-hidden mb-8 border border-slate-700/50">
 				<img src="images/Neurologic_rehab.jpg" alt="Neurologic Rehab at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="1024" height="1024" loading="lazy" >
 			</div>
 			<h1 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Neurologic Rehab</h1>
-			<div class="space-y-4 text-slate-300 leading-relaxed text-base md:text-lg">
-				<p>Neurologic rehab helps people who have movement, balance, strength, or coordination problems related to the nervous system. This may include recovery after a stroke, brain injury, spinal cord injury, or other neurologic condition. Your therapist works with you on safe exercises and daily movement skills to help improve independence and confidence.</p>
+			<div class="space-y-10 text-slate-300 leading-relaxed text-base md:text-lg">
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What is neurologic rehab?</h2>
+					<p>Neurologic rehab is physical therapy for people whose movement, balance, strength, coordination, walking, or daily function has been affected by the nervous system. This can include conditions involving the brain, spinal cord, nerves, or the way the body processes movement and balance.</p>
+					<p>Neurologic conditions can affect people in very different ways. One person may need help walking more safely after a stroke. Another may need balance training, endurance work, coordination practice, or strategies for managing fatigue. Neurologic rehab starts with a careful evaluation so the plan can match the person's abilities, goals, and safety needs.</p>
+					<p>At Mountain Town Rehab, treatment focuses on practical function: moving around the home, walking outdoors, getting up from a chair, using stairs, improving balance, building strength, and participating more fully in daily life.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Who benefits from neurologic rehab?</h2>
+					<p>Neurologic rehab may help people with:</p>
+					<ul class="list-disc space-y-2 pl-6">
+						<li>Stroke recovery</li>
+						<li>Brain injury or concussion-related movement challenges</li>
+						<li>Spinal cord injury</li>
+						<li>Parkinson's disease or Parkinsonian movement changes</li>
+						<li>Multiple sclerosis</li>
+						<li>Peripheral nerve conditions</li>
+						<li>Balance, coordination, or gait problems</li>
+						<li>Weakness or reduced endurance after a neurologic event</li>
+						<li>Difficulty with transfers, walking, stairs, or daily mobility</li>
+					</ul>
+					<p>Therapy may also help caregivers and family members understand safe ways to support mobility at home.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What to expect during treatment</h2>
+					<p>Your first session includes a review of your medical history, current abilities, fall history, home environment, and personal goals. Your therapist may assess strength, balance, coordination, walking, transfers, endurance, range of motion, and how symptoms change with fatigue or task difficulty.</p>
+					<p>Treatment may include gait training, balance activities, strengthening, stretching, coordination work, posture training, transfer practice, endurance building, and home exercise instruction. When appropriate, therapy may include task-specific practice, such as getting up from a chair, stepping over obstacles, turning safely, or climbing stairs.</p>
+					<p>Progress can look different for every neurologic condition. We focus on meaningful gains, safer movement, and helping you use your abilities more confidently.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Why choose Mountain Town Rehab for neurologic rehab?</h2>
+					<p>Mountain Town Rehab provides one-on-one treatment in a supportive outpatient setting. Our team includes therapists with experience in neurologic conditions, LSVT BIG, aquatic therapy, pediatric therapy, orthopedic rehab, and balance-related care.</p>
+					<p>Because we are family-owned and community-rooted, we take time to understand what independence means for each patient. Your plan may focus on walking farther, reducing fall risk, moving more confidently at home, or returning to community activities.</p>
+				</section>
+				<section class="space-y-6">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Neurologic rehab FAQs</h2>
+					<div class="space-y-5">
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Can physical therapy help long after a neurologic diagnosis?</h3>
+							<p>Many people can still benefit from therapy months or years after a diagnosis or event, especially when goals involve strength, balance, walking, endurance, safety, or activity participation.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">What if I get tired quickly?</h3>
+							<p>Fatigue is common with many neurologic conditions. Your therapist will pace activities, plan rest breaks, and help build endurance gradually.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Can family members attend therapy sessions?</h3>
+							<p>Yes, family or caregivers may be included when it helps with education, home safety, or carryover of exercises and mobility strategies.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Is neurologic rehab the same for every condition?</h3>
+							<p>No. Treatment is based on your evaluation, diagnosis, symptoms, safety needs, and goals. Two people with the same diagnosis may have very different therapy plans.</p>
+						</div>
+					</div>
+				</section>
 			</div>
+			<section class="mt-10 pt-8 border-t border-slate-700/50 space-y-4">
+				<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Related services</h2>
+				<ul class="space-y-4">
+					<li>
+						<a href="service-lsvt-big.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>LSVT BIG</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Structured therapy for movement changes related to Parkinson's disease.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-vestibular-therapy.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Vestibular Therapy</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Address dizziness, vertigo, and balance problems.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-pediatric-rehab.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Pediatric Rehab</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Support children with movement, strength, and coordination needs.</span>
+						</a>
+					</li>
+				</ul>
+			</section>
 			<div class="mt-8 pt-8 border-t border-slate-700/50 flex flex-col sm:flex-row gap-4">
 				<a href="contact.html" class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg shadow-sage-600/20 transition-all duration-300">
 					Book Appointment

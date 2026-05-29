@@ -371,7 +371,7 @@ Blood flow restriction, often called BFR, is a physical therapy technique that u
 
 BFR can be useful when heavy weights are not comfortable, not yet allowed, or not appropriate because of pain, surgery, weakness, or injury. The goal is to support strength and muscle development while reducing stress on healing joints or tissues.
 
-At Mountain Town Rehab, blood flow restriction is supervised by trained providers. The cuff pressure, exercise selection, repetitions, and rest periods are chosen for your body, your stage of recovery, and your goals. The service page currently notes use of Owen's Recovery Science products for comfortable and effective treatment.
+At Mountain Town Rehab, blood flow restriction is supervised by trained providers. The cuff pressure, exercise selection, repetitions, and rest periods are chosen for your body, your stage of recovery, and your goals. We use Owens Recovery Science products to offer the most comfortable experience possible, thanks to a wider tourniquet cuff and modulating pressure during treatment.
 
 ### H2: Who benefits from blood flow restriction?
 

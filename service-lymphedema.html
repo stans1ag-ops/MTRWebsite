@@ -8,7 +8,7 @@
 	<meta name="description" content="Lymphedema therapy in Mt Pleasant, MI. Manage swelling with hands-on care, compression, exercise, and home strategies from licensed physical therapists.">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Lymphedema Therapy in Mt Pleasant, MI | Mountain Town Rehab">
-	<meta property="og:description" content="Lymphedema therapy in Mt Pleasant, MI. Manage swelling with hands-on care, compression, exercise, and home strategies from licensed physical therapists.">
+	<meta property="og:description" content="Lymphedema therapy in Mt Pleasant, MI with hands-on care, compression, exercise, and home management strategies.">
 	<meta property="og:image" content="https://mountaintownrehab.com/images/Lymphedema.jpeg">
 	<link rel="canonical" href="https://mountaintownrehab.com/service-lymphedema.html">
 	<meta property="og:url" content="https://mountaintownrehab.com/service-lymphedema.html">
@@ -17,42 +17,120 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/output.css">
-	<!-- Procedure Structured Data -->
+	<!-- Procedure and FAQ Structured Data -->
 	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "MedicalProcedure",
-		"name": "Lymphedema",
-		"url": "https://mountaintownrehab.com/service-lymphedema.html",
-		"description": "Lymphedema is swelling that can happen when fluid builds up in part of the body, often in an arm or leg. Therapy can help manage this swelling, improve comfort, and teach you ways to care for the area at home. Treatment may include gentle hands-on care, wrapping or compression, exercise, and education to help reduce symptoms and support daily life.",
-		"procedureType": "Physical Therapy",
-		"medicalSpecialty": "Physical Therapy",
-		"provider": {
-			"@type": "MedicalBusiness",
-			"name": "Mountain Town Rehab",
-			"url": "https://mountaintownrehab.com/",
-			"telephone": "+1-989-779-2920",
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "1106 W High St",
-				"addressLocality": "Mt Pleasant",
-				"addressRegion": "MI",
-				"postalCode": "48858",
-				"addressCountry": "US"
-			}
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "MedicalProcedure",
+			"@id": "https://mountaintownrehab.com/service-lymphedema.html#procedure",
+			"name": "Lymphedema",
+			"url": "https://mountaintownrehab.com/service-lymphedema.html",
+			"description": "Lymphedema therapy helps manage swelling that can happen when lymph fluid builds up in part of the body, often in an arm or leg. Lymphedema can occur after cancer treatment, lymph node removal, radiation, infection, injury, surgery, vascular issues, or other medical conditions that affect fluid movement. Physical therapy for lymphedema focuses on reducing swelling, improving comfort, protecting skin health, supporting movement, and teaching long-term self-management strategies. Treatment may include gentle manual techniques, compression education, bandaging or garment guidance, exercise, skin care education, and home strategies. Lymphedema is often a condition that needs ongoing management rather than a one-time fix. The right plan can help you understand your symptoms, reduce flare-ups, and feel more prepared to care for the affected area.",
+			"procedureType": "Physical Therapy",
+			"medicalSpecialty": "Physical Therapy",
+			"provider": {
+				"@type": "MedicalBusiness",
+				"name": "Mountain Town Rehab",
+				"url": "https://mountaintownrehab.com/",
+				"telephone": "+1-989-779-2920",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1106 W High St",
+					"addressLocality": "Mt Pleasant",
+					"addressRegion": "MI",
+					"postalCode": "48858",
+					"addressCountry": "US"
+				}
+			},
+			"areaServed": [
+				"Mt Pleasant, MI",
+				"Mount Pleasant, MI",
+				"Central Michigan",
+				"Mid Michigan"
+			]
 		},
-		"areaServed": [
-			"Mt Pleasant, MI",
-			"Mount Pleasant, MI",
-			"Central Michigan",
-			"Mid Michigan"
-		]
-	}
+		{
+			"@type": "FAQPage",
+			"@id": "https://mountaintownrehab.com/service-lymphedema.html#faq",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "Can lymphedema be cured?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Lymphedema is usually managed rather than cured. Therapy can help reduce swelling, improve comfort, and teach strategies that support long-term control."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Will I need compression garments?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Many people with lymphedema use compression as part of management, but the type and timing depend on your condition. Your therapist can help guide the discussion."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Is lymphedema therapy painful?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Treatment is generally gentle. Compression or bandaging may feel different at first, but it should not feel unsafe or overly painful. Tell your therapist if something does not feel right."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Can exercise make lymphedema worse?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Exercise is often part of lymphedema management when it is introduced safely and progressively. Your therapist will help you choose appropriate movement for your situation."
+					}
+				}
+			]
+		},
+		{
+			"@type": "BreadcrumbList",
+			"@id": "https://mountaintownrehab.com/service-lymphedema.html#breadcrumb",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://mountaintownrehab.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Physical Therapy",
+					"item": "https://mountaintownrehab.com/services.html"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Lymphedema",
+					"item": "https://mountaintownrehab.com/service-lymphedema.html"
+				}
+			]
+		}
+	]
+}
 	</script>
 </head>
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
 
 <a href="#primary" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-slate-950 focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to content</a>
+
+<!-- ====== TOP ANNOUNCEMENT BAR ====== -->
+<div class="bg-gradient-to-r from-sage-950 via-sage-900 to-sage-950 border-b border-slate-800/40 text-slate-300 py-3 px-4 text-center text-xs sm:text-sm font-medium z-50 relative">
+	<span class="inline-flex items-center gap-2">
+		<span class="w-2.5 h-2.5 rounded-full bg-crimson-500 animate-pulse shrink-0"></span>
+		<span>We are Hiring! We are looking for passionate Physical Therapists and Assistants to join our team.</span>
+	</span>
+	<a href="careers.html" class="inline-flex items-center justify-center ml-3 px-3.5 py-1 text-xs font-semibold rounded-full text-white bg-sage-600 hover:bg-sage-500 transition-all shadow-sm hover:shadow hover:-translate-y-0.5">
+		Apply Now
+	</a>
+</div>
 
 <!-- ====== HEADER ====== -->
 <header class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 transition-all duration-300">
@@ -113,14 +191,106 @@
 <!-- ====== MAIN ====== -->
 <main id="primary" class="site-main flex-grow py-24">
 	<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+		<nav aria-label="Breadcrumb" class="mb-6 text-sm text-slate-400">
+			<ol class="flex flex-wrap items-center gap-2">
+				<li><a href="index.html" class="hover:text-sage-300 transition-colors">Home</a></li>
+				<li aria-hidden="true">/</li>
+				<li><a href="services.html" class="hover:text-sage-300 transition-colors">Physical Therapy</a></li>
+				<li aria-hidden="true">/</li>
+				<li class="text-slate-200" aria-current="page">Lymphedema</li>
+			</ol>
+		</nav>
 		<div class="glass-card rounded-2xl border border-slate-700/50 p-8 md:p-12 animate-fade-in-up">
 			<div class="w-full aspect-video rounded-xl overflow-hidden mb-8 border border-slate-700/50">
 				<img src="images/Lymphedema.jpeg" alt="Lymphedema at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="698" height="698" loading="lazy" >
 			</div>
 			<h1 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Lymphedema</h1>
-			<div class="space-y-4 text-slate-300 leading-relaxed text-base md:text-lg">
-				<p>Lymphedema is swelling that can happen when fluid builds up in part of the body, often in an arm or leg. Therapy can help manage this swelling, improve comfort, and teach you ways to care for the area at home. Treatment may include gentle hands-on care, wrapping or compression, exercise, and education to help reduce symptoms and support daily life.</p>
+			<div class="space-y-10 text-slate-300 leading-relaxed text-base md:text-lg">
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What is lymphedema therapy?</h2>
+					<p>Lymphedema therapy helps manage swelling that can happen when lymph fluid builds up in part of the body, often in an arm or leg. Lymphedema can occur after cancer treatment, lymph node removal, radiation, infection, injury, surgery, vascular issues, or other medical conditions that affect fluid movement.</p>
+					<p>Physical therapy for lymphedema focuses on reducing swelling, improving comfort, protecting skin health, supporting movement, and teaching long-term self-management strategies. Treatment may include gentle manual techniques, compression education, bandaging or garment guidance, exercise, skin care education, and home strategies.</p>
+					<p>Lymphedema is often a condition that needs ongoing management rather than a one-time fix. The right plan can help you understand your symptoms, reduce flare-ups, and feel more prepared to care for the affected area.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Who benefits from lymphedema therapy?</h2>
+					<p>Lymphedema therapy may help people with:</p>
+					<ul class="list-disc space-y-2 pl-6">
+						<li>Arm or leg swelling related to lymph fluid buildup</li>
+						<li>Swelling after cancer treatment or lymph node removal</li>
+						<li>Swelling after surgery, trauma, or infection</li>
+						<li>Heaviness, tightness, aching, or limited motion related to swelling</li>
+						<li>Difficulty fitting clothing, sleeves, shoes, or jewelry due to swelling</li>
+						<li>Need for compression, wrapping, or self-care education</li>
+						<li>Recurring swelling that affects walking, lifting, or daily tasks</li>
+					</ul>
+					<p>Sudden new swelling, redness, warmth, fever, chest symptoms, or calf pain should be discussed with a medical provider promptly, as those symptoms may need medical evaluation before therapy.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What to expect during treatment</h2>
+					<p>Your first visit includes a review of your medical history, swelling pattern, skin condition, comfort, movement, and daily challenges. Your therapist may take measurements to track change over time and will explain what type of care may be appropriate for your situation.</p>
+					<p>Treatment may include gentle hands-on techniques to support lymph flow, compression education, bandaging when appropriate, exercises that encourage muscle pumping, and instruction in skin care and home management. Your therapist will also help you understand how activity, positioning, compression consistency, and self-care can affect symptoms.</p>
+					<p>Because lymphedema care is highly individualized, your plan may change as swelling improves or as you learn what works best for your body.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Why choose Mountain Town Rehab for lymphedema therapy?</h2>
+					<p>Mountain Town Rehab offers one-on-one care from providers who take time to understand the details of your condition and daily life. Our team includes experience in lymphedema care, orthopedic rehab, neurologic rehab, aquatic therapy, and other services that may support patients with complex needs.</p>
+					<p>As a family-owned clinic serving Central Michigan since 2001, we focus on practical education and compassionate care. We want you to leave with clearer next steps, not just a list of exercises.</p>
+				</section>
+				<section class="space-y-6">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Lymphedema therapy FAQs</h2>
+					<div class="space-y-5">
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Can lymphedema be cured?</h3>
+							<p>Lymphedema is usually managed rather than cured. Therapy can help reduce swelling, improve comfort, and teach strategies that support long-term control.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Will I need compression garments?</h3>
+							<p>Many people with lymphedema use compression as part of management, but the type and timing depend on your condition. Your therapist can help guide the discussion.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Is lymphedema therapy painful?</h3>
+							<p>Treatment is generally gentle. Compression or bandaging may feel different at first, but it should not feel unsafe or overly painful. Tell your therapist if something does not feel right.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Can exercise make lymphedema worse?</h3>
+							<p>Exercise is often part of lymphedema management when it is introduced safely and progressively. Your therapist will help you choose appropriate movement for your situation.</p>
+						</div>
+					</div>
+				</section>
 			</div>
+			<section class="mt-10 pt-8 border-t border-slate-700/50 space-y-4">
+				<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Related services</h2>
+				<ul class="space-y-4">
+					<li>
+						<a href="service-aquatic-therapy.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Aquatic Therapy</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Use gentle water-based movement to support mobility and comfort.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-post-surgical-care.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Post-Surgical Care</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Recover safely after procedures with one-on-one physical therapy.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-neurologic-rehab.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Neurologic Rehab</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Improve balance, movement, and daily function with guided care.</span>
+						</a>
+					</li>
+				</ul>
+			</section>
 			<div class="mt-8 pt-8 border-t border-slate-700/50 flex flex-col sm:flex-row gap-4">
 				<a href="contact.html" class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg shadow-sage-600/20 transition-all duration-300">
 					Book Appointment

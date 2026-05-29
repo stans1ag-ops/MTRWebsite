@@ -8,7 +8,7 @@
 	<meta name="description" content="Aquatic therapy in Mt Pleasant, MI. Low-impact pool-based PT reduces joint stress while building strength, balance, and confidence with licensed therapists.">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Aquatic Therapy in Mt Pleasant, MI | Mountain Town Rehab">
-	<meta property="og:description" content="Aquatic therapy in Mt Pleasant, MI. Low-impact pool-based PT reduces joint stress while building strength, balance, and confidence with licensed therapists.">
+	<meta property="og:description" content="Aquatic therapy in Mt Pleasant, MI using low-impact pool-based rehab for strength, balance, and mobility.">
 	<meta property="og:image" content="https://mountaintownrehab.com/images/Aquatic_therapy.jpg">
 	<link rel="canonical" href="https://mountaintownrehab.com/service-aquatic-therapy.html">
 	<meta property="og:url" content="https://mountaintownrehab.com/service-aquatic-therapy.html">
@@ -17,42 +17,120 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/output.css">
-	<!-- Procedure Structured Data -->
+	<!-- Procedure and FAQ Structured Data -->
 	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "MedicalProcedure",
-		"name": "Aquatic Therapy",
-		"url": "https://mountaintownrehab.com/service-aquatic-therapy.html",
-		"description": "Aquatic therapy is physical therapy done in water. The water helps support your body, which can make movement feel easier and reduce stress on sore joints. It can be helpful for pain, weakness, balance concerns, or recovery after injury or surgery. Your therapist uses the water to help you move, strengthen, and build confidence in a low-impact setting.",
-		"procedureType": "Physical Therapy",
-		"medicalSpecialty": "Physical Therapy",
-		"provider": {
-			"@type": "MedicalBusiness",
-			"name": "Mountain Town Rehab",
-			"url": "https://mountaintownrehab.com/",
-			"telephone": "+1-989-779-2920",
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "1106 W High St",
-				"addressLocality": "Mt Pleasant",
-				"addressRegion": "MI",
-				"postalCode": "48858",
-				"addressCountry": "US"
-			}
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "MedicalProcedure",
+			"@id": "https://mountaintownrehab.com/service-aquatic-therapy.html#procedure",
+			"name": "Aquatic Therapy",
+			"url": "https://mountaintownrehab.com/service-aquatic-therapy.html",
+			"description": "Aquatic therapy is physical therapy performed in water. The buoyancy of water supports part of your body weight, which can make movement feel easier and reduce stress on sore joints. Water also provides gentle resistance in many directions, making it useful for strengthening, balance, walking, and mobility work. For some patients, the pool allows movement that is too painful, stiff, or difficult on land. For others, aquatic therapy is a stepping stone toward land-based exercise. It can help build confidence, reduce fear of movement, and improve activity tolerance in a low-impact setting. At Mountain Town Rehab, aquatic therapy is guided by your goals and your therapist's evaluation. The plan may include walking drills, balance activities, strengthening, stretching, range of motion, endurance work, or functional movement practice.",
+			"procedureType": "Physical Therapy",
+			"medicalSpecialty": "Physical Therapy",
+			"provider": {
+				"@type": "MedicalBusiness",
+				"name": "Mountain Town Rehab",
+				"url": "https://mountaintownrehab.com/",
+				"telephone": "+1-989-779-2920",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1106 W High St",
+					"addressLocality": "Mt Pleasant",
+					"addressRegion": "MI",
+					"postalCode": "48858",
+					"addressCountry": "US"
+				}
+			},
+			"areaServed": [
+				"Mt Pleasant, MI",
+				"Mount Pleasant, MI",
+				"Central Michigan",
+				"Mid Michigan"
+			]
 		},
-		"areaServed": [
-			"Mt Pleasant, MI",
-			"Mount Pleasant, MI",
-			"Central Michigan",
-			"Mid Michigan"
-		]
-	}
+		{
+			"@type": "FAQPage",
+			"@id": "https://mountaintownrehab.com/service-aquatic-therapy.html#faq",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "Do I need to know how to swim?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Not necessarily. Aquatic therapy is usually performed in a controlled therapy setting with guidance. Tell your therapist about your comfort level in the water."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Is aquatic therapy only for arthritis?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "No. It may help with many conditions, including joint pain, weakness, balance concerns, neurologic conditions, orthopedic injuries, and post-surgical recovery when appropriate."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Will I do all of my therapy in the pool?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Not always. Many plans combine aquatic and land-based therapy, especially as strength, balance, and activity tolerance improve."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What should I bring to aquatic therapy?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Bring swimwear or clothing appropriate for the pool, a towel, and any items the clinic recommends. Ask ahead if you are unsure what is needed."
+					}
+				}
+			]
+		},
+		{
+			"@type": "BreadcrumbList",
+			"@id": "https://mountaintownrehab.com/service-aquatic-therapy.html#breadcrumb",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://mountaintownrehab.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Physical Therapy",
+					"item": "https://mountaintownrehab.com/services.html"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Aquatic Therapy",
+					"item": "https://mountaintownrehab.com/service-aquatic-therapy.html"
+				}
+			]
+		}
+	]
+}
 	</script>
 </head>
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
 
 <a href="#primary" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-slate-950 focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to content</a>
+
+<!-- ====== TOP ANNOUNCEMENT BAR ====== -->
+<div class="bg-gradient-to-r from-sage-950 via-sage-900 to-sage-950 border-b border-slate-800/40 text-slate-300 py-3 px-4 text-center text-xs sm:text-sm font-medium z-50 relative">
+	<span class="inline-flex items-center gap-2">
+		<span class="w-2.5 h-2.5 rounded-full bg-crimson-500 animate-pulse shrink-0"></span>
+		<span>We are Hiring! We are looking for passionate Physical Therapists and Assistants to join our team.</span>
+	</span>
+	<a href="careers.html" class="inline-flex items-center justify-center ml-3 px-3.5 py-1 text-xs font-semibold rounded-full text-white bg-sage-600 hover:bg-sage-500 transition-all shadow-sm hover:shadow hover:-translate-y-0.5">
+		Apply Now
+	</a>
+</div>
 
 <!-- ====== HEADER ====== -->
 <header class="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 transition-all duration-300">
@@ -113,14 +191,108 @@
 <!-- ====== MAIN ====== -->
 <main id="primary" class="site-main flex-grow py-24">
 	<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+		<nav aria-label="Breadcrumb" class="mb-6 text-sm text-slate-400">
+			<ol class="flex flex-wrap items-center gap-2">
+				<li><a href="index.html" class="hover:text-sage-300 transition-colors">Home</a></li>
+				<li aria-hidden="true">/</li>
+				<li><a href="services.html" class="hover:text-sage-300 transition-colors">Physical Therapy</a></li>
+				<li aria-hidden="true">/</li>
+				<li class="text-slate-200" aria-current="page">Aquatic Therapy</li>
+			</ol>
+		</nav>
 		<div class="glass-card rounded-2xl border border-slate-700/50 p-8 md:p-12 animate-fade-in-up">
 			<div class="w-full aspect-video rounded-xl overflow-hidden mb-8 border border-slate-700/50">
 				<img src="images/Aquatic_therapy.jpg" alt="Aquatic Therapy at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="325" height="325" loading="lazy" >
 			</div>
 			<h1 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Aquatic Therapy</h1>
-			<div class="space-y-4 text-slate-300 leading-relaxed text-base md:text-lg">
-				<p>Aquatic therapy is physical therapy done in water. The water helps support your body, which can make movement feel easier and reduce stress on sore joints. It can be helpful for pain, weakness, balance concerns, or recovery after injury or surgery. Your therapist uses the water to help you move, strengthen, and build confidence in a low-impact setting.</p>
+			<div class="space-y-10 text-slate-300 leading-relaxed text-base md:text-lg">
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What is aquatic therapy?</h2>
+					<p>Aquatic therapy is physical therapy performed in water. The buoyancy of water supports part of your body weight, which can make movement feel easier and reduce stress on sore joints. Water also provides gentle resistance in many directions, making it useful for strengthening, balance, walking, and mobility work.</p>
+					<p>For some patients, the pool allows movement that is too painful, stiff, or difficult on land. For others, aquatic therapy is a stepping stone toward land-based exercise. It can help build confidence, reduce fear of movement, and improve activity tolerance in a low-impact setting.</p>
+					<p>At Mountain Town Rehab, aquatic therapy is guided by your goals and your therapist's evaluation. The plan may include walking drills, balance activities, strengthening, stretching, range of motion, endurance work, or functional movement practice.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Who benefits from aquatic therapy?</h2>
+					<p>Aquatic therapy may help people with:</p>
+					<ul class="list-disc space-y-2 pl-6">
+						<li>Arthritis or joint pain</li>
+						<li>Back, hip, knee, ankle, or foot pain</li>
+						<li>Weakness or deconditioning</li>
+						<li>Balance concerns or fear of falling</li>
+						<li>Post-surgical recovery when cleared for pool activity</li>
+						<li>Sports or orthopedic injuries</li>
+						<li>Neurologic conditions affecting movement</li>
+						<li>Pediatric therapy needs when water-based treatment is appropriate</li>
+						<li>Pain that limits land-based exercise</li>
+					</ul>
+					<p>Aquatic therapy is not right for every medical situation. Your therapist will review safety considerations, including wound healing, infection risk, pool tolerance, and other health factors.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">What to expect during treatment</h2>
+					<p>Your first visit will include a physical therapy evaluation and a discussion about whether aquatic therapy fits your needs. If pool therapy is appropriate, your therapist will guide you through water-based exercises at a level that matches your comfort and ability.</p>
+					<p>Sessions may include warm-up walking, supported balance work, leg or arm strengthening, gentle stretching, step or gait activities, and endurance exercises. The therapist will monitor how your symptoms respond in the water and afterward.</p>
+					<p>As you progress, your plan may transition toward more land-based activities so improvements carry over to daily life. For many patients, the pool helps open the door to movement, and land training helps make those gains practical outside the water.</p>
+				</section>
+				<section class="space-y-4">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Why choose Mountain Town Rehab for aquatic therapy?</h2>
+					<p>Mountain Town Rehab offers aquatic therapy as part of a personalized rehab plan, not as a generic pool exercise class. Our team includes providers with experience in aquatic therapy, pediatric therapy, neurologic rehab, orthopedic rehab, and post-surgical recovery.</p>
+					<p>Because our care is one-on-one and family-centered, we can adapt sessions to your comfort level, confidence in the water, mobility needs, and long-term goals.</p>
+				</section>
+				<section class="space-y-6">
+					<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Aquatic therapy FAQs</h2>
+					<div class="space-y-5">
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Do I need to know how to swim?</h3>
+							<p>Not necessarily. Aquatic therapy is usually performed in a controlled therapy setting with guidance. Tell your therapist about your comfort level in the water.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Is aquatic therapy only for arthritis?</h3>
+							<p>No. It may help with many conditions, including joint pain, weakness, balance concerns, neurologic conditions, orthopedic injuries, and post-surgical recovery when appropriate.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">Will I do all of my therapy in the pool?</h3>
+							<p>Not always. Many plans combine aquatic and land-based therapy, especially as strength, balance, and activity tolerance improve.</p>
+						</div>
+						<div>
+							<h3 class="text-lg md:text-xl font-serif font-bold text-white mb-2">What should I bring to aquatic therapy?</h3>
+							<p>Bring swimwear or clothing appropriate for the pool, a towel, and any items the clinic recommends. Ask ahead if you are unsure what is needed.</p>
+						</div>
+					</div>
+				</section>
 			</div>
+			<section class="mt-10 pt-8 border-t border-slate-700/50 space-y-4">
+				<h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Related services</h2>
+				<ul class="space-y-4">
+					<li>
+						<a href="service-orthopedic-rehab.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Orthopedic Rehab</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Improve movement and strength when pain limits daily activity.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-lymphedema.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Lymphedema</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Manage swelling with specialized therapy and home strategies.</span>
+						</a>
+					</li>
+					<li>
+						<a href="service-post-surgical-care.html" class="group block border-b border-slate-700/60 pb-4 transition-colors hover:border-sage-500/60">
+							<span class="flex items-center justify-between gap-4 text-white font-semibold">
+								<span>Post-Surgical Care</span>
+								<span aria-hidden="true" class="text-sage-400 transition-transform group-hover:translate-x-1">-&gt;</span>
+							</span>
+							<span class="mt-1 block text-sm text-slate-400 leading-relaxed">Use guided rehab to recover after surgery.</span>
+						</a>
+					</li>
+				</ul>
+			</section>
 			<div class="mt-8 pt-8 border-t border-slate-700/50 flex flex-col sm:flex-row gap-4">
 				<a href="contact.html" class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold rounded-full text-white bg-gradient-to-r from-sage-600 to-sage-500 hover:from-sage-500 hover:to-sage-400 shadow-lg shadow-sage-600/20 transition-all duration-300">
 					Book Appointment

@@ -19,45 +19,151 @@
 	<link rel="stylesheet" href="dist/output.css">
 	<!-- Structured Data -->
 	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "MedicalBusiness",
-		"name": "Mountain Town Rehab",
-		"url": "https://mountaintownrehab.com/",
-		"telephone": "+1-989-779-2920",
-		"email": "info@mountaintownrehab.com",
-		"address": {
-			"@type": "PostalAddress",
-			"streetAddress": "1106 W High St",
-			"addressLocality": "Mt Pleasant",
-			"addressRegion": "MI",
-			"postalCode": "48858",
-			"addressCountry": "US"
-		},
-		"areaServed": [
-			"Mt Pleasant, MI",
-			"Mount Pleasant, MI",
-			"Central Michigan",
-			"Mid Michigan"
-		],
-		"medicalSpecialty": "Physical Therapy",
-		"description": "Family-owned physical therapy clinic in Mt Pleasant, MI providing personalized rehabilitation and one-on-one care.",
-		"priceRange": "$$",
-		"openingHoursSpecification": [
-			{
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-				"opens": "07:00",
-				"closes": "17:30"
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "MedicalBusiness",
+			"name": "Mountain Town Rehab",
+			"url": "https://mountaintownrehab.com/",
+			"telephone": "+1-989-779-2920",
+			"email": "info@mountaintownrehab.com",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "1106 W High St",
+				"addressLocality": "Mt Pleasant",
+				"addressRegion": "MI",
+				"postalCode": "48858",
+				"addressCountry": "US"
 			},
-			{
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": "Friday",
-				"opens": "07:00",
-				"closes": "13:00"
-			}
-		]
-	}
+			"areaServed": [
+				"Mt Pleasant, MI",
+				"Mount Pleasant, MI",
+				"Central Michigan",
+				"Mid Michigan"
+			],
+			"medicalSpecialty": "Physical Therapy",
+			"description": "Family-owned physical therapy clinic in Mt Pleasant, MI providing personalized rehabilitation and one-on-one care.",
+			"priceRange": "$$",
+			"openingHoursSpecification": [
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
+						"Monday",
+						"Tuesday",
+						"Wednesday",
+						"Thursday"
+					],
+					"opens": "07:00",
+					"closes": "17:30"
+				},
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": "Friday",
+					"opens": "07:00",
+					"closes": "13:00"
+				}
+			],
+			"@id": "https://mountaintownrehab.com/#business"
+		},
+		{
+			"@type": "Person",
+			"@id": "https://mountaintownrehab.com/staff.html#mark-stansberry",
+			"name": "Mark Stansberry",
+			"jobTitle": "Owner / PT, DPT, FAAOMPT",
+			"worksFor": {
+				"@id": "https://mountaintownrehab.com/#business"
+			},
+			"image": "https://mountaintownrehab.com/images/mark-stansberry-physical-therapist-mt-pleasant-mi.jpg",
+			"url": "https://mountaintownrehab.com/staff.html#modal-mark",
+			"knowsAbout": "Physical Therapy"
+		},
+		{
+			"@type": "Person",
+			"@id": "https://mountaintownrehab.com/staff.html#sue-stansberry",
+			"name": "Sue Stansberry",
+			"jobTitle": "Owner / Office Manager",
+			"worksFor": {
+				"@id": "https://mountaintownrehab.com/#business"
+			},
+			"image": "https://mountaintownrehab.com/images/sue-stansberry-office-manager-mt-pleasant-mi.png",
+			"url": "https://mountaintownrehab.com/staff.html#modal-sue",
+			"knowsAbout": "Clinic Administration"
+		},
+		{
+			"@type": "Person",
+			"@id": "https://mountaintownrehab.com/staff.html#kristi-pifer",
+			"name": "Kristi Pifer",
+			"jobTitle": "MA, MSPT",
+			"worksFor": {
+				"@id": "https://mountaintownrehab.com/#business"
+			},
+			"image": "https://mountaintownrehab.com/images/kristi-pifer-physical-therapist-mt-pleasant-mi.png",
+			"url": "https://mountaintownrehab.com/staff.html#modal-kristi",
+			"knowsAbout": "Physical Therapy"
+		},
+		{
+			"@type": "Person",
+			"@id": "https://mountaintownrehab.com/staff.html#alex-stansberry",
+			"name": "Alex Stansberry",
+			"jobTitle": "DPT",
+			"worksFor": {
+				"@id": "https://mountaintownrehab.com/#business"
+			},
+			"image": "https://mountaintownrehab.com/images/alex-stansberry-physical-therapist-mt-pleasant-mi.jpg",
+			"url": "https://mountaintownrehab.com/staff.html#modal-alex",
+			"knowsAbout": "Physical Therapy"
+		},
+		{
+			"@type": "Person",
+			"@id": "https://mountaintownrehab.com/staff.html#stephanie-pifer",
+			"name": "Stephanie Pifer",
+			"jobTitle": "DPT",
+			"worksFor": {
+				"@id": "https://mountaintownrehab.com/#business"
+			},
+			"image": "https://mountaintownrehab.com/images/stephanie-pifer-physical-therapist-mt-pleasant-mi.png",
+			"url": "https://mountaintownrehab.com/staff.html#modal-stephanie",
+			"knowsAbout": "Physical Therapy"
+		},
+		{
+			"@type": "Person",
+			"@id": "https://mountaintownrehab.com/staff.html#lisa-smith",
+			"name": "Lisa Smith",
+			"jobTitle": "PTA",
+			"worksFor": {
+				"@id": "https://mountaintownrehab.com/#business"
+			},
+			"image": "https://mountaintownrehab.com/images/lisa-smith-physical-therapist-assistant-mt-pleasant-mi.jpg",
+			"url": "https://mountaintownrehab.com/staff.html#modal-lisa",
+			"knowsAbout": "Physical Therapy"
+		},
+		{
+			"@type": "Person",
+			"@id": "https://mountaintownrehab.com/staff.html#mary-lee-humphreys",
+			"name": "Mary Lee Humphreys",
+			"jobTitle": "Office Staff",
+			"worksFor": {
+				"@id": "https://mountaintownrehab.com/#business"
+			},
+			"image": "https://mountaintownrehab.com/images/mary-lee-humphreys-office-staff-mt-pleasant-mi.png",
+			"url": "https://mountaintownrehab.com/staff.html#modal-marylee",
+			"knowsAbout": "Clinic Administration"
+		},
+		{
+			"@type": "Person",
+			"@id": "https://mountaintownrehab.com/staff.html#liz-vasold",
+			"name": "Liz Vasold",
+			"jobTitle": "Office Staff",
+			"worksFor": {
+				"@id": "https://mountaintownrehab.com/#business"
+			},
+			"image": "https://mountaintownrehab.com/images/liz-vasold-office-staff-mt-pleasant-mi.png",
+			"url": "https://mountaintownrehab.com/staff.html#modal-liz",
+			"knowsAbout": "Clinic Administration"
+		}
+	]
+}
 	</script>
 </head>
 <body class="bg-slate-950 text-slate-300 font-sans antialiased flex flex-col min-h-screen">
@@ -137,7 +243,7 @@
 	<!-- Hero Section -->
 	<section class="relative overflow-hidden min-h-[85vh] flex items-center">
 		<!-- Background Image (Placeholder for exterior clinic shot) -->
-		<div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('images/Front_Desk.jpg'); opacity: 0.5;"></div>
+		<img src="images/Front_Desk.jpg" alt="Mountain Town Rehab front desk in Mt Pleasant, MI" class="absolute inset-0 z-0 w-full h-full object-cover opacity-50" width="1200" height="900" loading="eager" fetchpriority="high" decoding="async">
 		<!-- Gradient Overlay -->
 		<div class="absolute inset-0 z-[1] hero-gradient"></div>
 		<!-- Decorative Elements -->
@@ -148,7 +254,7 @@
 			<h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-4 max-w-4xl animate-fade-in-up">
 				Meet Our <span class="gradient-text">Team</span>
 			</h1>
-			<p class="text-lg text-slate-400 max-w-2xl leading-relaxed animate-fade-in-up delay-200">
+			<p class="text-lg text-slate-400 max-w-2xl leading-relaxed animate-fade-in-up anim-delay-200">
 				Dedicated professionals committed to your trust and recovery. Our experts provide personalized care to help you get back to doing what you love.
 			</p>
 		</div>
@@ -158,10 +264,14 @@
 	<section class="py-24 relative z-20 -mt-10">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			
+			<div class="text-center mb-12 animate-fade-in-up anim-delay-100">
+				<h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Our team</h2>
+				<p class="text-slate-400 max-w-2xl mx-auto leading-relaxed">Meet the licensed providers and front office team who support patient care at Mountain Town Rehab.</p>
+			</div>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 				
 				<!-- Mark Stansberry -->
-				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-100 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-mark" aria-haspopup="dialog" aria-controls="modal-mark">
+				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up anim-delay-100 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-mark" aria-haspopup="dialog" aria-controls="modal-mark">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<!-- Placeholder image -->
 						<img src="images/mark-stansberry-physical-therapist-mt-pleasant-mi.jpg" alt="Mark Stansberry, physical therapist at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="896" height="896" loading="lazy" >
@@ -178,7 +288,7 @@
 				</button>
 
 				<!-- Sue Stansberry -->
-				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-200 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-sue" aria-haspopup="dialog" aria-controls="modal-sue">
+				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up anim-delay-200 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-sue" aria-haspopup="dialog" aria-controls="modal-sue">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<img src="images/sue-stansberry-office-manager-mt-pleasant-mi.png" alt="Sue Stansberry, office manager at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="896" height="896" loading="lazy" >
 					</div>
@@ -194,7 +304,7 @@
 				</button>
 
 				<!-- Kristi Pifer -->
-				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-300 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-kristi" aria-haspopup="dialog" aria-controls="modal-kristi">
+				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up anim-delay-300 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-kristi" aria-haspopup="dialog" aria-controls="modal-kristi">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<img src="images/kristi-pifer-physical-therapist-mt-pleasant-mi.png" alt="Kristi Pifer, physical therapist at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="1792" height="1793" loading="lazy" >
 					</div>
@@ -210,7 +320,7 @@
 				</button>
 
 				<!-- Alex Stansberry -->
-				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-400 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-alex" aria-haspopup="dialog" aria-controls="modal-alex">
+				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up anim-delay-400 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-alex" aria-haspopup="dialog" aria-controls="modal-alex">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<img src="images/alex-stansberry-physical-therapist-mt-pleasant-mi.jpg" alt="Alex Stansberry, physical therapist at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="896" height="896" loading="lazy" >
 					</div>
@@ -226,7 +336,7 @@
 				</button>
 
 				<!-- Stephanie Pifer -->
-				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-100 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-stephanie" aria-haspopup="dialog" aria-controls="modal-stephanie">
+				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up anim-delay-100 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-stephanie" aria-haspopup="dialog" aria-controls="modal-stephanie">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<img src="images/stephanie-pifer-physical-therapist-mt-pleasant-mi.png" alt="Stephanie Pifer, physical therapist at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="896" height="896" loading="lazy" >
 					</div>
@@ -242,7 +352,7 @@
 				</button>
 
 				<!-- Lisa Smith -->
-				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-200 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-lisa" aria-haspopup="dialog" aria-controls="modal-lisa">
+				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up anim-delay-200 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-lisa" aria-haspopup="dialog" aria-controls="modal-lisa">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<img src="images/lisa-smith-physical-therapist-assistant-mt-pleasant-mi.jpg" alt="Lisa Smith, physical therapist assistant at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="896" height="896" loading="lazy" >
 					</div>
@@ -258,7 +368,7 @@
 				</button>
 
 				<!-- Mary Lee Humphreys -->
-				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-300 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-marylee" aria-haspopup="dialog" aria-controls="modal-marylee">
+				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up anim-delay-300 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-marylee" aria-haspopup="dialog" aria-controls="modal-marylee">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<img src="images/mary-lee-humphreys-office-staff-mt-pleasant-mi.png" alt="Mary Lee Humphreys, office staff at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="896" height="896" loading="lazy" >
 					</div>
@@ -274,7 +384,7 @@
 				</button>
 
 				<!-- Liz Vasold -->
-				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up delay-400 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-liz" aria-haspopup="dialog" aria-controls="modal-liz">
+				<button type="button" class="card-hover glass-card rounded-2xl border border-slate-700/50 hover:border-sage-500/50 hover:bg-slate-800/40 p-6 flex flex-col items-center text-center animate-fade-in-up anim-delay-400 cursor-pointer staff-card group transition-colors appearance-none w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950" data-target="modal-liz" aria-haspopup="dialog" aria-controls="modal-liz">
 					<div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-sage-500/30 bg-slate-800/50">
 						<img src="images/liz-vasold-office-staff-mt-pleasant-mi.png" alt="Liz Vasold, office staff at Mountain Town Rehab in Mt Pleasant, MI" class="w-full h-full object-cover" width="896" height="896" loading="lazy" >
 					</div>
@@ -290,7 +400,7 @@
 				</button>
 
 				<!-- Join Our Team Placeholder Card -->
-				<div class="card-hover glass-card rounded-2xl border-2 border-dashed border-sage-500/40 p-6 flex flex-col items-center justify-center text-center animate-fade-in-up delay-500 min-h-[380px] group">
+				<div class="card-hover glass-card rounded-2xl border-2 border-dashed border-sage-500/40 p-6 flex flex-col items-center justify-center text-center animate-fade-in-up anim-delay-500 min-h-[380px] group">
 					<div class="w-20 h-20 rounded-full bg-gradient-to-br from-sage-600/20 to-sage-400/10 border border-sage-500/20 flex items-center justify-center text-sage-400 mb-6 group-hover:scale-110 transition-transform duration-300">
 						<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg>
 					</div>
